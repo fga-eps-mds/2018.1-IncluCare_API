@@ -80,47 +80,126 @@ Nosso foco está nos profissionais que lidam de forma direta com os alunos espec
 |**Diferente de**|Do método tradicional feito manualmente.|
 |**Nosso produto**|É uma solução gratuita para o problema existente.|
 
+
+## 3.             Descrições dos Envolvidos e dos Usuários
+### 3.1               Demográficos de Mercado 
+O ensino público para estudantes com necessidades especiais é algo que, assim como em escolas convencionais, passa por dificuldades no Distrito Federal. Existem 13 escolas exclusivas para pessoas  que carecem de cuidados diferenciados (CEE) e, pelo fato do IncluCare ser um software com código aberto, poderá ser utilizado por essas instituições para um melhor acompanhamento dos seus alunos.
+
+### 3.2 Resumo dos Envolvidos
+|Nome|Descrição|Responsabilidade|
+|---|----|----|
+|Equipe de Desenvolvimento|Estudantes da Universidade de Brasília - FGA|Desenvolver e Implementar o Software|
+|Equipe de avaliação e suporte|Professora e Coaches das disciplinas de EPS e MDS|Auxiliar a equipe ao longo do desenvolvimento do projeto.|
+|Cliente|Escola Classe 401 do Recanto das Emas|Tornar disponível informações sobre os estudantes e o processo de acompanhamento.|
+
+
+### 3.3               Resumo dos Usuários
+
+|Nome|Descrição|Responsabilidade|
+|----|----|----|
+|Profissionais da área de educação|Utilizar o software para melhorar o processo de triagem e acompanhamento de alunos com dificuldade de aprendizagem.|Utilizar o sistema e manter e alimentar a base de dados.|
+ 
+
+### 3.4    Ambiente do Usuário
+
+O sistema Web poderá ser usado pelo profissional de educação em navegadores mais conhecidos (Mozilla FireFox, Google Chrome, Opera) para melhor funcionamento do software.
+
+
+
+### 3.5   Perfis dos Envolvidos 
+
+#### 3.5.1 Equipe de avaliação e suporte        
+|||
+|----|----|
+|**Representante**|Prª Carla Rocha| 
+|**Coach**|Joao Henrique|
+|**Descrição**|Equipe responsável pela avaliação e direcionamento do projeto.|
+|**Tipo**|Professora e coach do grupo da disciplina.|
+|**Responsabilidades**|Direcionar e dar suporte a equipe de desenvolvimento na disciplina Métodos de Desenvolvimento de Software quanto ao desenvolvimento do projeto.|
+|**Critérios de Sucesso**|A entrega do projeto juntamente com uma documentação coerente estabelecida, a partir das orientações dadas ao longo do semestre.|
+|**Envolvimento**|Alto.|
+|**Comentários / Problemas**|-|
+ 
+#### 3.5.2 Equipe de Desenvolvimento
+|||
+|----|----|
+|**Representante**|Byron Kamal Barreto Correa <br />Eduardo Vinícius Cerqueira<br />Gabriel Alves S de Souza<br />Igor Aragão<br />Igor Guimarães Veludo<br />João Pedro Mota Jardim<br />Marcelo Araújo dos Santos<br />Mateus Alves Mendes Assunção<br />William Silva de Almeida|
+|**Descrição**|Desenvolvedores.|
+|**Tipo**|Estudantes da Universidade de Brasília - FGA UnB/Gama.|
+|**Responsabilidades**|Desenvolver, implementar e entregar o projeto.|
+|**Critérios de Sucesso**|Entregar o software com as funcionalidades requeridas pelo cliente dentro do prazo da disciplina.
+|**Envolvimento**|Alto.|
+|**Comentários / Problemas**| Desenvolvimento de um software com clientes reais e a partir disso passar pelas etapas da engenharia de software, entregando um produto de qualidade.|
+
+
+### 3.5.3 Clientes
+|||
+|----|----|
+|**Representante**|Cinthia e Sumara|
+|**Descrição**|Profissionais da área de educação que fazem a triagem e acompanhamento dos estudantes com dificuldade de aprendizagem.|
+|**Tipo**|Cinthia (Professora) e Sumara (Psicóloga)|
+|**Responsabilidades**|Fornecer informações dos estudantes, dos métodos utilizados na triagem, acompanhamento e utilizar o sistema IncluCare.|
+|**Critérios de Sucesso**|Otimizar o tempo de atendimento e acompanhamento dos estudantes e da geração de relatórios|
+|**Envolvimento**|Alto.|
+|**Comentários / Problemas**|-|
+
+
+### 3.6               Perfis dos Usuários 
+#### 3.6.1         Cinthia e Sumara
+|||
+|----|----|
+|**Representante**|Cinthia e Sumara|
+|**Descrição**|Profissionais da área de educação que fazem a triagem e acompanhamento dos estudantes com dificuldade de aprendizagem.|
+|**Tipo**|Cinthia (Professora) e Sumara (Psicóloga)|
+|**Responsabilidades**|Fornecer informações dos estudantes e dos métodos utilizados na triagem e acompanhamento.|
+|**Critérios de Sucesso**|Otimizar o tempo de atendimento e acompanhamento dos estudantes e da geração de relatórios|
+|**Envolvimento**|Alto.|
+|**Comentários / Problemas**|-|
+ 
+### 3.7               Principais Necessidades dos Usuários ou dos Envolvidos
+|Necessidade|Prioridade|Preocupações|Solução Atual|Soluções Propostas|
+|----|----|----|----|----|
+|Gerenciar cuidados necessários com os alunos|Alta|Armazenar especialidades necessárias para cada aluno com necessidades especiais|Documento feito manualmente, assim torna o processo lento e menos eficiente|Facilitar a gestão desses documentos, encurtando rotinas repetitivas e aprimorando o armazenamento dos mesmos|
+|Transmitir mensagens|Media|Levar a informação necessária aos cuidados do aluno ao professor responsável|Entrega manual de um documento físico com as informações|Enviar e-mail para os professores com as recomendações.|
+
+
+### 3.8           Alternativas e Concorrência
+	
+Método Tradicional de triagem e acompanhamento
+O método tradicional de triagem e acompanhamento são feitos de maneira manual. O profissional da área de educação recebe dos demais professores uma ficha de encaminhamento para que o estudante que apresentar dificuldade de aprendizagem (estudante especial) possa passar pelo processo de triagem e acompanhamento ao longo do ano escolar. Os relatórios resultantes desse processo são feitos a mão e depois digitados em editor de texto.
+
 ## 4 Visão Geral do Produto
 ### 4.1 Perspectiva do Produto
 O sistema irá oferecer uma plataforma web, de maneira responsiva e ágil para profissionais que lidam diretamente com alunos especiais. O profissional irá contar com uma série de templates da documentação de diagnóstico do aluno, além de informações adicionais relacionadas ao estado dos alunos.
 
-### 4.2 Resumo dos Recursos
-|Benefício para o Cliente|Recursos de Suporte|
-|---|---|
-|Novas equipes de suporte poderão ficar rapidamente informadas do processo.|Uma base de conhecimentos ajuda o pessoal de suporte a identificar rapidamente ações corretivas e soluções conhecidas.|
-|A satisfação do cliente é melhorada porque nada é negligenciado.|Os problemas são relacionados como itens únicos, classificados e monitorados ao longo de todo o processo de resolução. São emitidas notificações automáticas para os problemas que têm seus prazos expirados.|
-|O gerenciamento pode identificar áreas de problemas e estimar a carga de trabalho da equipe.|Os relatórios de tendências e de distribuição permitem revisões de nível superior do status dos problemas.|
-|Equipes de suporte distribuídas podem trabalhar em conjunto para solucionar problemas.|Um servidor de duplicação permite que as informações atuais do banco de dados sejam compartilhadas pela empresa.|
-|Os clientes têm autonomia para resolver seus problemas, o que reduz os custos de suporte e melhora o tempo de resposta.|Uma base de dados pode ser disponibilizada na Internet. Ela contém recursos de pesquisa de hipertexto e um mecanismo de consulta gráfico.|
+### 4.2 Recursos do Produto
 
-## 5 Recursos do Produto
-
-### 5.1 Manter o cadastro de Alunos e Profissionais da área de educação
+#### 1.Manter o cadastro de Alunos e Profissionais da área de educação
 O sistema vai manter o cadastro dos alunos, professores e psicólogos.
 
-### 5.2 Gerenciar documentos de necessidades dos alunos
+### 2.Gerenciar documentos de necessidades dos alunos
 Os professores e psicólogos devem criar, editar e armazenar os documentos que contêm as necessidades especiais dos alunos.
 
-## 6 Restrições
+## 5 Restrições
 
-### 6.1 Restrições de escopo
+### 5.1 Restrições de escopo
 Como o tempo de desenvolvimento é curto, o processo de solicitação de encaminhamento dos estudantes pelos professores, em primeiro momento, será feita de forma manual.
 
-### 6.2  Restriçao de desenvolvimento e implantação
+### 5.2  Restriçao de desenvolvimento e implantação
 Como o grupo não possui conhecimentos técnicos necessários para a produção imediata do projeto, é necessário o estudo das linguagens e nivelamento de conhecimento, para que depois seja iniciado o processo de criação das funcionalidades do sistema.
 
-## 7 Intervalos de Qualidade
+## 6 Intervalos de Qualidade
 O sistema deve ser utilizado de forma eficiente e estável em qualquer dispositivo com suporte o navegador Google Chrome versão 65.0.3325.181 e acesso à internet.
 
-## 8 Outros requisitos do projeto
+## 7 Outros requisitos do projeto
 Para a parte de inserção de dados dos alunos no cadastro, a prioridade é a organização da planilha
 
-### 8.1 Requisitos de usabilidade
+### 7.1 Requisitos de usabilidade
 O sistema deve conter uma interface simples e intuitiva que seja agradável, para que nosso usuários tenham acesso às funcionalidades de forma fluida. Esse processo, no entanto, não pode comprometer a usabilidade do sistema.
 
-### 8.2 Requisitos do sistema
+### 7.2 Requisitos do sistema
 1. Apenas usuários com permissão podem ter acesso ao sistema, pois este contém informações sensíveis relacionada aos estudantes.
 2. O sistema Web deve ser acessado de forma rápida pelo usuário através de um navegador em uma máquina que possua acesso à internet. 
 
-### 8.3 Requisitos de confiabilidade
+### 7.3 Requisitos de confiabilidade
 O sistema deve manter todas as informações referentes aos estudantes com necessidades especiais e dos profissionais da área de acompanhamento dos estudantes envolvidos, de modo que não seja necessário um recadastramento dos estudantes.
