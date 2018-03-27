@@ -38,7 +38,7 @@
 ### 1.1. Objetivo
 Este documento tem como objetivo especificar de maneira geral as características do desenvolvimento da solução IncluCare para a Escola Classe 401 (Recanto das Emas).
 
-#### 1.2. Escopo
+### 1.2. Escopo
 Este projeto tem como finalidade suprir a necessidade de automação do processo de registro de alunos com necessidades especiais da Escola Classe 401 do Recanto das Emas.
 Os profissionais da área pedagógica da escola procuram uma solução em software para substituir o processo de encaminhamento e registro dos alunos com necessidades especiais.
 O software, a ser implementado, deve registrar o(s) tipo(s) de transtorno apresentado pelo aluno para servir de consulta aos profissionais, e para a elaboração do Relatório de Avaliação e Intervenção Educacional de cada aluno.
@@ -79,3 +79,48 @@ Nosso foco está nos profissionais que lidam de forma direta com os alunos espec
 |**Que**|Reduz tempo gasto com preenchimento de documentos em papéis.|
 |**Diferente de**|Do método tradicional feito manualmente.|
 |**Nosso produto**|É uma solução gratuita para o problema existente.|
+
+## 4 Visão Geral do Produto
+### 4.1 Perspectiva do Produto
+O sistema irá oferecer uma plataforma web, de maneira responsiva e ágil para profissionais que lidam diretamente com alunos especiais. O profissional irá contar com uma série de templates da documentação de diagnóstico do aluno, além de informações adicionais relacionadas ao estado dos alunos.
+
+### 4.2 Resumo dos Recursos
+|Benefício para o Cliente|Recursos de Suporte|
+|---|---|
+|Novas equipes de suporte poderão ficar rapidamente informadas do processo.|Uma base de conhecimentos ajuda o pessoal de suporte a identificar rapidamente ações corretivas e soluções conhecidas.|
+|A satisfação do cliente é melhorada porque nada é negligenciado.|Os problemas são relacionados como itens únicos, classificados e monitorados ao longo de todo o processo de resolução. São emitidas notificações automáticas para os problemas que têm seus prazos expirados.|
+|O gerenciamento pode identificar áreas de problemas e estimar a carga de trabalho da equipe.|Os relatórios de tendências e de distribuição permitem revisões de nível superior do status dos problemas.|
+|Equipes de suporte distribuídas podem trabalhar em conjunto para solucionar problemas.|Um servidor de duplicação permite que as informações atuais do banco de dados sejam compartilhadas pela empresa.|
+|Os clientes têm autonomia para resolver seus problemas, o que reduz os custos de suporte e melhora o tempo de resposta.|Uma base de dados pode ser disponibilizada na Internet. Ela contém recursos de pesquisa de hipertexto e um mecanismo de consulta gráfico.|
+
+## 5 Recursos do Produto
+
+### 5.1 Manter o cadastro de Alunos e Profissionais da área de educação
+O sistema vai manter o cadastro dos alunos, professores e psicólogos.
+
+### 5.2 Gerenciar documentos de necessidades dos alunos
+Os professores e psicólogos devem criar, editar e armazenar os documentos que contêm as necessidades especiais dos alunos.
+
+## 6 Restrições
+
+### 6.1 Restrições de escopo
+Como o tempo de desenvolvimento é curto, o processo de solicitação de encaminhamento dos estudantes pelos professores, em primeiro momento, será feita de forma manual.
+
+### 6.2  Restriçao de desenvolvimento e implantação
+Como o grupo não possui conhecimentos técnicos necessários para a produção imediata do projeto, é necessário o estudo das linguagens e nivelamento de conhecimento, para que depois seja iniciado o processo de criação das funcionalidades do sistema.
+
+## 7 Intervalos de Qualidade
+O sistema deve ser utilizado de forma eficiente e estável em qualquer dispositivo com suporte o navegador Google Chrome versão 65.0.3325.181 e acesso à internet.
+
+## 8 Outros requisitos do projeto
+Para a parte de inserção de dados dos alunos no cadastro, a prioridade é a organização da planilha
+
+### 8.1 Requisitos de usabilidade
+O sistema deve conter uma interface simples e intuitiva que seja agradável, para que nosso usuários tenham acesso às funcionalidades de forma fluida. Esse processo, no entanto, não pode comprometer a usabilidade do sistema.
+
+### 8.2 Requisitos do sistema
+1. Apenas usuários com permissão podem ter acesso ao sistema, pois este contém informações sensíveis relacionada aos estudantes.
+2. O sistema Web deve ser acessado de forma rápida pelo usuário através de um navegador em uma máquina que possua acesso à internet. 
+
+### 8.3 Requisitos de confiabilidade
+O sistema deve manter todas as informações referentes aos estudantes com necessidades especiais e dos profissionais da área de acompanhamento dos estudantes envolvidos, de modo que não seja necessário um recadastramento dos estudantes.
