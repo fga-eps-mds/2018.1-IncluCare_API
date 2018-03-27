@@ -1,3 +1,20 @@
+# Documento de Visão
+
+Índice
+=================
+## Histórico de Revisão
+
+|Data | Versão | Descrição | Autores |
+|  ---  |  ---  |  ---  |  ---  |
+| 21/03/2018 | 0.1 | Criação e estruturação do documento | Byron Kamal, Igor Aragão, Igor Veludo, Marcelo Araújo |
+| 22/03/2018 | 0.2 | Feitas seções 1.1 a 5.2 | Byron Kamal, Igor Aragão, Igor Veludo, Marcelo Araújo, Mateus Assunção |
+| 23/03/2018 | 0.3 | Alteração na subseção 3.7 | William Almeida |
+| 23/03/2018 | 0.4 | Feita seção 5 | William Almeida |
+| 24/03/2018 | 0.5 | Feitas seções 6.1, 6.2 e 7 | Igor Veludo |
+| 24/03/2018 | 0.6 | Revisão da seção 3.5.1 | Byron Kamal |
+| 24/03/2018 | 0.7 | Feitas seções 8.1 a 8.3 | Igor Veludo |
+| 25/03/2018 | 0.8 | Feita subseção 3.1 | William Almeida |
+
 ## 1. Introdução
 
 ### 1.1               Objetivo
@@ -21,5 +38,3 @@ Referência Template do cocumento: http://www.funpar.ufpr.br:8080/rup/webtmpl/te
 ### 1.5               Visão Geral
 Este documento descreve os detalhes sobre as características do software IncluCare, especificando os problemas que estimularam a criação dessa solução em software. O documento é dividido da seguinte maneira: inicialmente é especificado qual problema motivou o desenvolvimento da solução, em seguida as partes interessadas são descritas, e por fim todos os recursos, restrições e requisitos do produto são apresentados.
 
-
-#2018.1-grupo1
