@@ -174,10 +174,10 @@ O sistema irá oferecer uma plataforma web, de maneira responsiva e ágil para p
 
 ### 4.2 Recursos do Produto
 
-#### 1.Manter o cadastro de Alunos e Profissionais da área de educação
+ 1. Manter o cadastro de Alunos e Profissionais da área de educação
 O sistema vai manter o cadastro dos alunos, professores e psicólogos.
 
-### 2.Gerenciar documentos de necessidades dos alunos
+2. Gerenciar documentos de necessidades dos alunos
 Os professores e psicólogos devem criar, editar e armazenar os documentos que contêm as necessidades especiais dos alunos.
 
 ## 5 Restrições
