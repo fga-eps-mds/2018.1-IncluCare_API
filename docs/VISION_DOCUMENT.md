@@ -18,19 +18,52 @@
 # Índice
 1. [Introdução](#1-introdução)
 
-  1.1. [Objetivo](#11-objetivo)  
-  1.2. [Escopo](#12-escopo)  
-  1.3.	[Definições, acrônimos e abreviações](#13-definições-acrônimos-e-abreviações)  
-  1.4. [Referências](#14-referências)  
-  1.5. [Visão Geral](#15-visão-geral)  
+    1.1. [Objetivo](#11-objetivo)  
+    1.2. [Escopo](#12-escopo)  
+    1.3. [Definições, acrônimos e abreviações](#13-definições-acrônimos-e-abreviações)  
+    1.4. [Referências](#14-referências)  
+    1.5. [Visão Geral](#15-visão-geral)  
   
-2. [Posicionamento](#2)
-3. [Descrições dos envolvidos e dos usuários](#3)
-4. [Visão Geral do Produto](#4)
-5. [Recursos do Produto](#5)
-6. [Restrições](#6)
-7. [Intervalos de Qualidade](#7)
-8. [Outros requisitos do projeto](#8)
+2. [Posicionamento](#2-posicionamento)
+
+    2.1. [Oportunidade de Negócios](#21-oportunidade-de-negócios)  
+    2.2. [Descrição do Problema](#22-descrição-do-problema)  
+    2.3. [Sentença de Posição do Produto](#23-sentença-de-posição-do-produto)
+
+3. [Descrições dos envolvidos e dos usuários](#3-descrições-dos-envolvidos-e-dos-usuários)
+
+    3.1. [Demográficos de Mercado](#31-demográficos-de-mercado)  
+    3.2. [Resumo dos Envolvidos](#32-resumo-dos-envolvidos)  
+    3.3. [Resumo dos Usuários](#33-resumo-dos-usuários)  
+    3.4. [Ambiente do Usuário](#34-ambiente-do-usuário)  
+    3.5. [Perfis dos Envolvidos](#35-perfis-dos-envolvidos)  
+        3.5.1 [Equipe de avaliação e suporte](#351-equipe-de-avaliação-e-suporte)  
+	3.5.2 [Equipe de Desenvolvimento](#352-equipe-de-desenvolvimento)  
+	3.5.3 [Clientes](#353-clientes)  
+    3.6. [Perfis dos Usuários](#36-perfis-dos-usuários)  
+    	3.6.1 [Cinthia e Sumara](#361-cinthia-e-sumara)  
+    3.7. [Principais Necessidades dos Usuários ou dos Envolvidos](#37-principais-necessidades-dos-usuários-ou-dos-envolvidos)  
+    3.8. [Alternativas e Concorrência](#38-alternativas-e-concorrência)  
+
+4. [Visão Geral do Produto](#4-visão-geral-do-produto)
+
+    4.1. [Perspectiva do Produto](#41-perspectiva-do-produto)  
+    4.2. [Recursos do Produto](#42-recursos-do-produto)
+
+5. [Restrições](#5-restrições)
+
+    5.1. [Restrições de escopo](#51-restrições-de-escopo)  
+    5.2. [Restriçao de desenvolvimento e implantação](#52-restrição-de-desenvolvimento-e-implantação)
+    
+6. [Intervalos de Qualidade](#6-intervalos-de-qualidade)
+
+
+7. [Outros requisitos do projeto](#7-outros-requisitos-do-projeto)
+
+    7.1. [Requisitos de usabilidade](#71-requisitos-de-usabilidade)  
+    7.2. [Requisitos do sistema](#72-requisitos-do-sistema)  
+    7.3. [Requisitos de confiabilidade](#73-requisitos-de-confiabilidade)  
+
       
 
 ## 1. Introdução
@@ -81,8 +114,8 @@ Nosso foco está nos profissionais que lidam de forma direta com os alunos espec
 |**Nosso produto**|É uma solução gratuita para o problema existente.|
 
 
-## 3.             Descrições dos Envolvidos e dos Usuários
-### 3.1               Demográficos de Mercado 
+## 3. Descrições dos Envolvidos e dos Usuários
+### 3.1 Demográficos de Mercado 
 O ensino público para estudantes com necessidades especiais é algo que, assim como em escolas convencionais, passa por dificuldades no Distrito Federal. Existem 13 escolas exclusivas para pessoas  que carecem de cuidados diferenciados (CEE) e, pelo fato do IncluCare ser um software com código aberto, poderá ser utilizado por essas instituições para um melhor acompanhamento dos seus alunos.
 
 ### 3.2 Resumo dos Envolvidos
@@ -93,20 +126,20 @@ O ensino público para estudantes com necessidades especiais é algo que, assim 
 |Cliente|Escola Classe 401 do Recanto das Emas|Tornar disponível informações sobre os estudantes e o processo de acompanhamento.|
 
 
-### 3.3               Resumo dos Usuários
+### 3.3 Resumo dos Usuários
 
 |Nome|Descrição|Responsabilidade|
 |----|----|----|
 |Profissionais da área de educação|Utilizar o software para melhorar o processo de triagem e acompanhamento de alunos com dificuldade de aprendizagem.|Utilizar o sistema e manter e alimentar a base de dados.|
  
 
-### 3.4    Ambiente do Usuário
+### 3.4 Ambiente do Usuário
 
 O sistema Web poderá ser usado pelo profissional de educação em navegadores mais conhecidos (Mozilla FireFox, Google Chrome, Opera) para melhor funcionamento do software.
 
 
 
-### 3.5   Perfis dos Envolvidos 
+### 3.5 Perfis dos Envolvidos 
 
 #### 3.5.1 Equipe de avaliação e suporte        
 |||
@@ -144,8 +177,8 @@ O sistema Web poderá ser usado pelo profissional de educação em navegadores m
 |**Comentários / Problemas**|-|
 
 
-### 3.6               Perfis dos Usuários 
-#### 3.6.1         Cinthia e Sumara
+### 3.6 Perfis dos Usuários 
+#### 3.6.1 Cinthia e Sumara
 |||
 |----|----|
 |**Representante**|Cinthia e Sumara|
@@ -156,14 +189,14 @@ O sistema Web poderá ser usado pelo profissional de educação em navegadores m
 |**Envolvimento**|Alto.|
 |**Comentários / Problemas**|-|
  
-### 3.7               Principais Necessidades dos Usuários ou dos Envolvidos
+### 3.7 Principais Necessidades dos Usuários ou dos Envolvidos
 |Necessidade|Prioridade|Preocupações|Solução Atual|Soluções Propostas|
 |----|----|----|----|----|
 |Gerenciar cuidados necessários com os alunos|Alta|Armazenar especialidades necessárias para cada aluno com necessidades especiais|Documento feito manualmente, assim torna o processo lento e menos eficiente|Facilitar a gestão desses documentos, encurtando rotinas repetitivas e aprimorando o armazenamento dos mesmos|
 |Transmitir mensagens|Media|Levar a informação necessária aos cuidados do aluno ao professor responsável|Entrega manual de um documento físico com as informações|Enviar e-mail para os professores com as recomendações.|
 
 
-### 3.8           Alternativas e Concorrência
+### 3.8 Alternativas e Concorrência
 	
 Método Tradicional de triagem e acompanhamento
 O método tradicional de triagem e acompanhamento são feitos de maneira manual. O profissional da área de educação recebe dos demais professores uma ficha de encaminhamento para que o estudante que apresentar dificuldade de aprendizagem (estudante especial) possa passar pelo processo de triagem e acompanhamento ao longo do ano escolar. Os relatórios resultantes desse processo são feitos a mão e depois digitados em editor de texto.
@@ -185,7 +218,7 @@ Os professores e psicólogos devem criar, editar e armazenar os documentos que c
 ### 5.1 Restrições de escopo
 Como o tempo de desenvolvimento é curto, o processo de solicitação de encaminhamento dos estudantes pelos professores, em primeiro momento, será feita de forma manual.
 
-### 5.2  Restriçao de desenvolvimento e implantação
+### 5.2 Restrição de desenvolvimento e implantação
 Como o grupo não possui conhecimentos técnicos necessários para a produção imediata do projeto, é necessário o estudo das linguagens e nivelamento de conhecimento, para que depois seja iniciado o processo de criação das funcionalidades do sistema.
 
 ## 6 Intervalos de Qualidade
