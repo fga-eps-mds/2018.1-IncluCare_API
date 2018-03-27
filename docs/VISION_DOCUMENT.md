@@ -55,3 +55,26 @@ Referência Template do cocumento: http://www.funpar.ufpr.br:8080/rup/webtmpl/te
 ### 1.5.               Visão Geral
 Este documento descreve os detalhes sobre as características do software IncluCare, especificando os problemas que estimularam a criação dessa solução em software. O documento é dividido da seguinte maneira: inicialmente é especificado qual problema motivou o desenvolvimento da solução, em seguida as partes interessadas são descritas, e por fim todos os recursos, restrições e requisitos do produto são apresentados.
 
+## 2. Posicionamento
+
+### 2.1 Oportunidade de Negócios
+Ao analisar o método que a escola acompanha e pesquisa por informações de seus alunos especiais, percebemos que poderíamos facilitar o trabalho dos profissionais que cuidam desses alunos com o nosso produto. 
+Nosso foco está nos profissionais que lidam de forma direta com os alunos especiais, de forma automatizada e informatizada. Dando um maior suporte e agilidade no processo de acompanhamento dos alunos.
+
+### 2.2 Descrição do Problema
+|||
+|---|---|
+|**O problema seria**|A dificuldade de Triagem e acompanhamento dos  estudantes com dificuldades de aprendizagem.|
+|**afeta**|Estudantes e profissionais que fazem parte do acompanhamento.|
+|**cujo impacto é**|Demora no processo de geração de relatórios e tempo de acompanhamento por encontro profissional-estudante.|
+|**uma boa solução seria**|Sistema capaz de otimizar o tempo gasto na geração de relatórios e nos encontros profissional-estudante.|
+
+### 2.3 Sentença de Posição do Produto
+|||
+|---|---|
+|**Para**|Profissionais da educação do Brasil.|
+|**Que**|Necessitam de uma ferramenta para o processo de listagem de alunos com dificuldade de aprendizagem.|
+|**O IncluCare**|É um programa web de cadastro e acompanhamento.|
+|**Que**|Reduz tempo gasto com preenchimento de documentos em papéis.|
+|**Diferente de**|Do método tradicional feito manualmente.|
+|**Nosso produto**|É uma solução gratuita para o problema existente.|
