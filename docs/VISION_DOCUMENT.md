@@ -84,7 +84,7 @@ CEE - Centro de Ensino Especial
 
 ### 1.4. Referências
 Guia auxiliar do Documento de Visão: https://github.com/fga-gpp-mds/2017.1-Escola-X] 
-Referência Template do cocumento: http://www.funpar.ufpr.br:8080/rup/webtmpl/templates/req/rup_vision.htm
+Referência Template do documento: http://www.funpar.ufpr.br:8080/rup/webtmpl/templates/req/rup_vision.htm
 
 ### 1.5. Visão Geral
 Este documento descreve os detalhes sobre as características do software IncluCare, especificando os problemas que estimularam a criação dessa solução em software. O documento é dividido da seguinte maneira: inicialmente é especificado qual problema motivou o desenvolvimento da solução, em seguida as partes interessadas são descritas, e por fim todos os recursos, restrições e requisitos do produto são apresentados.
