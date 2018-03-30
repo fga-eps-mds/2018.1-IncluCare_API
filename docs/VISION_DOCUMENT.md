@@ -116,7 +116,7 @@ Nosso foco está nos profissionais que lidam de forma direta com os alunos espec
 
 ## 3. Descrições dos Envolvidos e dos Usuários
 ### 3.1 Demográficos de Mercado 
-O ensino público para estudantes com necessidades especiais é algo que, assim como em escolas convencionais, passa por dificuldades no Distrito Federal. Existem 13 escolas exclusivas para pessoas  que carecem de cuidados diferenciados (CEE) e, pelo fato do IncluCare ser um software com código aberto, poderá ser utilizado por essas instituições para um melhor acompanhamento dos seus alunos.
+Existem 655 escolas públicas no DF, e nelas também estudam alunos que possuem necessidades especiais no aprendizado e pelo fato do IncluCare ser um software com código aberto, poderá ser utilizado por essas instituições para um melhor acompanhamento dos seus alunos.
 
 ### 3.2 Resumo dos Envolvidos
 |Nome|Descrição|Responsabilidade|
