@@ -77,10 +77,10 @@ Os profissionais da área pedagógica da escola procuram uma solução em softwa
 O software, a ser implementado, deve registrar o(s) tipo(s) de transtorno apresentado pelo aluno para servir de consulta aos profissionais, e para a elaboração do Relatório de Avaliação e Intervenção Educacional de cada aluno.
 
 ### 1.3. Definições, Acrônimos e Abreviações
-EC 401 - Escola Classe 401 do Recanto das Emas.
-DF - Distrito Federal.
-MDS - Disciplina de Métodos de Desenvolvimento de Software.
-CEE - Centro de Ensino Especial
+EC 401 - Escola Classe 401 do Recanto das Emas.  
+DF - Distrito Federal.  
+MDS - Disciplina de Métodos de Desenvolvimento de Software.  
+CEE - Centro de Ensino Especial.
 
 ### 1.4. Referências
 Guia auxiliar do Documento de Visão: https://github.com/fga-gpp-mds/2017.1-Escola-X] 
