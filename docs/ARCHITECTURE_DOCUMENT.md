@@ -25,33 +25,38 @@
     1.4. [Referências](#14-referências)  
     1.5. [Visão Geral](#15-visão-geral)  
   
-2. [Representação da Arquitetura]
+2. [Representação da Arquitetura](#2-representação-da-arquitetura)
+
+    2.1. [Angular CLI 1.7.3](#21-angular-cli-173)  
+    2.2. [Ruby on Rails 5.1.4](#22-ruby-on-rails-514)
+
+3. [Metas e restrições da arquitetura](#3-metas-e-restrições-de-arquitetura)
 
 
-3. [Metas e restrições da arquitetura]
- 
+4. [Visão de Casos de Usos](#4-visão-de-casos-de-uso)
 
-4. [Visão de Casos de Usos]
+    4.1. [Atores de Casos de Uso](#41-atores-de-casos-de-uso)  
+    4.2. [Visão dos Casos de Uso](#42-visão-dos-casos-de-uso)  
+    4.3. [Descrições dos Casos de Uso](#43-descrições-dos-casos-de-uso)  
 
+5. [Visão Lógica](#5-visão-lógica)
 
-5. [Visão Lógica]
-
-
+    5.1.1. [Diagrama de Classe](#511-diagrama-de-classe)
     
-6. [Visão de Implementação]
+6. [Visão de Implementação](#6-visão-de-implementação)
 
 
-7. [Tamanho e desempenho]
+7. [Tamanho e desempenho](#7-tamanho-e-desempenho)
 
 
-## 1.                  Introdução
+## 1. Introdução
 
-### 1.1               Finalidade
+### 1.1 Finalidade
 Este documento tem como objetivo demonstrar a arquitetura selecionada para o projeto IncluCare. O documento é composto por diversos métodos auxiliadores, tais como, diagrama de casos de uso, para facilitar a visualização do processo. Tendo como foco também mostrar que a arquitetura escolhida atende os requisitos exigidos pelo cliente, como desempenho, segurança, disponibilidade, integridade e flexibilidade.  
-### 1.2               Escopo
+### 1.2 Escopo
 Neste documento é descrito as camadas arquiteturais do projeto, abrangendo as tecnologias utilizadas para sua implementação com seus respectivos framework e ambientes de trabalho. O documento demonstra também, aspectos como desempenho e qualidade.
 
-### 1.3               Definições, Acrônimos e Abreviações
+### 1.3 Definições, Acrônimos e Abreviações
 Alguns dos acrônimos, definições e abreviações usados neste documento são:
 MVC - Arquitetura padrão Model View Controller.
 Angular CLI - Angular Command Line Interface.
@@ -61,7 +66,7 @@ CSS - Cascading Style Sheets, usado para adicionar estilo a um documento web.
 HTML - HyperText Markup Language, linguagem padrão para construção de páginas web.
 HTTP - HyperText Transfer Protocol, é um protocolo de comunicação web.
 
-### 1.4               Referências
+### 1.4 Referências
 
 #### Linguagem Ruby
 
@@ -83,10 +88,10 @@ Site Oficial Angular - Framework Angular. Disponível em: https://angularjs.org/
 
 Linha de Código - Como documentar a arquitetura de software. Disponível em: http://www.linhadecodigo.com.br/artigo/3343/como-documentar-a-arquitetura-de-software.aspx. Acesso em: 27 de março de 2018;
 
-### 1.5               Visão Geral
+### 1.5 Visão Geral
 Este artefato descreve uma visão detalhada da arquitetura utilizada para o desenvolvimento do software. O documento foi elaborado e dividido com as seguintes etapas: representação arquitetural, metas e restrições, casos de uso, lógica, implementação e tamanho e desempenho do software. 
 
-## 2.                  Representação da Arquitetura
+## 2. Representação da Arquitetura
 A arquitetura será uma adaptação do Model-View-Controller, que é separada de duas formas de interação entre software e usuário. Para que isso ocorra existirá uma integração entre duas tecnologias, o Ruby on Rails 5.1.4 e o Angular CLI 1.7.3.
 
 ### 2.1 Angular CLI 1.7.3
@@ -101,15 +106,15 @@ O MVC em RoR segue o mesmo padrão da arquitetura MVC que outras linguagens util
 fonte : http://guides.rubyonrails.org/active_record_basics.html
 
 
-## 3.                  Metas e Restrições de Arquitetura
+## 3. Metas e Restrições de Arquitetura
 
 O sistema a ser desenvolvido será suportado por navegadores web como Mozilla Firefox e Google Chrome, sendo otimizado para este último por conta de possuir recursos, em sua maioria, superiores aos outros navegadores disponíveis no mercado, além de abranger a maior parte dos usuários de navegadores desktop.
 O back-end será implementado usando a linguagem de programação Ruby, versão 2.5.0, no framework de desenvolvimento Rails na versão 5.1.4 enquanto o front-end será implementado utilizando o framework de desenvolvimento Angular CLI 1.7.3.
 O software por possuir uma base de dados pessoais bastante pertinente dos alunos deverá manter estes dados em segurança dentro da base de dados do sistema, assim como as credenciais de usuários se tornam necessárias para a filtragem de recursos dentro da aplicação.
 
-## 4.                  Visão de Casos de Uso
+## 4. Visão de Casos de Uso
 
-### 4.1     Atores de Casos de Uso
+### 4.1 Atores de Casos de Uso
 |  Ator  |  Descrição  |
 |----|----|
 | Administrador | O administrador irá gerenciar os dados do corpo docente e poderá gerenciar os dados dos alunos |
@@ -131,15 +136,15 @@ O software por possuir uma base de dados pessoais bastante pertinente dos alunos
 | UC07 - Gerar recomendações | Gerar recomendações de cada aluno |
 | UC08 - Criar Registro Diário | Criar registro diário das reuniões |
 
-## 5.                  Visão Lógica
+## 5. Visão Lógica
 ### 5.1.1 Diagrama de Classe
 <img src="https://github.com/fga-gpp-mds/2018.1-IncluCare/blob/docs/docs/images/diagrama_classe.png">
 
-## 6.                  Visão de Implementação
+## 6. Visão de Implementação
 No front-end ficam os arquivos HTML e CSS, que são referentes a parte visual do projeto. Eles serão implementadas a partir do framework Angular CLI. O Angular fará a comunicação a API através de requisições HTTP.
 O back-end é responsável por receber as requisições HTTP e fazer a conexão com o banco de dados. O conjunto Model-Controller, desenvolvida em RoR, controla, acessa e mantém o relacionamento entre objetos e o banco de dados, fazendo as validações necessárias. Em RoR a camada Model é implementada pela biblioteca ActionRecord que oferece uma interface de relacionamento entre as tabelas do banco de dados e o código do programa.
 
-## 7.             Tamanho e Desempenho
+## 7. Tamanho e Desempenho
 A Escola Classe 401 possui um pouco mais de 900 alunos, então sistema precisará de uma forma eficiente para guardar os dados dos mesmos. O processamento de dados não será uma grande exigência, já que os relatórios são criados ou editados em um intervalo razoável de tempo. O desempenho do sistema dependerá principalmente da máquina e do navegador utilizados em seu uso. 
 
 
