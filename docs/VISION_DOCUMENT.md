@@ -77,10 +77,10 @@ Os profissionais da área pedagógica da escola procuram uma solução em softwa
 O software, a ser implementado, deve registrar o(s) tipo(s) de transtorno apresentado pelo aluno para servir de consulta aos profissionais, e para a elaboração do Relatório de Avaliação e Intervenção Educacional de cada aluno.
 
 ### 1.3. Definições, Acrônimos e Abreviações
-EC 401 - Escola Classe 401 do Recanto das Emas.
-DF - Distrito Federal.
-MDS - Disciplina de Métodos de Desenvolvimento de Software.
-CEE - Centro de Ensino Especial
+EC 401 - Escola Classe 401 do Recanto das Emas.  
+DF - Distrito Federal.  
+MDS - Disciplina de Métodos de Desenvolvimento de Software.  
+CEE - Centro de Ensino Especial.
 
 ### 1.4. Referências
 Guia auxiliar do Documento de Visão: https://github.com/fga-gpp-mds/2017.1-Escola-X] 
@@ -116,7 +116,7 @@ Nosso foco está nos profissionais que lidam de forma direta com os alunos espec
 
 ## 3. Descrições dos Envolvidos e dos Usuários
 ### 3.1 Demográficos de Mercado 
-O ensino público para estudantes com necessidades especiais é algo que, assim como em escolas convencionais, passa por dificuldades no Distrito Federal. Existem 13 escolas exclusivas para pessoas  que carecem de cuidados diferenciados (CEE) e, pelo fato do IncluCare ser um software com código aberto, poderá ser utilizado por essas instituições para um melhor acompanhamento dos seus alunos.
+Existem 655 escolas públicas no DF, e nelas também estudam alunos que possuem necessidades especiais no aprendizado e pelo fato do IncluCare ser um software com código aberto, poderá ser utilizado por essas instituições para um melhor acompanhamento dos seus alunos.
 
 ### 3.2 Resumo dos Envolvidos
 |Nome|Descrição|Responsabilidade|
