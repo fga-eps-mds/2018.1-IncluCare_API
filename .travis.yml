@@ -1,0 +1,11 @@
+sudo: required
+
+laguage: ruby
+rvm:
+  - 2.3.1
+
+script:
+  - bundle exec spec
+
+after_success:
+  - CI=true TRAVIS=true coveralls --verboose
