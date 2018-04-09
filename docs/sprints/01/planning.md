@@ -1,7 +1,5 @@
 ## Sprint 01
 
-### Reunião
-
 #### Data de ínicio: 11/03/2018
 
 #### Data de término: 17/03/2018
