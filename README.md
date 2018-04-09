@@ -31,3 +31,9 @@ Para executar este projeto em uma máquina local, é necessário estar de prefer
 ## Executando testes
 
 ## Contribuindo com o preojeto
+
+Para contribuir com projeto, por favor, leia [código de conduta](https://github.com/fga-gpp-mds/2018.1-IncluCare/blob/master/CODE_OF_CONDUCT.md) e [contribuição](https://github.com/fga-gpp-mds/2018.1-IncluCare/blob/master/CONTRIBUTING.md).
+
+## Documentação
+
+A documentação desse projeto pode ser acessada por [aqui](https://github.com/fga-gpp-mds/2018.1-IncluCare/tree/docs/docs)
