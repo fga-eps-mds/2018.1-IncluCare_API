@@ -11,7 +11,7 @@ O objetivo do IncluCare é auxiliar a equipe educacional resposável, de escolas
 
 Para executar este projeto em uma máquina local, é necessário estar de preferência em um ambiente Linux com os alguns softwares já instalados: Git, Ruby e Rails (versão 5.1.4). Para instalação dos softwares consulte: [Instalação Git](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git), [Instalação Ruby e Ruby on Rails](https://gorails.com/setup/ubuntu/16.04).
 
-## Executando o projeto
+## Executando no servidor local
 
 1. Deve-se clonar este repositório com o seguinte comando:
 
