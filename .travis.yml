@@ -1,1 +1,11 @@
-language: ruby
+sudo: required
+
+laguage: ruby
+rvm:
+  - 2.3.1
+
+script:
+  - bundle exec rspec
+
+after_success:
+  - CI=true TRAVIS=true coveralls --verboose
