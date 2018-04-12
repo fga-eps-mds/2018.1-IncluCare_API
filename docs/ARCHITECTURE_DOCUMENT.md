@@ -94,6 +94,9 @@ Este artefato descreve uma visão detalhada da arquitetura utilizada para o dese
 ## 2. Representação da Arquitetura
 A arquitetura será uma adaptação do Model-View-Controller, que é separada de duas formas de interação entre software e usuário. Para que isso ocorra existirá uma integração entre duas tecnologias, o Ruby on Rails 5.1.4 e o Angular CLI 1.7.3.
 
+<p align="center">
+<img src="https://github.com/fga-gpp-mds/2018.1-IncluCare/blob/docs/docs/images/Architecture%20Representation.jpg" width = "500" height = "500" />
+<p/>
 ### 2.1 Angular CLI 1.7.3
 Angular é uma framework baseado em JavaScript mantido pela Google e foi projetado para facilitar o desenvolvimento de aplicações web e tornar o código mais modularizado. Este framework é baseado na arquitetura MVC, porém neste projeto o Angular CLI tem a função de View-Controller. Todas as requisições feitas pelo usuários passam pelo View e depois para Controller, e este envia as requisições para a API (desenvolvida em Ruby on Rails) que fará o processamentos necessários dos dados.
 
@@ -104,8 +107,6 @@ A camada de controle (Controller) é a camada que faz a ligação entre usuário
 
 O MVC em RoR segue o mesmo padrão da arquitetura MVC que outras linguagens utilizam, apesar de possuir outras funcionalidades. A model mantém a relação entre os objetos e o banco de dados e manipula validação associação, transação e muito mais. Esse subsistema é implementado na biblioteca ActiveRecord, que fornece uma interface de vinculação entre as tabelas em um banco de dados relacional e o código de programa em Ruby que manipula registros do Banco de dados. Por padrão o ActiveRecords usa algumas convenções para nomenclatura para descobrir como o mapeamento entre os modelos e tabelas do banco de dados devem ser criados, o Rails pluraliza os nomes das classes para encontrar as tabelas nos respectivos bancos de dados.l 
 fonte : http://guides.rubyonrails.org/active_record_basics.html
-
-<img src="https://github.com/fga-gpp-mds/2018.1-IncluCare/blob/docs/docs/images/Architecture%20Representation.jpg">
 
 
 ## 3. Metas e Restrições de Arquitetura
