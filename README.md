@@ -1,5 +1,8 @@
 # IncluCare
-<img src="https://github.com/fga-gpp-mds/2018.1-IncluCare/blob/docs/docs/images/incluCareLogo.png"  width="300" height="300"/>
+<p align="center">
+  <img src="https://github.com/fga-gpp-mds/2018.1-IncluCare/blob/docs/docs/images/incluCareLogo.png"  width="300" height="300"/>
+</p>
+
 
 ## Sobre o Projeto
 
