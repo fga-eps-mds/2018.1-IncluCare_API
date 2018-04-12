@@ -24,7 +24,7 @@ Para executar este projeto em uma máquina local, é necessário estar de prefer
 
 3. Inicie a aplicação com o seguinte comando:
 
-<pre><code>$rails s</code></pre>
+<pre><code>$ rails s</code></pre>
 
 4. Acesse a página através através de um browser:
 <pre><code>http://localhost:3000</code></pre>
