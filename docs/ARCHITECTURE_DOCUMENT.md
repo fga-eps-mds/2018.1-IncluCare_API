@@ -94,6 +94,10 @@ Este artefato descreve uma visão detalhada da arquitetura utilizada para o dese
 ## 2. Representação da Arquitetura
 A arquitetura será uma adaptação do Model-View-Controller, sendo aquela separada em duas frentes: front-end e API. Para que isso ocorra existirá uma integração entre duas tecnologias, o Ruby on Rails 5.1.4 e o Angular5. A comunicação entre os frameworks é feita por protocolos HTTP.
 
+<p align="center">
+<img src="https://github.com/fga-gpp-mds/2018.1-IncluCare/blob/docs/docs/images/Representa%C3%A7%C3%A3o_arquitetura.png" width="500" height="400">
+</p>
+
 ### 2.1 Angular5
 Angular é uma framework baseado em JavaScript mantido pela Google e foi projetado para facilitar o desenvolvimento de aplicações web e tornar o código mais modularizado. Este framework é baseado na arquitetura MVC, porém neste projeto o Angular5 tem a função de View-Controller. Todas as requisições feitas pelo usuários passam pelo View e depois para Controller, e este envia as requisições para a API (desenvolvida em Ruby on Rails) que fará o processamentos necessários dos dados.
 
