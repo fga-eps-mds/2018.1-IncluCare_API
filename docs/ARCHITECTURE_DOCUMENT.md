@@ -92,21 +92,16 @@ Linha de Código - Como documentar a arquitetura de software. Disponível em: ht
 Este artefato descreve uma visão detalhada da arquitetura utilizada para o desenvolvimento do software. O documento foi elaborado e dividido com as seguintes etapas: representação arquitetural, metas e restrições, casos de uso, lógica, implementação e tamanho e desempenho do software. 
 
 ## 2. Representação da Arquitetura
-A arquitetura será uma adaptação do Model-View-Controller, que é separada de duas formas de interação entre software e usuário. Para que isso ocorra existirá uma integração entre duas tecnologias, o Ruby on Rails 5.1.4 e o Angular CLI 1.7.3.
+A arquitetura será uma adaptação do Model-View-Controller, sendo aquela separada em duas frentes: front-end e API. Para que isso ocorra existirá uma integração entre duas tecnologias, o Ruby on Rails 5.1.4 e o Angular5. A comunicação entre os frameworks é feita por protocolos HTTP.
 
-<p align="center">
-<img src="https://github.com/fga-gpp-mds/2018.1-IncluCare/blob/docs/docs/images/Architecture%20Representation.jpg" width = "500" height = "500" />
-<p/>
-### 2.1 Angular CLI 1.7.3
-Angular é uma framework baseado em JavaScript mantido pela Google e foi projetado para facilitar o desenvolvimento de aplicações web e tornar o código mais modularizado. Este framework é baseado na arquitetura MVC, porém neste projeto o Angular CLI tem a função de View-Controller. Todas as requisições feitas pelo usuários passam pelo View e depois para Controller, e este envia as requisições para a API (desenvolvida em Ruby on Rails) que fará o processamentos necessários dos dados.
+### 2.1 Angular5
+Angular é uma framework baseado em JavaScript mantido pela Google e foi projetado para facilitar o desenvolvimento de aplicações web e tornar o código mais modularizado. Este framework é baseado na arquitetura MVC, porém neste projeto o Angular5 tem a função de View-Controller. Todas as requisições feitas pelo usuários passam pelo View e depois para Controller, e este envia as requisições para a API (desenvolvida em Ruby on Rails) que fará o processamentos necessários dos dados.
 
 ### 2.2 Ruby on Rails 5.1.4
-O framework Rails é utilizado na linguagem Ruby e tem como foco facilitar o desenvolvimento de sistemas web. A arquitetura deste framework é organizada o sistema em três partes distintas: Modelo, controle e visão.
-A camada de modelo (Model) é o lugar onde os dados são estruturados, consultados e validados. Ela se conecta diretamente com a camada de controle pois a camada de controle que, através do input da camada de visão, irá definir quais dados serão consultados para que a camada de modelo faça conexão com a base de dados, e retorne sua resposta baseando-se nos dados analisados ou alterados. 
-A camada de controle (Controller) é a camada que faz a ligação entre usuário e os dados, tendo vital importância dentro da arquitetura. Para que essa camada execute os métodos ela recebe os comandos passados pelo usuário através da camada de visão e manipula os dados recebidos da camada de modelo.
+O framework Rails é utilizado na linguagem Ruby. A arquitetura deste framework é organizada no sistema em três partes distintas: Modelo, controle e visão. Para este projeto são utilizadas as partes Modelo e Controle, pois o papel de view é executado pelo Angular5.
+A camada de modelo (Model) é o lugar onde os dados são estruturados, consultados e validados. Ela se conecta diretamente com a camada de controle pois a camada de controle que irá definir quais dados serão consultados para que a camada de modelo faça conexão com a base de dados, e retorne sua resposta baseando-se nos dados analisados ou alterados. 
+A camada de controle (Controller) é a camada que faz a ligação entre usuário e os dados, tendo importância dentro da arquitetura. Para que essa camada execute os métodos ela recebe os comandos passados pelo usuário através da camada de visão e manipula os dados recebidos da camada de modelo.
 
-O MVC em RoR segue o mesmo padrão da arquitetura MVC que outras linguagens utilizam, apesar de possuir outras funcionalidades. A model mantém a relação entre os objetos e o banco de dados e manipula validação associação, transação e muito mais. Esse subsistema é implementado na biblioteca ActiveRecord, que fornece uma interface de vinculação entre as tabelas em um banco de dados relacional e o código de programa em Ruby que manipula registros do Banco de dados. Por padrão o ActiveRecords usa algumas convenções para nomenclatura para descobrir como o mapeamento entre os modelos e tabelas do banco de dados devem ser criados, o Rails pluraliza os nomes das classes para encontrar as tabelas nos respectivos bancos de dados.l 
-fonte : http://guides.rubyonrails.org/active_record_basics.html
 
 
 ## 3. Metas e Restrições de Arquitetura
