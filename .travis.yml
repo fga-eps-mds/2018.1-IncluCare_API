@@ -1,1 +1,4 @@
+before_script:
+  - psql -c 'create database "inclucare-api_test";' -U postgres
+
 language: ruby
