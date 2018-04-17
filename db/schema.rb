@@ -16,9 +16,9 @@ ActiveRecord::Schema.define(version: 20180414161946) do
   enable_extension "plpgsql"
 
   create_table "team_members", force: :cascade do |t|
-    t.string "nome"
+    t.string "name"
     t.string "email"
-    t.string "senha"
+    t.string "password"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

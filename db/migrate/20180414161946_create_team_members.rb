@@ -1,9 +1,9 @@
 class CreateTeamMembers < ActiveRecord::Migration[5.1]
   def change
     create_table :team_members do |t|
-      t.string :nome
+      t.string :name
       t.string :email
-      t.string :senha
+      t.string :password
 
       t.timestamps
     end
