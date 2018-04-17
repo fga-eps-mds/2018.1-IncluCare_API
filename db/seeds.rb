@@ -6,13 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
- #TeamMember.create(name: 'Byron K', email: 'byronK@exemplo.com', password: 'K123456')
+ TeamMember.create(email: 'byron@exemplo.com', name: 'Byron K', password: "12345678")
+ puts "Byron cadastrado"
 
- 5.times do |num|
-   num += 1
-   TeamMember.create!(
-     name: "Test team member #{num}",
-     email: "test email team member #{num}",
-     password: "test password team member #{num}"
-   )
- end
+ # 5.times do |num|
+ #   num += 1
+ #   TeamMember.create!(
+ #     name: "Test team member #{num}",
+ #     email: "test#{num}@email.com",
+ #     password: "newpassword#{num}"
+ #   )
+ # end
