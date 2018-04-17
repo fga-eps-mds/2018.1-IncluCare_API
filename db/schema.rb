@@ -22,5 +22,22 @@ ActiveRecord::Schema.define(version: 20180414161946) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+  
+  create_table "students", force: :cascade do |t|
+    t.string "name"
+    t.date "birth_date"
+    t.integer "age"
+    t.string "nationality"
+    t.integer "year"
+    t.string "student_class"
+    t.string "shift"
+    t.string "father_name"
+    t.string "mother_name"
+    t.string "address"
+    t.integer "parent_telephone"
+    t.string "parent_email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
