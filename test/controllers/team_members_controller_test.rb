@@ -12,7 +12,7 @@ class TeamMembersControllerTest < ActionDispatch::IntegrationTest
 
   test "should create team_member" do
     assert_difference('TeamMember.count') do
-      post team_members_url, params: { team_member: { email: @team_member.email, name: @team_member.name, senha: @team_member.senha } }, as: :json
+      post team_members_url, params: { team_member: { email: @team_member.email, name: @team_member.name, password: @team_member.password } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class TeamMembersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update team_member" do
-    patch team_member_url(@team_member), params: { team_member: { email: @team_member.email, name: @team_member.name, senha: @team_member.senha } }, as: :json
+    patch team_member_url(@team_member), params: { team_member: { email: @team_member.email, name: @team_member.name, password: @team_member.password } }, as: :json
     assert_response 200
   end
 
