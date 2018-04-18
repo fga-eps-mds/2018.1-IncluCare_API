@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
- TeamMember.create(email: 'byron@exemplo.com', name: 'Byron K', password: "12345678")
- puts "Byron cadastrado"
+ TeamMember.create(email: 'example@example.com', name: 'Example Name', password: "12345678")
+ puts "Example seeded."
 
  # 5.times do |num|
  #   num += 1
