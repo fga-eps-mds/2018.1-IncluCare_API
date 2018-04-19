@@ -95,7 +95,7 @@ Este artefato descreve uma visão detalhada da arquitetura utilizada para o dese
 A arquitetura será uma adaptação do Model-View-Controller, sendo aquela separada em duas frentes: front-end e API. Para que isso ocorra existirá uma integração entre duas tecnologias, o Ruby on Rails 5.1.4 e o Angular5. A comunicação entre os frameworks é feita por protocolos HTTP.
 
 <p align="center">
-<img src="https://github.com/fga-gpp-mds/2018.1-IncluCare/blob/docs/docs/images/Representa%C3%A7%C3%A3o_arquitetura.png" width="500" height="400">
+<img src="./images/Representação_arquitetura.png" width="500" height="400">
 </p>
 
 ### 2.1 Angular5
@@ -123,7 +123,7 @@ O software por possuir uma base de dados pessoais bastante pertinente dos alunos
 | Profissional de educação | Os membros do corpo docente poderão manter e consultar os dados dos alunos |
 
 ### 4.2 Visão dos Casos de Uso
-<img src= "https://github.com/fga-gpp-mds/2018.1-IncluCare/blob/docs/docs/images/caso_uso.png">
+<img src= "./images/caso_uso.png">
 
 ### 4.3 Descrições dos Casos de Uso
 
@@ -140,7 +140,7 @@ O software por possuir uma base de dados pessoais bastante pertinente dos alunos
 
 ## 5. Visão Lógica
 ### 5.1.1 Diagrama de Classe
-<img src="https://github.com/fga-gpp-mds/2018.1-IncluCare/blob/docs/docs/images/diagrama_classe.png">
+<img src="images/diagrama_classe.png">
 
 ## 6. Visão de Implementação
 No front-end ficam os arquivos HTML e CSS, que são referentes a parte visual do projeto. Eles serão implementadas a partir do framework Angular CLI. O Angular fará a comunicação a API através de requisições HTTP.
