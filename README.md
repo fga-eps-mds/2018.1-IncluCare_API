@@ -1,9 +1,13 @@
-<<<<<<< HEAD
+
 # IncluCare
 <p align="center">
-  <img src="https://github.com/fga-gpp-mds/2018.1-IncluCare/blob/docs/docs/images/incluCareLogo.png"  width="300" height="300"/>
+  <img src="/docs/images/incluCareLogo.png"  width="300" height="300"/>
 </p>
-
+<p align="center">
+  <a href="https://codeclimate.com/github/fga-gpp-mds/22018.1-IncluCare_API"><img src="https://codeclimate.com/github/fga-gpp-mds/2018.1-IncluCare_API/badges/gpa.svg"></a>
+<a href="https://travis-ci.org/fga-gpp-mds/2018.1-IncluCare_API/"><img src="https://api.travis-ci.org/fga-gpp-mds/2018.1-IncluCare_API.svg?branch=master"></a>
+</p>
+  
 
 ## Sobre o Projeto
 
@@ -43,7 +47,4 @@ Para contribuir com projeto, por favor, leia [código de conduta](https://github
 
 A documentação desse projeto pode ser acessada por [aqui](https://github.com/fga-gpp-mds/2018.1-IncluCare/tree/docs/docs)
 
-<p align="center">
-<a href="https://codeclimate.com/github/fga-gpp-mds/22018.1-IncluCare"><img src="https://codeclimate.com/github/fga-gpp-mds/2018.1-IncluCare/badges/gpa.svg"></a>
-<a href="https://travis-ci.org/fga-gpp-mds/2018.1-IncluCare/"><img src="https://api.travis-ci.org/fga-gpp-mds/2018.1-IncluCare.svg?branch=master"></a>
-</p>  
+
