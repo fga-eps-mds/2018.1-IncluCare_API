@@ -1,7 +1,7 @@
 
 # IncluCare
 <p align="center">
-  <img src="https://github.com/fga-gpp-mds/2018.1-IncluCare/blob/docs/docs/images/incluCareLogo.png"  width="300" height="300"/>
+  <img src="https://github.com/fga-gpp-mds/2018.1-IncluCare_API/blob/development/docs/images/incluCareLogo.png"  width="300" height="300"/>
 </p>
 <p align="center">
   <a href="https://codeclimate.com/github/fga-gpp-mds/22018.1-IncluCare_API"><img src="https://codeclimate.com/github/fga-gpp-mds/2018.1-IncluCare_API/badges/gpa.svg"></a>
