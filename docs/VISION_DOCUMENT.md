@@ -23,7 +23,7 @@
     1.3. [Definições, acrônimos e abreviações](#13-definições-acrônimos-e-abreviações)  
     1.4. [Referências](#14-referências)  
     1.5. [Visão Geral](#15-visão-geral)  
-  
+
 2. [Posicionamento](#2-posicionamento)
 
     2.1. [Oportunidade de Negócios](#21-oportunidade-de-negócios)  
@@ -54,7 +54,7 @@
 
     5.1. [Restrições de escopo](#51-restrições-de-escopo)  
     5.2. [Restriçao de desenvolvimento e implantação](#52-restrição-de-desenvolvimento-e-implantação)
-    
+
 6. [Intervalos de Qualidade](#6-intervalos-de-qualidade)
 
 
@@ -64,7 +64,7 @@
     7.2. [Requisitos do sistema](#72-requisitos-do-sistema)  
     7.3. [Requisitos de confiabilidade](#73-requisitos-de-confiabilidade)  
 
-      
+
 
 ## 1. Introdução
 
@@ -83,7 +83,7 @@ MDS - Disciplina de Métodos de Desenvolvimento de Software.
 CEE - Centro de Ensino Especial.  
 
 ### 1.4. Referências
-Guia auxiliar do Documento de Visão: https://github.com/fga-gpp-mds/2017.1-Escola-X] 
+Guia auxiliar do Documento de Visão: https://github.com/fga-gpp-mds/2017.1-Escola-X]
 Referência Template do documento: http://www.funpar.ufpr.br:8080/rup/webtmpl/templates/req/rup_vision.htm
 
 ### 1.5. Visão Geral
@@ -92,7 +92,7 @@ Este documento descreve os detalhes sobre as características do software IncluC
 ## 2. Posicionamento
 
 ### 2.1 Oportunidade de Negócios
-Ao analisar o método que a escola acompanha e pesquisa por informações de seus alunos especiais, percebemos que poderíamos facilitar o trabalho dos profissionais que cuidam desses alunos com o nosso produto. 
+Ao analisar o método que a escola acompanha e pesquisa por informações de seus alunos especiais, percebemos que poderíamos facilitar o trabalho dos profissionais que cuidam desses alunos com o nosso produto.
 Nosso foco está nos profissionais que lidam de forma direta com os alunos especiais, de forma automatizada e informatizada. Dando um maior suporte e agilidade no processo de acompanhamento dos alunos.
 
 ### 2.2 Descrição do Problema
@@ -115,7 +115,7 @@ Nosso foco está nos profissionais que lidam de forma direta com os alunos espec
 
 
 ## 3. Descrições dos Envolvidos e dos Usuários
-### 3.1 Demográficos de Mercado 
+### 3.1 Demográficos de Mercado
 Existem 655 escolas públicas no DF, e nelas também estudam alunos que possuem necessidades especiais no aprendizado e pelo fato do IncluCare ser um software com código aberto, poderá ser utilizado por essas instituições para um melhor acompanhamento dos seus alunos.
 
 ### 3.2 Resumo dos Envolvidos
@@ -131,7 +131,7 @@ Existem 655 escolas públicas no DF, e nelas também estudam alunos que possuem 
 |Nome|Descrição|Responsabilidade|
 |----|----|----|
 |Profissionais da área de educação|Utilizar o software para melhorar o processo de triagem e acompanhamento de alunos com dificuldade de aprendizagem.|Utilizar o sistema e manter e alimentar a base de dados.|
- 
+
 
 ### 3.4 Ambiente do Usuário
 
@@ -139,12 +139,12 @@ O sistema Web poderá ser usado pelo profissional de educação em navegadores m
 
 
 
-### 3.5 Perfis dos Envolvidos 
+### 3.5 Perfis dos Envolvidos
 
 #### 3.5.1 Equipe de avaliação e suporte        
 |||
 |----|----|
-|**Representante**|Prª Carla Rocha| 
+|**Representante**|Prª Carla Rocha|
 |**Coach**|Joao Henrique|
 |**Descrição**|Equipe responsável pela avaliação e direcionamento do projeto.|
 |**Tipo**|Professora e coach do grupo da disciplina.|
@@ -152,7 +152,7 @@ O sistema Web poderá ser usado pelo profissional de educação em navegadores m
 |**Critérios de Sucesso**|A entrega do projeto juntamente com uma documentação coerente estabelecida, a partir das orientações dadas ao longo do semestre.|
 |**Envolvimento**|Alto.|
 |**Comentários / Problemas**|-|
- 
+
 #### 3.5.2 Equipe de Desenvolvimento
 |||
 |----|----|
@@ -177,7 +177,7 @@ O sistema Web poderá ser usado pelo profissional de educação em navegadores m
 |**Comentários / Problemas**|-|
 
 
-### 3.6 Perfis dos Usuários 
+### 3.6 Perfis dos Usuários
 #### 3.6.1 Cinthia e Sumara
 |||
 |----|----|
@@ -188,7 +188,7 @@ O sistema Web poderá ser usado pelo profissional de educação em navegadores m
 |**Critérios de Sucesso**|Otimizar o tempo de atendimento e acompanhamento dos estudantes e da geração de relatórios|
 |**Envolvimento**|Alto.|
 |**Comentários / Problemas**|-|
- 
+
 ### 3.7 Principais Necessidades dos Usuários ou dos Envolvidos
 |Necessidade|Prioridade|Preocupações|Solução Atual|Soluções Propostas|
 |----|----|----|----|----|
@@ -197,7 +197,7 @@ O sistema Web poderá ser usado pelo profissional de educação em navegadores m
 
 
 ### 3.8 Alternativas e Concorrência
-	
+
 Método Tradicional de triagem e acompanhamento
 O método tradicional de triagem e acompanhamento são feitos de maneira manual. O profissional da área de educação recebe dos demais professores uma ficha de encaminhamento para que o estudante que apresentar dificuldade de aprendizagem (estudante especial) possa passar pelo processo de triagem e acompanhamento ao longo do ano escolar. Os relatórios resultantes desse processo são feitos a mão e depois digitados em editor de texto.
 
@@ -232,7 +232,7 @@ O sistema deve conter uma interface simples e intuitiva que seja agradável, par
 
 ### 7.2 Requisitos do sistema
 1. Apenas usuários com permissão podem ter acesso ao sistema, pois este contém informações sensíveis relacionada aos estudantes.
-2. O sistema Web deve ser acessado de forma rápida pelo usuário através de um navegador em uma máquina que possua acesso à internet. 
+2. O sistema Web deve ser acessado de forma rápida pelo usuário através de um navegador em uma máquina que possua acesso à internet.
 
 ### 7.3 Requisitos de confiabilidade
 O sistema deve manter todas as informações referentes aos estudantes com necessidades especiais e dos profissionais da área de acompanhamento dos estudantes envolvidos, de modo que não seja necessário um recadastramento dos estudantes.

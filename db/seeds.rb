@@ -5,3 +5,26 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+TeamMember.create(name: 'admin',           nickname: 'admin',           email: 'admin@inclucare.com',           password: "123456789")
+TeamMember.create(name: 'Cínthia Martins', nickname: 'cinthia.martins', email: 'cinthia.martins@inclucare.com', password: "123456789")
+TeamMember.create(name: 'Sumara Ferreira', nickname: 'sumara.ferreira', email: 'sumara.ferreira@inclucare.com', password: "123456789")
+puts "TeamMembers seeded."
+
+6.times do |num|
+  num += 1
+  Student.create!(
+    name: "Aluno #{num}",
+    birth_date: "10/12/2010",
+    age: "8 anos",
+    nationality: "Brasileiro",
+    year: "2º ano",
+    student_class: "B",
+    shift: "VESPERTINO",
+    father_name: "Pai #{num}",
+    mother_name: "Mãe #{num}",
+    address: "Endereço #{num}",
+    parent_telephone: "99999999#{num}",
+    parent_email: "teste#{num}@email.com"
+  )
+end
