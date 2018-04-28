@@ -10,21 +10,25 @@
 |Nome|Papel|
 |----|----|
 |Byron Kamal|PO|
-|Eduardo Cerqueira|Desenvolvimento|
 |Gabriel Alves|Desenvolvimento|
 |Igor Aragão|Desenvolvimento|
 |Igor Veludo|Desenvolvimento|
 |João Mota|Desenvolvimento|
 |Marcelo Araújo|Desenvolvimento|
-|Mateus Assunção|Desenvolvimneto|
 |William Silva|Desenvolvimento|
 
 ## Pareamento
-Não se aplica.
+<ul>
+ <li>Byron e Igor Aragão</li>
+ <li>Igor Veludo e Marcelo Araújo e João Mota</li>
+ <li>Gabriel Alves e William Silva. </li>
+</ul>
 
 ## Planejamento
 
 <ul>
-  <li> Ajustes de erros no Documento de Arquitetura</li>
-  <li> Instalação de ambiente de desenvolvimento nos computadores de alguns membros que tiveram dificuldades</li>
+  <li>Fazer seção 5 e 6 do Documento de Arquitetura</li>
+  <li>Corrigir bug na instalação de desenvolvimento da equipe</li>
+  <li>Criação do Código de Conduta e Contribuição</li>
+  <li>Refatoração do Documento de Visão</li>
 </ul>
