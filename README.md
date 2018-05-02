@@ -6,7 +6,8 @@
 <p align="center">
   <a href="https://codeclimate.com/github/fga-gpp-mds/2018.1-IncluCare_API"><img src="https://codeclimate.com/github/fga-gpp-mds/2018.1-IncluCare_API/badges/gpa.svg"></a>
 <a href="https://travis-ci.org/fga-gpp-mds/2018.1-IncluCare_API/"><img src="https://api.travis-ci.org/fga-gpp-mds/2018.1-IncluCare_API.svg?branch=master"></a>
-  <a href='https://coveralls.io/github/fga-gpp-mds/2018.1-IncluCare_API?branch=feature%2Fcoveralls'><img src='https://coveralls.io/repos/github/fga-gpp-mds/2018.1-IncluCare_API/badge.svg?branch=feature%2Fcoveralls' alt='Coverage Status' /></a>
+  <a href='https://coveralls.io/github/fga-gpp-mds/2018.1-IncluCare_API?branch=development'><img src='https://coveralls.io/repos/github/fga-gpp-mds/2018.1-IncluCare_API/badge.svg?branch=development' alt='Coverage Status' /></a>
+
 
 </p>
   
