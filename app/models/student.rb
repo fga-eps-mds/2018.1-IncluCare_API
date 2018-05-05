@@ -1,3 +1,4 @@
+include EmailValidate
 class Student < ApplicationRecord
   validates :name, presence: true
   validates :birth_date, presence: true
@@ -9,6 +10,6 @@ class Student < ApplicationRecord
   validates :father_name, presence: true
   validates :mother_name, presence: true
   validates :address, presence: true
-  validates :parent_telephone, presence: true
-  validates :parent_email, presence: true
+  validates :parent_telephone, presence: true, length: { is: 11 }
+  validates :parent_email, presence: true, email: true
 end
