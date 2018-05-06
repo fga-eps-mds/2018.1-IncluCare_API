@@ -1,4 +1,3 @@
-include EmailValidate
 class Student < ApplicationRecord
   validates_presence_of :name, presence: true, message: 'can t be left blank'
   validates_presence_of :birth_date, presence: true, message: 'can t be left blank'
