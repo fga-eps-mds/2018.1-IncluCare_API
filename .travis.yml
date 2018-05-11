@@ -1,4 +1,14 @@
+sudo: required
+
+language: ruby
+rvm:
+  - 2.3.1
+
 before_script:
   - psql -c 'create database "inclucare-api_test";' -U postgres
 
-language: ruby
+script:
+  - bundle exec rake
+
+after_success:
+- CI=true TRAVIS=true coveralls --verboose
