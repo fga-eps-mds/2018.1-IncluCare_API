@@ -24,9 +24,9 @@
 <ul>
   <li>Histórias de Usuários relaciondas ao CRUD de estudante:</li>
 US#02-createStudent
-US#3-editaStudent
+US#03-editStudent
 US#04-deleteStudent
- 
+
 <li>Organização das pastas dos respositórios</li>
 
 <li>História de Usuário - Login na aplicação</li>

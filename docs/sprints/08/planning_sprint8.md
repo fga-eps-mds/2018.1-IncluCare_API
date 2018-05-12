@@ -25,9 +25,9 @@
 </ul>
 
 ## Planejamento
-[US#16-studentPanel](https://github.com/fga-gpp-mds/2018.1-IncluCare_API/issues/38)
-[US#18-listClasses](https://github.com/fga-gpp-mds/2018.1-IncluCare_API/issues/69)
-[US#19-registerTeamMember](https://github.com/fga-gpp-mds/2018.1-IncluCare_API/issues/70)
+- [TS#01-validateStudent](https://github.com/fga-gpp-mds/2018.1-IncluCare_API/issues/73)
+- [TS#02-Melhorar design do projeto](https://github.com/fga-gpp-mds/2018.1-IncluCare_API/issues/71)
+- [TS#03-Routes](https://github.com/fga-gpp-mds/2018.1-IncluCare_API/issues/74)
 
 ## Melhorias a serem tomadas
-O grupo deve buscar melhorar no conhecimento técnico, para isso, o pareamento vai tomar em conta o nível técnico de cada integrante, juntando o de menor conheciment com o que mais desenvolveu em determinada área.
+O grupo deve buscar melhorar no conhecimento técnico, para isso, o pareamento vai tomar em conta o nível técnico de cada integrante, juntando o de menor conhecimento com o que mais desenvolveu em determinada área.
