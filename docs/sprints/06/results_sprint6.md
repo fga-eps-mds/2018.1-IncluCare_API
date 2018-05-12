@@ -44,7 +44,10 @@
 </ul>
 
 ## Burndown
-(Colocar depois)
+Não se aplica.
 
 ## Velocity
-(Colocar depois)
+Não se aplica.
+
+## Analise da Sprint
+A equipe não possui pontos entregues, burndown e velocity, pois a equipe não conseguiu realizar os testes das histórias de usuário, portanto as histórias não foram consideradas como entregues nessa Sprint.

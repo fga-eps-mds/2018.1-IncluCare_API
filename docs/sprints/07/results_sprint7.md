@@ -26,8 +26,8 @@
 US#02-createStudent
 US#3-editaStudent
 US#04-deleteStudent
- 
-<li>Organização das pastas dos respositórios</li>
+
+<li>Organização das pastas dos repositórios</li>
 
 <li>História de Usuário - Login na aplicação</li>
 US#1-userLogin
@@ -41,7 +41,7 @@ Roadmap do Projeto
 ##### Total de pontos planejados: 15
 ##### Total de pontos entregues: 14
 
-## Restropectiva
+## Retrospectiva
 ### Pontos Positivos :
 <ul>
    <li> Super Pareamento da equipe</li>
@@ -52,19 +52,22 @@ Roadmap do Projeto
 
 <ul>
     <li> Testes incompletos</li>
-    <li> Falta de nivelamento tecnico (commits)</li>
+    <li> Falta de nivelamento técnico (commits)</li>
   <li>Houve planejamento, mas não foi seguido de forma efetiva</li>
 </ul>
 
 ### Pontos a melhorar:
 
 <ul>
-  <li>Nivel tecnico da equipe</li>
+  <li>Nível técnico da equipe</li>
   <li>Testes</li>
 </ul>
 
 ## Burndown
-(Colocar depois)
+![Burndown](https://imgur.com/Qr733HN)
 
 ## Velocity
-(Colocar depois)
+![Velocity](https://imgur.com/QQypoIx)
+
+## Analise da Sprint
+Nessa Sprint, a equipe conseguiu entregar quase todos os pontos, mas eles foram entregues nos últimos dias da Sprint.
