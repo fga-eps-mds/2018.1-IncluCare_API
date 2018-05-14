@@ -43,10 +43,10 @@ Para esta Sprint a equipe focou na refatoracão dos documentos e criacão de nov
 </ul>
 
 ## Burndown
-![Burndown](https://imgur.com/reaq5yP)
+![Sprint 04 - Burndown](https://imgur.com/reaq5yP.png)
 
 ## Velocity
-![Velocity](https://imgur.com/bQ114DS)
+![Sprint 04 - Velocity](https://imgur.com/bQ114DS.png)
 
 ## Analise da Sprint
 Durante essa Sprint, a equipe conseguiu entregar os pontos ao decorrer da Sprint, isso mostra um conhecimento maior dos documentos em relação a Sprint passada.

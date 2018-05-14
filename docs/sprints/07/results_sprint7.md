@@ -64,10 +64,10 @@ Roadmap do Projeto
 </ul>
 
 ## Burndown
-![Burndown](https://imgur.com/Qr733HN)
+![Sprint 07 - Burndown](https://imgur.com/Qr733HN.png)
 
 ## Velocity
-![Velocity](https://imgur.com/QQypoIx)
+![Sprint 07 - Velocity](https://imgur.com/QQypoIx.png)
 
 ## Analise da Sprint
 Nessa Sprint, a equipe conseguiu entregar quase todos os pontos, mas eles foram entregues nos últimos dias da Sprint.

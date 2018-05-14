@@ -42,7 +42,7 @@ Pontos entregues: Todos os pontos planejados foram entregues na Sprint.
 </ul>
 
 ## Burndown
-![Burndown](https://imgur.com/3SHiAs5)
+![Sprint 03 - Burndown](https://imgur.com/3SHiAs5.png)
 
 ## Velocity
 Não se aplica, porque uma vez que a analise desta métrica não existe antes dessa Sprint.
