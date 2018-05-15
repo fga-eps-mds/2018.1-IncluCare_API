@@ -25,6 +25,7 @@ puts "TeamMembers seeded."
     mother_name: "Mãe #{num}",
     address: "Endereço #{num}",
     parent_telephone: "99999999#{num}",
-    parent_email: "teste#{num}@email.com"
+    parent_email: "teste#{num}@email.com",
+    teacher_name: "Professor #{num}"
   )
 end
