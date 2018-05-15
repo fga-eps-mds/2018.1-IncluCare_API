@@ -16,7 +16,7 @@ puts "TeamMembers seeded."
   Student.create!(
     name: "Aluno #{num}",
     birth_date: "10/12/2010",
-    age: "8 anos",
+    age: "8",
     nationality: "Brasileiro",
     year: "2º ano",
     student_class: "B",
