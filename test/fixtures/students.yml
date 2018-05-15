@@ -13,6 +13,7 @@ one:
   address: MyString
   parent_telephone: 1
   parent_email: MyString
+  teacher_name: MyString
 
 two:
   name: ''
@@ -26,3 +27,4 @@ two:
   mother_name: MyString
   parent_telephone: 1
   parent_email: MyString
+  teacher_name: MyString
