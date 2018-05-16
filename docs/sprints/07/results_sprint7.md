@@ -22,15 +22,14 @@
 #### Histórias entregues:
 
 <ul>
-  <li>Histórias de Usuários relaciondas ao CRUD de estudante:</li>
+<li>Histórias de Usuários relaciondas ao CRUD de estudante:</li>
 US#02-createStudent
 US#03-editStudent
 US#04-deleteStudent
-
-<li>Organização das pastas dos respositórios</li>
+<li>Organização das pastas dos repositórios</li>
 
 <li>História de Usuário - Login na aplicação</li>
-US#1-userLogin
+US#01-userLogin
 
 <li>Melhorar Prototipagem do projeto de acordo com as novas demandas do cliente</li>
 </ul>
@@ -41,30 +40,33 @@ Roadmap do Projeto
 ##### Total de pontos planejados: 15
 ##### Total de pontos entregues: 14
 
-## Restropectiva
+## Retrospectiva
 ### Pontos Positivos :
 <ul>
-   <li> Super Pareamento da equipe</li>
-   <li> Aumento da integração do time</li>
+<li> Super Pareamento da equipe</li>
+<li> Aumento da integração do time</li>
 </ul>
 
 ### Pontos Negativos:
 
 <ul>
-    <li> Testes incompletos</li>
-    <li> Falta de nivelamento tecnico (commits)</li>
-  <li>Houve planejamento, mas não foi seguido de forma efetiva</li>
+<li> Testes incompletos</li>
+<li> Falta de nivelamento técnico (commits)</li>
+<li>Houve planejamento, mas não foi seguido de forma efetiva</li>
 </ul>
 
 ### Pontos a melhorar:
 
 <ul>
-  <li>Nivel tecnico da equipe</li>
-  <li>Testes</li>
+<li>Nível técnico da equipe</li>
+<li>Testes</li>
 </ul>
 
 ## Burndown
-(Colocar depois)
+![Sprint 07 - Burndown](https://imgur.com/Qr733HN.png)
 
 ## Velocity
-(Colocar depois)
+![Sprint 07 - Velocity](https://imgur.com/QQypoIx.png)
+
+## Analise da Sprint
+Nessa Sprint, a equipe conseguiu entregar quase todos os pontos, mas eles foram entregues nos últimos dias da Sprint.

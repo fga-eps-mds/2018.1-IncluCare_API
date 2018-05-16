@@ -19,6 +19,7 @@
 
 ## Review
 Para esta Sprint a equipe focou no inicio do Documento de Arquitetura.
+Pontos entregues: Todos os pontos planejados foram entregues na Sprint.
 
 ## Restropectiva
 ### Pontos Positivos :
@@ -41,13 +42,10 @@ Para esta Sprint a equipe focou no inicio do Documento de Arquitetura.
 </ul>
 
 ## Burndown
-(Colocar depois)
-
-## Quadro de conhecimento
-Não se aplica.
+![Sprint 03 - Burndown](https://imgur.com/3SHiAs5.png)
 
 ## Velocity
-(Colocar depois)
+Não se aplica, porque uma vez que a analise desta métrica não existe antes dessa Sprint.
 
-## Metricas
-Não se aplica
+## Analise da Sprint
+Durante essa Sprint a equipe de desenvolvimento conseguiu entregar tudo que foi proposto. Entretanto, para conseguir fazer isso a equipe teve que dedicar e estudar como o Documento de Arquitetura deve ser feito, por isso que todos os pontos foram entregues de última hora.
