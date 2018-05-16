@@ -48,7 +48,10 @@ Todas os planejamentos do plannning sprint 5 foram realizadas
 </ul>
 
 ## Burndown
-(Colocar depois)
+![Sprint 05 - Burndown](https://imgur.com/u0TL73N.png)
 
 ## Velocity
-(Colocar depois)
+![Sprint 05 - Velocity](https://imgur.com/C1tnleP.png)
+
+## Analise da Sprint
+Nessa Sprint, a equipe conseguiu entregar a primeira História de Usuário. A equipe mostrou um avanço no conhecimento das tecnologias. A equipe conseguiu entregar todos os pontos ao decorrer da Sprint.
