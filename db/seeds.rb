@@ -18,7 +18,7 @@ puts "TeamMembers seeded."
     birth_date: "10/12/2010",
     age: "8",
     nationality: "Brasileiro",
-    year: "2º ano",
+    year: "2",
     student_class: "B",
     shift: "VESPERTINO",
     father_name: "Pai #{num}",
@@ -29,3 +29,4 @@ puts "TeamMembers seeded."
     teacher_name: "Professor #{num}"
   )
 end
+puts "Students seeded."
