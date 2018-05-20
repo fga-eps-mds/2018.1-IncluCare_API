@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180511020236) do
+ActiveRecord::Schema.define(version: 20180516145233) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "daily_logs", force: :cascade do |t|
+    t.date "date"
+    t.text "activity"
+    t.string "note"
+    t.bigint "student_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["student_id"], name: "index_daily_logs_on_student_id"
+  end
 
   create_table "students", force: :cascade do |t|
     t.string "name"
