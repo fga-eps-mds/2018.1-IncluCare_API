@@ -1,12 +1,12 @@
-## Sprint 2
+## Sprint 3
 
 ### Reunião
 
-### Datade inicio: 18/03/2018
+### Datade inicio: 25/03/2018
 
-### Data de término: 24/03/2018
+### Data de término: 31/03/2018
 
-## Planejamento 
+## Planejamento
 ### Papéis
 
 |Nome|Papel|
@@ -27,6 +27,6 @@ Não se aplica.
 ## Planejamento
 
 <ul>
-  <li> Elaborar o Documento de Visão</li>
-  <li> Elaborar o Documento de Arquitetura</li>
+  <li> Estruturaçaõ e inicio do Documento de Arquitetura</li>
+ <li>Fazer tópicos 1-4 e 7 do Documento de Arquitetura</li>
 </ul>

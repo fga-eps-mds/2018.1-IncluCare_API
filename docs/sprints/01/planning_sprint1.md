@@ -1,10 +1,10 @@
-## Sprint 01
+## Sprint 1
 
 #### Data de ínicio: 11/03/2018
 
 #### Data de término: 17/03/2018
 
-## Planejamento 
+## Planejamento
 
 ### Papéis
 
@@ -20,10 +20,10 @@
 |Mateus Assunção|Desenvolvimneto|
 |William Silva|Desenvolvimento|
 
-## Pareamento 
+## Pareamento
 Não se aplica.
 
-## Planejamento 
+## Planejamento
 
 <ul>
 <li>Treinamento de Git</li>

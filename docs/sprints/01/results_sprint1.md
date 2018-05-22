@@ -1,4 +1,4 @@
-## Sprint 01
+## Sprint 1
 
 #### Data de ínicio: 11/03/2018
 
@@ -10,7 +10,7 @@
 
 |Nome|Presente|
 |----|-|
-|Byron Kamal|:heavy_check_mark: | 
+|Byron Kamal|:heavy_check_mark: |
 |Eduardo Cerqueira| :x: |
 |Gabriel Alves| :x: |
 |Igor Aragão| :heavy_check_mark: |
@@ -20,13 +20,13 @@
 |Mateus Assunção| :x: |
 |William Silva|:x: |
 
-## Sprint Review 
-Para esta Sprint a esquipe focou somente em Treinamento de Git e Metodologia Agil e estas foram 
+## Sprint Review
+Para esta Sprint a esquipe focou somente em Treinamento de Git e Metodologia Agil e estas foram
 realizadas com sucesso, para quem foi ao treinamento. Também foram decididas as linguagens
 que o time usará para desenvolver o projeto.
 
-## Retrospectiva 
-### Pontos positivos: 
+## Retrospectiva
+### Pontos positivos:
 <ul>
   <li>Bom aproveitamento do treinamento</li>
 </ul>
@@ -36,22 +36,21 @@ que o time usará para desenvolver o projeto.
   <li>Falta de comunicação adequada</li>
   <li>Sincronização dos horários para reuniões e Stand Up Meeting</li>
  </ul>
- 
+
  ### Pontos a melhorar:
-  <ul> 
+  <ul>
   <li>Comunicação da equipe</li>
   <li>Sincronização de horários</li>
   </ul>
- 
- ## Burndown 
+
+ ## Burndown
  Não se aplica.
- 
+
  ## Quadro de conhecimento
  Não se aplica.
- 
+
  ## Velocity
  Não se aplica.
- 
- ## Metricas 
+
+ ## Metricas
  Não se aplica.
- 
