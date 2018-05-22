@@ -16,15 +16,21 @@ puts "TeamMembers seeded."
   Student.create!(
     name: "Aluno #{num}",
     birth_date: "10/12/2010",
-    age: "8 anos",
+    age: "8",
     nationality: "Brasileiro",
-    year: "2º ano",
+    year: "2",
     student_class: "B",
     shift: "VESPERTINO",
     father_name: "Pai #{num}",
     mother_name: "Mãe #{num}",
     address: "Endereço #{num}",
     parent_telephone: "99999999#{num}",
-    parent_email: "teste#{num}@email.com"
+    parent_email: "teste#{num}@email.com",
+    teacher_name: "Professor #{num}"
   )
 end
+puts "Students seeded."
+
+DailyLog.create!(date: "10/10/2010", activity: 'pescar', note: 'A', student_id: 1)
+DailyLog.create!(date: "10/10/2010", activity: 'nadar', note: 'B', student_id: 2)
+puts "DailyLogs seeded."

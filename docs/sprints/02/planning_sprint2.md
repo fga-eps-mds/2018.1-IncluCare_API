@@ -1,12 +1,10 @@
-## Sprint 3
+## Sprint 2
 
-### Reunião
+### Datade inicio: 18/03/2018
 
-### Datade inicio: 25/03/2018
+### Data de término: 24/03/2018
 
-### Data de término: 29/03/2018
-
-## Planejamento 
+## Planejamento
 ### Papéis
 
 |Nome|Papel|
@@ -27,6 +25,4 @@ Não se aplica.
 ## Planejamento
 
 <ul>
-  <li> Ajustes de erros no Documento de Arquitetura</li>
-  <li> Instalação de hambiente nos computadores de alguns membros que tiveram dificuldades</li>
-</ul>
+  <li> Elaborar o Documento de Visão</li>

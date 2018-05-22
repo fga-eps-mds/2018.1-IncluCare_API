@@ -4,6 +4,9 @@
 
 ### Data de término: 24/03/2018
 
+
+### Reunião
+#### Data da reunião: 24/03/2018
 |Nome|Presente|
 |----|----|
 |Byron Kamal|:heavy_check_mark: |
@@ -16,8 +19,8 @@
 |Mateus Assunção|<p><strong>Justificado</strong></p>|
 |William Silva|<p><strong>Justificado</strong></p>|
 
-## Review 
-Para esta Sprint a equipe focou no término do Documento de Visão e deu inicio ao Documento de Arquitetura.
+## Review
+Para esta Sprint a equipe focou no término do Documento de Visão e configurar os ambientes de desenvolvimento.
 
 ## Restropectiva
 ### Pontos Positivos :
