@@ -16,16 +16,17 @@
 |William Silva|:heavy_check_mark: |
 
 ## Review
-- [TS#05-sideNav](https://github.com/fga-gpp-mds/2018.1-IncluCare_API/issues/89)
+
 #### Histórias entregues:
 - [US#18-listClasses (Dívida Técnica)](https://github.com/fga-gpp-mds/2018.1-IncluCare_API/issues/69)
 - [US#21-studentReport](https://github.com/fga-gpp-mds/2018.1-IncluCare_API/issues/88)
+- [TS#05-sideNav](https://github.com/fga-gpp-mds/2018.1-IncluCare_API/issues/89)
 
 #### Histórias não entregues:
 
 
 ##### Total de pontos planejados: 10
-##### Total de pontos entregues: X
+##### Total de pontos entregues: 10
 
 ## Retrospectiva
 ### Pontos Positivos:
@@ -47,14 +48,14 @@
 </ul>
 
 ## Burndown
-![Sprint 11 - Burndown]()
+![Sprint 11 - Burndown](https://imgur.com/txlLxjF.png)
 
 Por conta de dívida técnica os pontos entregues para a Sprint 11 foram menores.
 
 ## Velocity
-![Sprint 11 - Velocity]()
+![Sprint 11 - Velocity](https://imgur.com/y35Oj1I.png)
 
-Foram planejadas as entregas de 1 dívida técnica, 1 história técnica e 1 história de usuário. Todos pontos planejados foram entregues.
+Foram planejadas as entregas de 1 dívida técnica, 1 história técnica e 1 história de usuário. Os pontos planejados foram um pouco acima da média e todos pontos planejados foram entregues.
 
 ## Métricas
 Nessa Sprint os valores alcançados nas métricas foram:
@@ -64,17 +65,17 @@ Nessa Sprint os valores alcançados nas métricas foram:
 |----|----|----|
 |MAINTAINABILITY|A|:heavy_check_mark:|
 |BUILD|PASSING|:heavy_check_mark:|
-|TESTS COVERAGE|96%|:heavy_check_mark:|
+|TESTS COVERAGE|97%|:heavy_check_mark:|
 
 #### FrontEnd
 |Métrica|Resultado|Aceitável?|
 |----|----|----|
-|MAINTAINABILITY|C|:x:|
+|MAINTAINABILITY|F|:x:|
 |BUILD|PASSING|:heavy_check_mark:|
 |TESTS COVERAGE|69%|:x:|
 
 ## Quadro de Conhecimento
-![Sprint 11 - Quadro de Conhecimento]()
+![Sprint 11 - Quadro de Conhecimento](https://imgur.com/LUJ3eBF.png)
 
 ## Análise do Scrum Master
-
+Nessa Sprint, pela primeira vez nesse projeto todas histórias planejadas foram concluídas. Houve também a maior participação de membros que se mostravam mais ausentes em relação ao código. O pareamento de certa forma foi bem-sucedido, pois alguns membros conseguiram melhorar seu conhecimento. Para as próximas sprints, a participação de todos membros, as entregas das histórias e o aumento de pontos planejados são necessários para a entrega do projeto.
