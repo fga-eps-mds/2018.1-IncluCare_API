@@ -34,3 +34,7 @@ puts "Students seeded."
 DailyLog.create!(date: "10/10/2010", activity: 'pescar', note: 'A', student_id: 1)
 DailyLog.create!(date: "10/10/2010", activity: 'nadar', note: 'B', student_id: 2)
 puts "DailyLogs seeded."
+
+Referral.create!(title: "Encaminhamento ao Neurologista", body: "Teste 1", student_id: 1)
+Referral.create!(title: "Encaminhamento ao Psicólogo", body: "Teste 2", student_id: 2)
+puts "Referrals seeded."
