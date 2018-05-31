@@ -95,5 +95,4 @@ ActiveRecord::Schema.define(version: 20180531182716) do
     t.index ["uid", "provider"], name: "index_team_members_on_uid_and_provider", unique: true
   end
 
-  add_foreign_key "referrals", "students"
 end
