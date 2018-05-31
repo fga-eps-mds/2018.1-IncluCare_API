@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :reports
   resources :daily_logs
   resources :team_members
   resources :students
