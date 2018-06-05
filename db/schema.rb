@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180531041406) do
+ActiveRecord::Schema.define(version: 20180523222308) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,20 +26,17 @@ ActiveRecord::Schema.define(version: 20180531041406) do
   end
 
   create_table "reports", force: :cascade do |t|
+    t.date "init_date"
+    t.date "end_date"
+    t.string "school_phone"
+    t.string "member_name"
+    t.string "school_name"
     t.text "reason"
     t.text "general_information"
     t.text "synthesis"
     t.text "conclusion"
     t.text "family_orientation"
     t.text "school_orientation"
-    t.bigint "student_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.date "init_date"
-    t.date "end_date"
-    t.string "school_name"
-    t.string "school_phone"
-    t.string "member_name"
     t.string "pedagogue_name"
     t.string "pedagogue_function"
     t.string "pedagogue_registry"
@@ -62,6 +59,9 @@ ActiveRecord::Schema.define(version: 20180531041406) do
     t.string "possibly_eeaa"
     t.string "possibly_resources"
     t.string "possibly_adequation"
+    t.bigint "student_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["student_id"], name: "index_reports_on_student_id"
   end
 
@@ -80,8 +80,6 @@ ActiveRecord::Schema.define(version: 20180531041406) do
     t.string "parent_email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "teacher_name"
-    t.string "responsible"
   end
 
   create_table "team_members", force: :cascade do |t|
