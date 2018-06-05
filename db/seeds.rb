@@ -71,3 +71,7 @@ Report.create!(
   possibly_adequation: "MyString",
   student_id: 2)
 puts "Reports seeded."
+
+Referral.create!(title: "Encaminhamento ao Neurologista", body: "Teste 1", student_id: 1)
+Referral.create!(title: "Encaminhamento ao Psicólogo", body: "Teste 2", student_id: 2)
+puts "Referrals seeded."
