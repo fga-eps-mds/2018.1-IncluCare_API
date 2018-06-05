@@ -39,13 +39,13 @@ class DailyLogsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_daily_log
-      @daily_log = DailyLog.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_daily_log
+    @daily_log = DailyLog.find(params[:id])
+  end
 
-    # Only allow a trusted parameter "white list" through.
-    def daily_log_params
-      params.require(:daily_log).permit(:date, :activity, :note, :student_id)
-    end
+  # Only allow a trusted parameter "white list" through.
+  def daily_log_params
+    params.require(:daily_log).permit(:date, :activity, :note, :student_id)
+  end
 end
