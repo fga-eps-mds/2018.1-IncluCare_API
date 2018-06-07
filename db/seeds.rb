@@ -23,6 +23,7 @@ puts "TeamMembers seeded."
     shift: "VESPERTINO",
     father_name: "Pai #{num}",
     mother_name: "Mãe #{num}",
+    responsible: "Responsável #{num}",
     address: "Endereço #{num}",
     parent_telephone: "99999999#{num}",
     parent_email: "teste#{num}@email.com"

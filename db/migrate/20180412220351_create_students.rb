@@ -10,6 +10,7 @@ class CreateStudents < ActiveRecord::Migration[5.1]
       t.string :shift
       t.string :father_name
       t.string :mother_name
+      t.string :responsible
       t.string :address
       t.integer :parent_telephone
       t.string :parent_email
