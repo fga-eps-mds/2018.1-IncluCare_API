@@ -1,0 +1,33 @@
+class ReportSerializer < ActiveModel::Serializer
+  attributes :id,
+  :init_date,
+  :end_date,
+  :school_phone,
+  :member_name,
+  :school_name,
+  :reason,
+  :general_information,
+  :synthesis,
+  :conclusion,
+  :family_orientation,
+  :school_orientation,
+  :pedagogue_name,
+  :pedagogue_function,
+  :pedagogue_registry,
+  :psycholog_name,
+  :psycholog_function,
+  :psycholog_registry,
+  :reason_adequation,
+  :reason_emotional,
+  :reason_performance,
+  :reason_behavior,
+  :reason_language,
+  :level_school, :level_family, :level_student,
+  :envolved_school, :envolved_family, :envolved_student,
+  :realized_actions,
+  :possibly_saa, :possibly_eeaa,
+  :possibly_resources, :possibly_adequation,
+  :student_id
+
+  has_one :student
+end
