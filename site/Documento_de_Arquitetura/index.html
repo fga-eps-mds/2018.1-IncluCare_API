@@ -36,7 +36,7 @@
     
     
       
-        <title>Documento de Arquitetura - incluCare</title>
+        <title>Documento de Arquitetura - IncluCare</title>
       
     
     
@@ -79,7 +79,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href=".." title="incluCare" class="md-header-nav__button md-logo">
+        <a href=".." title="IncluCare" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -93,7 +93,7 @@
           
             
               <span class="md-header-nav__topic">
-                incluCare
+                IncluCare
               </span>
               <span class="md-header-nav__topic">
                 Documento de Arquitetura
@@ -156,7 +156,7 @@
         <i class="md-icon"></i>
       
     </span>
-    incluCare
+    IncluCare
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -167,8 +167,20 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="IncluCare" class="md-nav__link">
-      IncluCare
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Documento de Visão/" title="Documento de Visão" class="md-nav__link">
+      Documento de Visão
     </a>
   </li>
 
@@ -220,18 +232,6 @@
   
 </nav>
     
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../Documento de Visão/" title="Documento de Visão" class="md-nav__link">
-      Documento de Visão
-    </a>
   </li>
 
     
@@ -1057,18 +1057,22 @@ HTTP - HyperText Transfer Protocol, é um protocolo de comunicação web.</p>
 <h4 id="documento-de-arquitetura_1">Documento de Arquitetura</h4>
 <p>Linha de Código - Como documentar a arquitetura de software. Disponível em: http://www.linhadecodigo.com.br/artigo/3343/como-documentar-a-arquitetura-de-software.aspx. Acesso em: 27 de março de 2018;</p>
 <h3 id="15-visao-geral">1.5 Visão Geral</h3>
-<p>Este artefato descreve uma visão detalhada da arquitetura utilizada para o desenvolvimento do software. O documento foi elaborado e dividido com as seguintes etapas: representação arquitetural, metas e restrições, casos de uso, lógica, implementação e tamanho e desempenho do software. </p>
+<p>Este artefato descreve uma visão detalhada da arquitetura utilizada para o desenvolvimento do software. O documento foi elaborado e dividido com as seguintes etapas: representação arquitetural, metas e restrições, casos de uso, lógica, implementação e tamanho e desempenho do software.</p>
 <h2 id="2-representacao-da-arquitetura">2. Representação da Arquitetura</h2>
 <p>A arquitetura será uma adaptação do Model-View-Controller, sendo aquela separada em duas frentes: front-end e API. Para que isso ocorra existirá uma integração entre duas tecnologias, o Ruby on Rails 5.1.4 e o Angular5. A comunicação entre os frameworks é feita por protocolos HTTP.</p>
 <p align="center">
-<img src="./images/Representação_arquitetura.png" width="500" height="400">
+  <img src="https://imgur.com/HRpxiLY.png"  width="500" height="400"/>
+</p>
+
+<p align="center"> </br>
+
 </p>
 
 <h3 id="21-angular5">2.1 Angular5</h3>
 <p>Angular é uma framework baseado em JavaScript mantido pela Google e foi projetado para facilitar o desenvolvimento de aplicações web e tornar o código mais modularizado. Este framework é baseado na arquitetura MVC, porém neste projeto o Angular5 tem a função de View-Controller. Todas as requisições feitas pelo usuários passam pelo View e depois para Controller, e este envia as requisições para a API (desenvolvida em Ruby on Rails) que fará o processamentos necessários dos dados.</p>
 <h3 id="22-ruby-on-rails-514">2.2 Ruby on Rails 5.1.4</h3>
 <p>O framework Rails é utilizado na linguagem Ruby. A arquitetura deste framework é organizada no sistema em três partes distintas: Modelo, controle e visão. Para este projeto são utilizadas as partes Modelo e Controle, pois o papel de view é executado pelo Angular5.
-A camada de modelo (Model) é o lugar onde os dados são estruturados, consultados e validados. Ela se conecta diretamente com a camada de controle pois a camada de controle que irá definir quais dados serão consultados para que a camada de modelo faça conexão com a base de dados, e retorne sua resposta baseando-se nos dados analisados ou alterados. 
+A camada de modelo (Model) é o lugar onde os dados são estruturados, consultados e validados. Ela se conecta diretamente com a camada de controle pois a camada de controle que irá definir quais dados serão consultados para que a camada de modelo faça conexão com a base de dados, e retorne sua resposta baseando-se nos dados analisados ou alterados.
 A camada de controle (Controller) é a camada que faz a ligação entre usuário e os dados, tendo importância dentro da arquitetura. Para que essa camada execute os métodos ela recebe os comandos passados pelo usuário através da camada de visão e manipula os dados recebidos da camada de modelo.</p>
 <h2 id="3-metas-e-restricoes-de-arquitetura">3. Metas e Restrições de Arquitetura</h2>
 <p>O sistema a ser desenvolvido será suportado por navegadores web como Mozilla Firefox e Google Chrome, sendo otimizado para este último por conta de possuir recursos, em sua maioria, superiores aos outros navegadores disponíveis no mercado, além de abranger a maior parte dos usuários de navegadores desktop.
@@ -1095,7 +1099,12 @@ O software por possuir uma base de dados pessoais bastante pertinente dos alunos
 </tbody>
 </table>
 <h3 id="42-visao-dos-casos-de-uso">4.2 Visão dos Casos de Uso</h3>
-<p><img src= "./images/caso_uso.png"></p>
+<p><p align="center">
+  <img src="https://imgur.com/8y26NlM.png"/>
+</p>
+<p align="center"> </br></p>
+</p>
+
 <h3 id="43-descricoes-dos-casos-de-uso">4.3 Descrições dos Casos de Uso</h3>
 <table>
 <thead>
@@ -1141,12 +1150,17 @@ O software por possuir uma base de dados pessoais bastante pertinente dos alunos
 </table>
 <h2 id="5-visao-logica">5. Visão Lógica</h2>
 <h3 id="511-diagrama-de-classe">5.1.1 Diagrama de Classe</h3>
-<p><img src="images/diagrama_classe.png"></p>
+<p><p align="center">
+  <img src="https://imgur.com/yAcSpCq.png"/>
+</p>
+<p align="center"> </br></p>
+</p>
+
 <h2 id="6-visao-de-implementacao">6. Visão de Implementação</h2>
 <p>No front-end ficam os arquivos HTML e CSS, que são referentes a parte visual do projeto. Eles serão implementadas a partir do framework Angular CLI. O Angular fará a comunicação a API através de requisições HTTP.
 O back-end é responsável por receber as requisições HTTP e fazer a conexão com o banco de dados. O conjunto Model-Controller, desenvolvida em RoR, controla, acessa e mantém o relacionamento entre objetos e o banco de dados, fazendo as validações necessárias. Em RoR a camada Model é implementada pela biblioteca ActionRecord que oferece uma interface de relacionamento entre as tabelas do banco de dados e o código do programa.</p>
 <h2 id="7-tamanho-e-desempenho">7. Tamanho e Desempenho</h2>
-<p>A Escola Classe 401 possui um pouco mais de 900 alunos, então sistema precisará de uma forma eficiente para guardar os dados dos mesmos. O processamento de dados não será uma grande exigência, já que os relatórios são criados ou editados em um intervalo razoável de tempo. O desempenho do sistema dependerá principalmente da máquina e do navegador utilizados em seu uso. </p>
+<p>A Escola Classe 401 possui um pouco mais de 900 alunos, então sistema precisará de uma forma eficiente para guardar os dados dos mesmos. O processamento de dados não será uma grande exigência, já que os relatórios são criados ou editados em um intervalo razoável de tempo. O desempenho do sistema dependerá principalmente da máquina e do navegador utilizados em seu uso.</p>
                 
                   
                 
@@ -1167,7 +1181,7 @@ O back-end é responsável por receber as requisições HTTP e fazer a conexão 
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="IncluCare" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Documento de Visão/" title="Documento de Visão" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1176,19 +1190,19 @@ O back-end é responsável por receber as requisições HTTP e fazer a conexão 
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                IncluCare
+                Documento de Visão
               </span>
             </div>
           </a>
         
         
-          <a href="../Documento de Visão/" title="Documento de Visão" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../Roadmap/" title="Roadmap" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Documento de Visão
+                Roadmap
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
