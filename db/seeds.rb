@@ -75,3 +75,6 @@ puts "Reports seeded."
 Referral.create!(title: "Encaminhamento ao Neurologista", body: "Teste 1", student_id: 1)
 Referral.create!(title: "Encaminhamento ao Psicólogo", body: "Teste 2", student_id: 2)
 puts "Referrals seeded."
+
+Recommendation.create!(title: "Recomendações ao professor João", body: "Aluno com DHCP, cuidados necessários!", student_id: 1)
+puts "Recommendation seeded."
