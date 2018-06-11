@@ -7,13 +7,13 @@
 
 |Nome|Presente|
 |----|----|
-|Byron Kamal|:heavy_check_mark: |
-|Gabriel Alves|:x: |
-|Igor Aragão|:heavy_check_mark: |
-|Igor Veludo|:heavy_check_mark: |
-|João Mota|<p><strong>JUSTIFICADO</strong></p> |
-|Marcelo Araújo|:heavy_check_mark: |
-|William Silva|:heavy_check_mark: |
+|Byron Kamal|<p><strong>Presente</strong></p> |
+|Gabriel Alves|<p><strong>Ausente</strong></p> |
+|Igor Aragão|<p><strong>Presente</strong></p> |
+|Igor Veludo|<p><strong>Presente</strong></p> |
+|João Mota|<p><strong>Justificado</strong></p> |
+|Marcelo Araújo|<p><strong>Presente</strong></p> |
+|William Silva|<p><strong>Presente</strong></p> |
 
 ## Review
 #### Histórias entregues:
@@ -66,16 +66,16 @@ Nessa Sprint os valores alcançados nas métricas foram:
 #### FrontEnd
 |Métrica|Resultado|Aceitável?|
 |----|----|----|
-|MAINTAINABILITY|A|:heavy_check_mark:|
-|BUILD|PASSING|:heavy_check_mark:|
-|TESTS COVERAGE|96%|:heavy_check_mark:|
+|MAINTAINABILITY|A|<p><strong>Presente</strong></p>|
+|BUILD|PASSING|<p><strong>Presente</strong></p>|
+|TESTS COVERAGE|96%|<p><strong>Presente</strong></p>|
 
 #### BackEnd
 |Métrica|Resultado|Aceitável?|
 |----|----|----|
-|MAINTAINABILITY|C|:heavy_check_mark:|
-|BUILD|PASSING|:heavy_check_mark:|
-|TESTS COVERAGE|65%|:x:|
+|MAINTAINABILITY|C|<p><strong>Presente</strong></p>|
+|BUILD|PASSING|<p><strong>Presente</strong></p>|
+|TESTS COVERAGE|65%|<p><strong>Ausente</strong></p>|
 
 ## Quadro de Conhecimento
 ![Sprint 09 - Quadro de Conhecimento](https://i.imgur.com/bAGhntW.png)

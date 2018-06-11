@@ -7,13 +7,13 @@
 
 |Nome|Presente|
 |----|----|
-|Byron Kamal|:heavy_check_mark: |
-|Gabriel Alves|:heavy_check_mark: |
-|Igor Aragão|:heavy_check_mark: |
-|Igor Veludo|<p><strong>JUSTIFICADO</strong></p> |
-|João Mota|<p><strong>JUSTIFICADO</strong></p> |
-|Marcelo Araújo|:heavy_check_mark: |
-|William Silva|:heavy_check_mark: |
+|Byron Kamal|<p><strong>Presente</strong></p> |
+|Gabriel Alves|<p><strong>Presente</strong></p> |
+|Igor Aragão|<p><strong>Presente</strong></p> |
+|Igor Veludo|<p><strong>Justificado</strong></p> |
+|João Mota|<p><strong>Justificado</strong></p> |
+|Marcelo Araújo|<p><strong>Presente</strong></p> |
+|William Silva|<p><strong>Presente</strong></p> |
 
 ## Review
 
@@ -63,16 +63,16 @@ Nessa Sprint os valores alcançados nas métricas foram:
 #### BackEnd
 |Métrica|Resultado|Aceitável?|
 |----|----|----|
-|MAINTAINABILITY|A|:heavy_check_mark:|
-|BUILD|PASSING|:heavy_check_mark:|
-|TESTS COVERAGE|97%|:heavy_check_mark:|
+|MAINTAINABILITY|A|<p><strong>Presente</strong></p>|
+|BUILD|PASSING|<p><strong>Presente</strong></p>|
+|TESTS COVERAGE|97%|<p><strong>Presente</strong></p>|
 
 #### FrontEnd
 |Métrica|Resultado|Aceitável?|
 |----|----|----|
-|MAINTAINABILITY|F|:x:|
-|BUILD|PASSING|:heavy_check_mark:|
-|TESTS COVERAGE|69%|:x:|
+|MAINTAINABILITY|F|<p><strong>Ausente</strong></p>|
+|BUILD|PASSING|<p><strong>Presente</strong></p>|
+|TESTS COVERAGE|69%|<p><strong>Ausente</strong></p>|
 
 ## Quadro de Conhecimento
 ![Sprint 11 - Quadro de Conhecimento](https://imgur.com/LUJ3eBF.png)

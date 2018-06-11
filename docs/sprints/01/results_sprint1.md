@@ -10,15 +10,15 @@
 
 |Nome|Presente|
 |----|-|
-|Byron Kamal|:heavy_check_mark: |
-|Eduardo Cerqueira| :x: |
-|Gabriel Alves| :x: |
-|Igor Aragão| :heavy_check_mark: |
-|Igor Veludo|<p><strong>JUSTIFICADO</strong></p>|
-|João Mota| :heavy_check_mark: |
-|Marcelo Araújo| :heavy_check_mark: |
-|Mateus Assunção| :x: |
-|William Silva|:x: |
+|Byron Kamal| <p><strong>Presente</strong></p> |
+|Eduardo Cerqueira| <p><strong>Ausente</strong></p> |
+|Gabriel Alves| <p><strong>Ausente</strong></p> |
+|Igor Aragão| <p><strong>Presente</strong></p> |
+|Igor Veludo|<p><strong>Justificado</strong></p>|
+|João Mota| <p><strong>Presente</strong></p> |
+|Marcelo Araújo| <p><strong>Presente</strong></p> |
+|Mateus Assunção| <p><strong>Ausente</strong></p> |
+|William Silva| <p><strong>Ausente</strong></p> |
 
 ## Sprint Review
 Para esta Sprint a esquipe focou somente em Treinamento de Git e Metodologia Agil e estas foram

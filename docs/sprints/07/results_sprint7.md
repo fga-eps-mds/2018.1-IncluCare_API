@@ -10,13 +10,13 @@
 
 |Nome|Presente|
 |----|----|
-|Byron Kamal|:heavy_check_mark: |
-|Gabriel Alves|:heavy_check_mark: |
-|Igor Aragão|:heavy_check_mark: |
-|Igor Veludo|:heavy_check_mark: |
-|João Mota|:heavy_check_mark: |
-|Marcelo Araújo|:heavy_check_mark: |
-|William Silva|:heavy_check_mark: |
+|Byron Kamal|<p><strong>Presente</strong></p> |
+|Gabriel Alves|<p><strong>Presente</strong></p> |
+|Igor Aragão|<p><strong>Presente</strong></p> |
+|Igor Veludo|<p><strong>Presente</strong></p> |
+|João Mota|<p><strong>Presente</strong></p> |
+|Marcelo Araújo|<p><strong>Presente</strong></p> |
+|William Silva|<p><strong>Presente</strong></p> |
 
 ## Review
 #### Histórias entregues:

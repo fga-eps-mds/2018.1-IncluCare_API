@@ -24,7 +24,7 @@
     1.3. [Definições, acrônimos e abreviações](#13-definições-acrônimos-e-abreviações)  
     1.4. [Referências](#14-referências)  
     1.5. [Visão Geral](#15-visão-geral)  
-  
+
 2. [Representação da Arquitetura](#2-representação-da-arquitetura)
 
     2.1. [Angular CLI 1.7.3](#21-angular-cli-173)  
@@ -42,7 +42,7 @@
 5. [Visão Lógica](#5-visão-lógica)
 
     5.1.1. [Diagrama de Classe](#511-diagrama-de-classe)
-    
+
 6. [Visão de Implementação](#6-visão-de-implementação)
 
 
@@ -89,13 +89,16 @@ Site Oficial Angular - Framework Angular. Disponível em: https://angularjs.org/
 Linha de Código - Como documentar a arquitetura de software. Disponível em: http://www.linhadecodigo.com.br/artigo/3343/como-documentar-a-arquitetura-de-software.aspx. Acesso em: 27 de março de 2018;
 
 ### 1.5 Visão Geral
-Este artefato descreve uma visão detalhada da arquitetura utilizada para o desenvolvimento do software. O documento foi elaborado e dividido com as seguintes etapas: representação arquitetural, metas e restrições, casos de uso, lógica, implementação e tamanho e desempenho do software. 
+Este artefato descreve uma visão detalhada da arquitetura utilizada para o desenvolvimento do software. O documento foi elaborado e dividido com as seguintes etapas: representação arquitetural, metas e restrições, casos de uso, lógica, implementação e tamanho e desempenho do software.
 
 ## 2. Representação da Arquitetura
 A arquitetura será uma adaptação do Model-View-Controller, sendo aquela separada em duas frentes: front-end e API. Para que isso ocorra existirá uma integração entre duas tecnologias, o Ruby on Rails 5.1.4 e o Angular5. A comunicação entre os frameworks é feita por protocolos HTTP.
 
 <p align="center">
-<img src="./images/Representação_arquitetura.png" width="500" height="400">
+  <img src="https://imgur.com/HRpxiLY.png"  width="500" height="400"/>
+</p>
+<p align="center"> </br>
+
 </p>
 
 ### 2.1 Angular5
@@ -103,7 +106,7 @@ Angular é uma framework baseado em JavaScript mantido pela Google e foi projeta
 
 ### 2.2 Ruby on Rails 5.1.4
 O framework Rails é utilizado na linguagem Ruby. A arquitetura deste framework é organizada no sistema em três partes distintas: Modelo, controle e visão. Para este projeto são utilizadas as partes Modelo e Controle, pois o papel de view é executado pelo Angular5.
-A camada de modelo (Model) é o lugar onde os dados são estruturados, consultados e validados. Ela se conecta diretamente com a camada de controle pois a camada de controle que irá definir quais dados serão consultados para que a camada de modelo faça conexão com a base de dados, e retorne sua resposta baseando-se nos dados analisados ou alterados. 
+A camada de modelo (Model) é o lugar onde os dados são estruturados, consultados e validados. Ela se conecta diretamente com a camada de controle pois a camada de controle que irá definir quais dados serão consultados para que a camada de modelo faça conexão com a base de dados, e retorne sua resposta baseando-se nos dados analisados ou alterados.
 A camada de controle (Controller) é a camada que faz a ligação entre usuário e os dados, tendo importância dentro da arquitetura. Para que essa camada execute os métodos ela recebe os comandos passados pelo usuário através da camada de visão e manipula os dados recebidos da camada de modelo.
 
 
@@ -123,7 +126,12 @@ O software por possuir uma base de dados pessoais bastante pertinente dos alunos
 | Profissional de educação | Os membros do corpo docente poderão manter e consultar os dados dos alunos |
 
 ### 4.2 Visão dos Casos de Uso
-<img src= "./images/caso_uso.png">
+<p align="center">
+  <img src="https://imgur.com/8y26NlM.png"/>
+</p>
+<p align="center"> </br>
+
+</p>
 
 ### 4.3 Descrições dos Casos de Uso
 
@@ -140,13 +148,16 @@ O software por possuir uma base de dados pessoais bastante pertinente dos alunos
 
 ## 5. Visão Lógica
 ### 5.1.1 Diagrama de Classe
-<img src="images/diagrama_classe.png">
+<p align="center">
+  <img src="https://imgur.com/yAcSpCq.png"/>
+</p>
+<p align="center"> </br>
+
+</p>
 
 ## 6. Visão de Implementação
 No front-end ficam os arquivos HTML e CSS, que são referentes a parte visual do projeto. Eles serão implementadas a partir do framework Angular CLI. O Angular fará a comunicação a API através de requisições HTTP.
 O back-end é responsável por receber as requisições HTTP e fazer a conexão com o banco de dados. O conjunto Model-Controller, desenvolvida em RoR, controla, acessa e mantém o relacionamento entre objetos e o banco de dados, fazendo as validações necessárias. Em RoR a camada Model é implementada pela biblioteca ActionRecord que oferece uma interface de relacionamento entre as tabelas do banco de dados e o código do programa.
 
 ## 7. Tamanho e Desempenho
-A Escola Classe 401 possui um pouco mais de 900 alunos, então sistema precisará de uma forma eficiente para guardar os dados dos mesmos. O processamento de dados não será uma grande exigência, já que os relatórios são criados ou editados em um intervalo razoável de tempo. O desempenho do sistema dependerá principalmente da máquina e do navegador utilizados em seu uso. 
-
-
+A Escola Classe 401 possui um pouco mais de 900 alunos, então sistema precisará de uma forma eficiente para guardar os dados dos mesmos. O processamento de dados não será uma grande exigência, já que os relatórios são criados ou editados em um intervalo razoável de tempo. O desempenho do sistema dependerá principalmente da máquina e do navegador utilizados em seu uso.

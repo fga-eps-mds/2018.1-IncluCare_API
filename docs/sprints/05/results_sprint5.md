@@ -9,13 +9,13 @@
 #### Data da reunião: 24/03/2018
 |Nome|Presente|
 |----|----|
-|Byron Kamal|:heavy_check_mark: |
-|Gabriel Alves|:heavy_check_mark: |
-|Igor Aragão|:heavy_check_mark: |
-|Igor Veludo|:heavy_check_mark: |
+|Byron Kamal|<p><strong>Presente</strong></p> |
+|Gabriel Alves|<p><strong>Presente</strong></p> |
+|Igor Aragão|<p><strong>Presente</strong></p> |
+|Igor Veludo|<p><strong>Presente</strong></p> |
 |João Mota|<p><strong>Justificado</strong></p>|
-|Marcelo Araújo|:heavy_check_mark: |
-|William Silva|:heavy_check_mark: |
+|Marcelo Araújo|<p><strong>Presente</strong></p> |
+|William Silva|<p><strong>Presente</strong></p> |
 
 ## Review
 Nesta Sprint, além dos pareamentos normais, foi feita um super pareamento para alinhar a equipe e adiantar o projeto.

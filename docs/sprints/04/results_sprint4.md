@@ -10,13 +10,13 @@
 
 |Nome|Presente|
 |----|----|
-|Byron Kamal|:heavy_check_mark: |
-|Gabriel Alves|:heavy_check_mark: |
-|Igor Aragão|:heavy_check_mark: |
-|Igor Veludo|:heavy_check_mark: |
+|Byron Kamal|<p><strong>Presente</strong></p> |
+|Gabriel Alves|<p><strong>Presente</strong></p> |
+|Igor Aragão|<p><strong>Presente</strong></p> |
+|Igor Veludo|<p><strong>Presente</strong></p> |
 |João Mota|<p><strong>Justificado</strong></p>|
-|Marcelo Araújo|:heavy_check_mark: |
-|William Silva|:heavy_check_mark: |
+|Marcelo Araújo|<p><strong>Presente</strong></p> |
+|William Silva|<p><strong>Presente</strong></p> |
 
 ## Review
 Para esta Sprint a equipe focou na refatoracão dos documentos e criacão de novos tópicos. A equipe também resolveu alguns bugs de código e também foi criada o Código de Conduta e Contribuição.

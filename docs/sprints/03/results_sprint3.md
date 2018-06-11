@@ -8,14 +8,14 @@
 #### Data da reunião: 31/03/2018
 |Nome|Presente|
 |----|----|
-|Byron Kamal|:heavy_check_mark: |
-|Eduardo Cerqueira|:x:|
-|Gabriel Alves|:heavy_check_mark: |
-|Igor Aragão|:heavy_check_mark: |
-|Igor Veludo|:heavy_check_mark: |
+|Byron Kamal|<p><strong>Presente</strong></p> |
+|Eduardo Cerqueira|<p><strong>Ausente</strong></p>|
+|Gabriel Alves|<p><strong>Presente</strong></p> |
+|Igor Aragão|<p><strong>Presente</strong></p> |
+|Igor Veludo|<p><strong>Presente</strong></p> |
 |João Mota|<p><strong>Justificado</strong></p>|
 |Marcelo Araújo|<p><strong>Justificado</strong></p>|
-|William Silva|:x:|
+|William Silva|<p><strong>Ausente</strong></p>|
 
 ## Review
 Para esta Sprint a equipe focou no inicio do Documento de Arquitetura.

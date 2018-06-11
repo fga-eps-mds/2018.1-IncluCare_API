@@ -9,11 +9,11 @@
 #### Data da reunião: 24/03/2018
 |Nome|Presente|
 |----|----|
-|Byron Kamal|:heavy_check_mark: |
-|Eduardo Cerqueira|:x:|
+|Byron Kamal|<p><strong>Presente</strong></p> |
+|Eduardo Cerqueira|<p><strong>Ausente</strong></p>|
 |Gabriel Alves|<p><strong>Justificado</strong></p>|
 |Igor Aragão|<p><strong>Justificado</strong></p>|
-|Igor Veludo|:heavy_check_mark: |
+|Igor Veludo|<p><strong>Presente</strong></p> |
 |João Mota|<p><strong>Justificado</strong></p>|
 |Marcelo Araújo|<p><strong>Justificado</strong></p>|
 |Mateus Assunção|<p><strong>Justificado</strong></p>|
