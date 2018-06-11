@@ -18,22 +18,22 @@ class CreateReports < ActiveRecord::Migration[5.1]
       t.string :psycholog_name
       t.string :psycholog_function
       t.string :psycholog_registry
-      t.string :reason_adequation
-      t.string :reason_emotional
-      t.string :reason_performance
-      t.string :reason_behavior
-      t.string :reason_language
-      t.string :level_school
-      t.string :level_family
-      t.string :level_student
+      t.boolean :reason_adequation
+      t.boolean :reason_emotional
+      t.boolean :reason_performance
+      t.boolean :reason_behavior
+      t.boolean :reason_language
+      t.boolean :level_school
+      t.boolean :level_family
+      t.boolean :level_student
       t.string :envolved_school
       t.string :envolved_family
       t.string :envolved_student
       t.text :realized_actions
-      t.string :possibly_saa
-      t.string :possibly_eeaa
-      t.string :possibly_resources
-      t.string :possibly_adequation
+      t.boolean :possibly_saa
+      t.boolean :possibly_eeaa
+      t.boolean :possibly_resources
+      t.boolean :possibly_adequation
       t.belongs_to :student, index: true
 
       t.timestamps
