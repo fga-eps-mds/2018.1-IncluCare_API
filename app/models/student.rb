@@ -8,9 +8,10 @@ class Student < ApplicationRecord
   validates_presence_of :shift, presence: true, message: 'can t be left blank'
   validates_presence_of :father_name, presence: true, message: 'can t be left blank'
   validates_presence_of :mother_name, presence: true, message: 'can t be left blank'
+  validates_presence_of :responsible, presence: true, message: 'can t be left blank'
   validates_presence_of :address, presence: true, message: 'can t be left blank'
   validates_presence_of :parent_telephone, presence: true, length: { is: 11 }, message: 'can t be left blank'
-  validates_presence_of :parent_email, presence: true, email: true, message: 'can t be left blank'
+  #validates_presence_of :parent_email, presence: true, email: true, message: 'can t be left blank'
   #validates_presence_of :teacher_name, presence: true, message: 'can t be left blank'
 
   validates_length_of :name, minimum: 5, message: 'at least 5 characters'
@@ -20,6 +21,7 @@ class Student < ApplicationRecord
   validates_length_of :shift, minimum: 1, message: 'at least 1 characters'
   validates_length_of :father_name, minimum: 5, message: 'at least 5 characters'
   validates_length_of :mother_name,minimum: 5, message: 'at least 5 characters'
+  validates_length_of :responsible,minimum: 5, message: 'at least 5 characters'
   validates_length_of :address, minimum: 7, message: 'at least 7 characters'
 
   validates_numericality_of :age, message: 'need to be number'
