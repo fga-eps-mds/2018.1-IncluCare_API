@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :recommendations
   resources :referrals
   resources :reports
   resources :daily_logs
