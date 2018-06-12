@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180531182716) do
+ActiveRecord::Schema.define(version: 20180607195236) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,15 @@ ActiveRecord::Schema.define(version: 20180531182716) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["student_id"], name: "index_daily_logs_on_student_id"
+  end
+
+  create_table "recommendations", force: :cascade do |t|
+    t.string "title"
+    t.string "body"
+    t.bigint "student_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["student_id"], name: "index_recommendations_on_student_id"
   end
 
   create_table "referrals", force: :cascade do |t|
@@ -52,22 +61,22 @@ ActiveRecord::Schema.define(version: 20180531182716) do
     t.string "psycholog_name"
     t.string "psycholog_function"
     t.string "psycholog_registry"
-    t.string "reason_adequation"
-    t.string "reason_emotional"
-    t.string "reason_performance"
-    t.string "reason_behavior"
-    t.string "reason_language"
-    t.string "level_school"
-    t.string "level_family"
-    t.string "level_student"
+    t.boolean "reason_adequation"
+    t.boolean "reason_emotional"
+    t.boolean "reason_performance"
+    t.boolean "reason_behavior"
+    t.boolean "reason_language"
+    t.boolean "level_school"
+    t.boolean "level_family"
+    t.boolean "level_student"
     t.string "envolved_school"
     t.string "envolved_family"
     t.string "envolved_student"
     t.text "realized_actions"
-    t.string "possibly_saa"
-    t.string "possibly_eeaa"
-    t.string "possibly_resources"
-    t.string "possibly_adequation"
+    t.boolean "possibly_saa"
+    t.boolean "possibly_eeaa"
+    t.boolean "possibly_resources"
+    t.boolean "possibly_adequation"
     t.bigint "student_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -84,6 +93,7 @@ ActiveRecord::Schema.define(version: 20180531182716) do
     t.string "shift"
     t.string "father_name"
     t.string "mother_name"
+    t.string "responsible"
     t.string "address"
     t.integer "parent_telephone"
     t.string "parent_email"

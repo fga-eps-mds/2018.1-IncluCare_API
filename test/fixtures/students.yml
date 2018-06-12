@@ -10,6 +10,7 @@ one:
   shift: MyString
   father_name: MyString
   mother_name: MyString
+  responsible: MyString
   address: MyString
   parent_telephone: 1
   parent_email: MyString
@@ -25,6 +26,7 @@ two:
   shift: MyString
   father_name: MyString
   mother_name: MyString
+  responsible: MyString
   parent_telephone: 1
   parent_email: MyString
   #teacher_name: MyString

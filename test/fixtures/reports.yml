@@ -18,22 +18,22 @@ one:
   psycholog_name: MyString
   psycholog_function: MyString
   psycholog_registry: MyString
-  reason_adequation: MyString
-  reason_emotional: MyString
-  reason_performance: MyString
-  reason_behavior: MyString
-  reason_language: MyString
-  level_school: MyString
-  level_family: MyString
-  level_student: MyString
+  reason_adequation: "t"
+  reason_emotional: "f"
+  reason_performance: "t"
+  reason_behavior: "f"
+  reason_language: "t"
+  level_school: "t"
+  level_family: "t"
+  level_student: "t"
   envolved_school: MyString
   envolved_family: MyString
   envolved_student: MyString
   realized_actions: MyText
-  possibly_saa: MyString
-  possibly_eeaa: MyString
-  possibly_resources: MyString
-  possibly_adequation: MyString
+  possibly_saa: "t"
+  possibly_eeaa: "f"
+  possibly_resources: "f"
+  possibly_adequation: "f"
   student: one
 
 two:
@@ -54,20 +54,20 @@ two:
   psycholog_name: MyString
   psycholog_function: MyString
   psycholog_registry: MyString
-  reason_adequation: MyString
-  reason_emotional: MyString
-  reason_performance: MyString
-  reason_behavior: MyString
-  reason_language: MyString
-  level_school: MyString
-  level_family: MyString
-  level_student: MyString
+  reason_adequation: "t"
+  reason_emotional: "f"
+  reason_performance: "t"
+  reason_behavior: "f"
+  reason_language: "t"
+  level_school: "t"
+  level_family: "t"
+  level_student: "t"
   envolved_school: MyString
   envolved_family: MyString
   envolved_student: MyString
   realized_actions: MyText
-  possibly_saa: MyString
-  possibly_eeaa: MyString
-  possibly_resources: MyString
-  possibly_adequation: MyString
+  possibly_saa: "t"
+  possibly_eeaa: "f"
+  possibly_resources: "f"
+  possibly_adequation: "f"
   student_id: two

@@ -23,6 +23,7 @@ puts "TeamMembers seeded."
     shift: "VESPERTINO",
     father_name: "Pai #{num}",
     mother_name: "Mãe #{num}",
+    responsible: "Responsável #{num}",
     address: "Endereço #{num}",
     parent_telephone: "99999999#{num}",
     parent_email: "teste#{num}@email.com"
@@ -53,25 +54,28 @@ Report.create!(
   psycholog_name: "MyString",
   psycholog_function: "MyString",
   psycholog_registry: "MyString",
-  reason_adequation: "MyString",
-  reason_emotional: "MyString",
-  reason_performance: "MyString",
-  reason_behavior: "MyString",
-  reason_language: "MyString",
-  level_school: "MyString",
-  level_family: "MyString",
-  level_student: "MyString",
+  reason_adequation: "false",
+  reason_emotional: "false",
+  reason_performance: "true",
+  reason_behavior: "false",
+  reason_language: "false",
+  level_school: "true",
+  level_family: "false",
+  level_student: "true",
   envolved_school: "MyString",
   envolved_family: "MyString",
   envolved_student: "MyString",
   realized_actions: "MyText",
-  possibly_saa: "MyString",
-  possibly_eeaa: "MyString",
-  possibly_resources: "MyString",
-  possibly_adequation: "MyString",
+  possibly_saa: "false",
+  possibly_eeaa: "true",
+  possibly_resources: "false",
+  possibly_adequation: "false",
   student_id: 2)
 puts "Reports seeded."
 
 Referral.create!(title: "Encaminhamento ao Neurologista", body: "Teste 1", student_id: 1)
 Referral.create!(title: "Encaminhamento ao Psicólogo", body: "Teste 2", student_id: 2)
 puts "Referrals seeded."
+
+Recommendation.create!(title: "Recomendações ao professor João", body: "Aluno com DHCP, cuidados necessários!", student_id: 1)
+puts "Recommendation seeded."
