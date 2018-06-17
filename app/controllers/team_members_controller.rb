@@ -7,7 +7,7 @@ class TeamMembersController < ApplicationController
 
      render json: @team_members
    end
- 
+
    # GET /team_members/1
    def show
      render json: @team_member
