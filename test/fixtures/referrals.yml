@@ -3,9 +3,13 @@
 one:
   title: MyString
   body: MyText
+  created_by: MyText
+  updated_by: MyText
   student: one
 
 two:
   title: MyString
   body: MyText
+  created_by: MyText
+  updated_by: MyText
   student: two

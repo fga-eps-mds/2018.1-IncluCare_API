@@ -34,6 +34,8 @@ one:
   possibly_eeaa: "f"
   possibly_resources: "f"
   possibly_adequation: "f"
+  created_by: MyString
+  updated_by: MyString
   student: one
 
 two:
@@ -70,4 +72,6 @@ two:
   possibly_eeaa: "f"
   possibly_resources: "f"
   possibly_adequation: "f"
+  created_by: MyString
+  updated_by: MyString
   student_id: two

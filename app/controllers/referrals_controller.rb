@@ -46,6 +46,6 @@ class ReferralsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def referral_params
-      params.require(:referral).permit(:title, :body, :student_id)
+      params.require(:referral).permit(:title, :body, :created_by, :updated_by, :student_id)
     end
 end

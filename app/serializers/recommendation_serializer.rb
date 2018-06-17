@@ -1,4 +1,4 @@
 class RecommendationSerializer < ActiveModel::Serializer
-  attributes :id, :title, :body
+  attributes :id, :title, :body, :created_by, :updated_by
   has_one :student
 end

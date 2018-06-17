@@ -34,5 +34,6 @@ class Report < ApplicationRecord
   validates_inclusion_of :possibly_eeaa, :in => [true, false], message: 'can t be left blank'
   validates_inclusion_of :possibly_resources, :in => [true, false], message: 'can t be left blank'
   validates_inclusion_of :possibly_adequation, :in => [true, false], message: 'can t be left blank'
-
+  validates_presence_of :created_by, presence: true, message: 'can t be left blank'
+  validates_presence_of :updated_by, presence: true, message: 'can t be left blank'
 end

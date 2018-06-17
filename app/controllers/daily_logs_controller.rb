@@ -46,6 +46,6 @@ class DailyLogsController < ApplicationController
 
   # Only allow a trusted parameter "white list" through.
   def daily_log_params
-    params.require(:daily_log).permit(:date, :activity, :note, :student_id)
+    params.require(:daily_log).permit(:date, :activity, :note, :created_by, :updated_by, :student_id)
   end
 end

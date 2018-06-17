@@ -12,7 +12,12 @@ class ReferralsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create referral" do
     assert_difference('Referral.count') do
-      post referrals_url, params: { referral: { body: @referral.body, student_id: @referral.student_id, title: @referral.title } }, as: :json
+      post referrals_url, params: { referral: {
+        body: @referral.body,
+        created_by: @referral.created_by,
+        updated_by: @referral.updated_by,
+        student_id: @referral.student_id,
+        title: @referral.title } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +29,12 @@ class ReferralsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update referral" do
-    patch referral_url(@referral), params: { referral: { body: @referral.body, student_id: @referral.student_id, title: @referral.title } }, as: :json
+    patch referral_url(@referral), params: { referral: {
+      body: @referral.body,
+      created_by: @referral.created_by,
+      updated_by: @referral.updated_by, 
+      student_id: @referral.student_id,
+      title: @referral.title } }, as: :json
     assert_response 200
   end
 

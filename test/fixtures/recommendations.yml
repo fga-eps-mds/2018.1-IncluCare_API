@@ -2,5 +2,7 @@
 
 one:
   title: MyString
-  body: MyString
+  body: MyText
+  created_by: MyString
+  updated_by: MyString
   student: one

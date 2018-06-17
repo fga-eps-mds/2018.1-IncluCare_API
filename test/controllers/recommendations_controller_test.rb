@@ -12,7 +12,12 @@ class RecommendationsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create recommendation" do
     assert_difference('Recommendation.count') do
-      post recommendations_url, params: { recommendation: { body: @recommendation.body, student_id: @recommendation.student_id, title: @recommendation.title } }, as: :json
+      post recommendations_url, params: { recommendation: {
+        body: @recommendation.body,
+        created_by: @recommendation.created_by,
+        updated_by: @recommendation.updated_by,
+        student_id: @recommendation.student_id,
+        title: @recommendation.title } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +29,12 @@ class RecommendationsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update recommendation" do
-    patch recommendation_url(@recommendation), params: { recommendation: { body: @recommendation.body, student: @recommendation.student_id, title: @recommendation.title } }, as: :json
+    patch recommendation_url(@recommendation), params: { recommendation: {
+      body: @recommendation.body,
+      created_by: @recommendation.created_by,
+      updated_by: @recommendation.updated_by,
+      student: @recommendation.student_id,
+      title: @recommendation.title } }, as: :json
     assert_response 200
   end
 
