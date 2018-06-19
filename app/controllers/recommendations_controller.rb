@@ -46,6 +46,6 @@ class RecommendationsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def recommendation_params
-      params.require(:recommendation).permit(:title, :string, :body, :student_id)
+      params.require(:recommendation).permit(:title, :string, :body, :created_by, :updated_by, :student_id)
     end
 end

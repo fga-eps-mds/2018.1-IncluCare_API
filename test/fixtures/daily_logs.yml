@@ -4,10 +4,14 @@ one:
   date: 2018-05-16
   activity: MyText
   note: MyString
+  created_by: MyString
+  updated_by: MyString
   student: one
 
 two:
   date: 2018-05-16
   activity: MyText
   note: MyString
+  created_by: MyString
+  updated_by: MyString
   student: two

@@ -34,6 +34,8 @@ class CreateReports < ActiveRecord::Migration[5.1]
       t.boolean :possibly_eeaa
       t.boolean :possibly_resources
       t.boolean :possibly_adequation
+      t.string :created_by
+      t.string :updated_by
       t.belongs_to :student, index: true
 
       t.timestamps

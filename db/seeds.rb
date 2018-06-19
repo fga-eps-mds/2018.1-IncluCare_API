@@ -27,13 +27,12 @@ puts "TeamMembers seeded."
     address: "Endereço #{num}",
     parent_telephone: "99999999#{num}",
     parent_email: "teste#{num}@email.com"
-    #teacher_name: "Professor #{num}"
   )
 end
 puts "Students seeded."
 
-DailyLog.create!(date: "10/10/2010", activity: 'pescar', note: 'A', student_id: 1)
-DailyLog.create!(date: "10/10/2010", activity: 'nadar', note: 'B', student_id: 2)
+DailyLog.create!(date: "10/10/2010", activity: 'pescar', note: 'A', created_by: 'user', updated_by: 'user', student_id: 1)
+DailyLog.create!(date: "10/10/2010", activity: 'nadar', note: 'B', created_by: 'user', updated_by: 'user', student_id: 2)
 puts "DailyLogs seeded."
 
 Report.create!(
@@ -70,12 +69,14 @@ Report.create!(
   possibly_eeaa: "true",
   possibly_resources: "false",
   possibly_adequation: "false",
+  created_by: "MyString",
+  updated_by: "MyString",
   student_id: 2)
 puts "Reports seeded."
 
-Referral.create!(title: "Encaminhamento ao Neurologista", body: "Teste 1", student_id: 1)
-Referral.create!(title: "Encaminhamento ao Psicólogo", body: "Teste 2", student_id: 2)
+Referral.create!(title: "Encaminhamento ao Neurologista", body: "Teste 1", created_by: 'user', updated_by: 'user', student_id: 1)
+Referral.create!(title: "Encaminhamento ao Psicólogo", body: "Teste 2", created_by: 'user', updated_by: 'user', student_id: 2)
 puts "Referrals seeded."
 
-Recommendation.create!(title: "Recomendações ao professor João", body: "Aluno com DHCP, cuidados necessários!", student_id: 1)
+Recommendation.create!(title: "Recomendações ao professor João", body: "Aluno com DHCP, cuidados necessários!", created_by: 'user', updated_by: 'user', student_id: 1)
 puts "Recommendation seeded."

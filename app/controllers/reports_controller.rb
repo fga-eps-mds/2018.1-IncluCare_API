@@ -74,6 +74,7 @@ class ReportsController < ApplicationController
       :realized_actions,
       :possibly_saa, :possibly_eeaa,
       :possibly_resources, :possibly_adequation,
+      :created_by, :updated_by,
       :student_id )
   end
 end
