@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-TeamMember.create(name: 'admin',           nickname: 'admin',           email: 'admin@inclucare.com',           password: "123456789")
-TeamMember.create(name: 'Cínthia Martins', nickname: 'cinthia.martins', email: 'cinthia.martins@inclucare.com', password: "123456789")
-TeamMember.create(name: 'Sumara Ferreira', nickname: 'sumara.ferreira', email: 'sumara.ferreira@inclucare.com', password: "123456789")
+TeamMember.create(name: 'admin',           nickname: 'admin',           email: 'admin@inclucare.com', admin: true,           password: "123456789")
+TeamMember.create(name: 'Cínthia Martins', nickname: 'cinthia.martins', email: 'cinthia.martins@inclucare.com', admin: true, password: "123456789")
+TeamMember.create(name: 'Sumara Ferreira', nickname: 'sumara.ferreira', email: 'sumara.ferreira@inclucare.com', admin: false,password: "123456789")
 puts "TeamMembers seeded."
 
 6.times do |num|
