@@ -12,7 +12,13 @@ class DailyLogsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create daily_log" do
     assert_difference('DailyLog.count') do
-      post daily_logs_url, params: { daily_log: { activity: @daily_log.activity, date: @daily_log.date, note: @daily_log.note, student_id: @daily_log.student_id } }, as: :json
+      post daily_logs_url, params: { daily_log: {
+        activity: @daily_log.activity,
+        date: @daily_log.date,
+        note: @daily_log.note,
+        created_by: @daily_log.created_by,
+        updated_by: @daily_log.updated_by,
+        student_id: @daily_log.student_id } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +30,13 @@ class DailyLogsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update daily_log" do
-    patch daily_log_url(@daily_log), params: { daily_log: { activity: @daily_log.activity, date: @daily_log.date, note: @daily_log.note, student_id: @daily_log.student_id } }, as: :json
+    patch daily_log_url(@daily_log), params: { daily_log: {
+      activity: @daily_log.activity,
+      date: @daily_log.date,
+      note: @daily_log.note,
+      created_by: @daily_log.created_by,
+      updated_by: @daily_log.updated_by,
+      student_id: @daily_log.student_id } }, as: :json
     assert_response 200
   end
 

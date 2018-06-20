@@ -46,6 +46,8 @@ class ReportsControllerTest < ActionDispatch::IntegrationTest
         possibly_eeaa: @report.possibly_eeaa,
         possibly_resources: @report.possibly_resources,
         possibly_adequation: @report.possibly_adequation,
+        created_by: @report.created_by,
+        updated_by: @report.updated_by,
         student_id: @report.student_id } }, as: :json
     end
 
@@ -92,6 +94,8 @@ class ReportsControllerTest < ActionDispatch::IntegrationTest
       possibly_eeaa: @report.possibly_eeaa,
       possibly_resources: @report.possibly_resources,
       possibly_adequation: @report.possibly_adequation,
+      created_by: @report.created_by,
+      updated_by: @report.updated_by,
       student_id: @report.student_id } }, as: :json
     assert_response 200
   end

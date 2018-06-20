@@ -11,9 +11,7 @@ class Student < ApplicationRecord
   validates_presence_of :responsible, presence: true, message: 'can t be left blank'
   validates_presence_of :address, presence: true, message: 'can t be left blank'
   validates_presence_of :parent_telephone, presence: true, length: { is: 11 }, message: 'can t be left blank'
-  #validates_presence_of :parent_email, presence: true, email: true, message: 'can t be left blank'
-  #validates_presence_of :teacher_name, presence: true, message: 'can t be left blank'
-
+  
   validates_length_of :name, minimum: 5, message: 'at least 5 characters'
   validates_length_of :nationality, maximum: 14, message: 'deve possuir no maximo 15 caracteres'
   validates_length_of :year, maximum: 2, message: 'deve possuir no maximo 3 digitos'
