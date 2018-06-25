@@ -1,0 +1,2184 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Home\n\n\n\n  \n\n\n\n\n\n \n\n\n\n\n\n\nO IncluCare \u00e9 uma aplica\u00e7\u00e3o para auxiliar a equipe educacional no acompanhamento e triagem de estudantes com dificuldade de aprendizagem.\nO objetivo do IncluCare \u00e9 auxiliar a equipe educacional respons\u00e1vel, de escolas p\u00fablicas, pela triagem e acompanhamento de estudantes que apresentam algum tipo de dificuldade de aprendizagem, facilitando e tornando estes processos mais r\u00e1pidos.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#home", 
+            "text": "O IncluCare \u00e9 uma aplica\u00e7\u00e3o para auxiliar a equipe educacional no acompanhamento e triagem de estudantes com dificuldade de aprendizagem.\nO objetivo do IncluCare \u00e9 auxiliar a equipe educacional respons\u00e1vel, de escolas p\u00fablicas, pela triagem e acompanhamento de estudantes que apresentam algum tipo de dificuldade de aprendizagem, facilitando e tornando estes processos mais r\u00e1pidos.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/", 
+            "text": "Documento de Arquitetura\n\n\nHist\u00f3rico de Revis\u00e3o\n\n\n\n\n\n\n\n\nData\n\n\nVers\u00e3o\n\n\nDescri\u00e7\u00e3o\n\n\nAutor\n\n\n\n\n\n\n\n\n\n\n26/03/2018\n\n\n0.1\n\n\nFeitas as se\u00e7\u00f5es 1.1, 1.2, 1.4 e 1.5\n\n\nGabriel Alves\n\n\n\n\n\n\n26/03/2018\n\n\n0.2\n\n\nFeita se\u00e7\u00e3o 1.3\n\n\nIgor Veludo\n\n\n\n\n\n\n27/03/2018\n\n\n0.3\n\n\nFeitas a se\u00e7\u00e3o 2\n\n\nByron Kamal\n\n\n\n\n\n\n29/03/2018\n\n\n0.5\n\n\nFeita as se\u00e7\u00f5es 4 e 7\n\n\nWilliam Almeida\n\n\n\n\n\n\n30/03/2018\n\n\n0.4\n\n\nFeita a se\u00e7\u00e3o 3\n\n\nIgor Veludo, Igor Arag\u00e3o, Gabriel Alves, Jo\u00e3o Mota, Marcelo Araujo, William Almeida\n\n\n\n\n\n\n30/03/2018\n\n\n0.6\n\n\nAltera\u00e7\u00f5es 4.2\n\n\nIgor Veludo, Joao Mota\n\n\n\n\n\n\n02/04/2018\n\n\n0.7\n\n\nCorre\u00e7\u00e3o do topico 3\n\n\nByron Kamal\n\n\n\n\n\n\n02/04/2018\n\n\n0.8\n\n\nFeita se\u00e7\u00e3o 5\n\n\nIgor Veludo\n\n\n\n\n\n\n02/04/2018\n\n\n0.9\n\n\nFeita se\u00e7\u00e3o 6\n\n\nIgor Veludo, Byron Kamal\n\n\n\n\n\n\n\n\n\n\n\u00cdndice\n\n\n\n\n\n\nIntrodu\u00e7\u00e3o\n\n\n1.1. \nFinalidade\n\n1.2. \nEscopo\n\n1.3. \nDefini\u00e7\u00f5es, acr\u00f4nimos e abrevia\u00e7\u00f5es\n\n1.4. \nRefer\u00eancias\n\n1.5. \nVis\u00e3o Geral\n  \n\n\n\n\n\n\nRepresenta\u00e7\u00e3o da Arquitetura\n\n\n2.1. \nAngular CLI 1.7.3\n\n2.2. \nRuby on Rails 5.1.4\n\n\n\n\n\n\nMetas e restri\u00e7\u00f5es da arquitetura\n\n\n\n\n\n\nVis\u00e3o de Casos de Usos\n\n\n4.1. \nAtores de Casos de Uso\n\n4.2. \nVis\u00e3o dos Casos de Uso\n\n4.3. \nDescri\u00e7\u00f5es dos Casos de Uso\n  \n\n\n\n\n\n\nVis\u00e3o L\u00f3gica\n\n\n5.1.1. \nDiagrama de Classe\n\n\n\n\n\n\nVis\u00e3o de Implementa\u00e7\u00e3o\n\n\n\n\n\n\nTamanho e desempenho\n\n\n\n\n\n\n1. Introdu\u00e7\u00e3o\n\n\n1.1 Finalidade\n\n\nEste documento tem como objetivo demonstrar a arquitetura selecionada para o projeto IncluCare. O documento \u00e9 composto por diversos m\u00e9todos auxiliadores, tais como, diagrama de casos de uso, para facilitar a visualiza\u00e7\u00e3o do processo. Tendo como foco tamb\u00e9m mostrar que a arquitetura escolhida atende os requisitos exigidos pelo cliente, como desempenho, seguran\u00e7a, disponibilidade, integridade e flexibilidade.  \n\n\n1.2 Escopo\n\n\nNeste documento \u00e9 descrito as camadas arquiteturais do projeto, abrangendo as tecnologias utilizadas para sua implementa\u00e7\u00e3o com seus respectivos framework e ambientes de trabalho. O documento demonstra tamb\u00e9m, aspectos como desempenho e qualidade.\n\n\n1.3 Defini\u00e7\u00f5es, Acr\u00f4nimos e Abrevia\u00e7\u00f5es\n\n\nAlguns dos acr\u00f4nimos, defini\u00e7\u00f5es e abrevia\u00e7\u00f5es usados neste documento s\u00e3o:\nMVC - Arquitetura padr\u00e3o Model View Controller.\nAngular CLI - Angular Command Line Interface.\nRoR - Ruby on Rails, framework de criacao de aplicacoes web.\nAPI - Application Programming Interface.\nCSS - Cascading Style Sheets, usado para adicionar estilo a um documento web.\nHTML - HyperText Markup Language, linguagem padr\u00e3o para constru\u00e7\u00e3o de p\u00e1ginas web.\nHTTP - HyperText Transfer Protocol, \u00e9 um protocolo de comunica\u00e7\u00e3o web.\n\n\n1.4 Refer\u00eancias\n\n\nLinguagem Ruby\n\n\nSite Oficial Ruby - Linguagem Ruby. Dispon\u00edvel em: https://www.ruby-lang.org/pt/. Acesso em: 27 de mar\u00e7o de 2018;\n\n\nSite Oficial Rails - Framework Rails. Dispon\u00edvel em: http://rubyonrails.org/. Acesso em: 23 de mar\u00e7o de 2018;\n\n\nAngular\n\n\nSite Oficial Angular - Angular. Disponivel em :https://cli.angular.io/. Acesso em 23 de mar\u00e7o de 2018.\n\n\nLinguagem JavaScript\n\n\nSite Oficial javaScript - Linguagem JavaScript. Dispon\u00edvel em: https://www.javascript.com/. Acesso em: 27 de mar\u00e7o de 2018;\n\n\nSite Oficial Angular - Framework Angular. Dispon\u00edvel em: https://angularjs.org/. Acesso em: 27 de mar\u00e7o de 2018;\n\n\nDocumento de Arquitetura\n\n\nLinha de C\u00f3digo - Como documentar a arquitetura de software. Dispon\u00edvel em: http://www.linhadecodigo.com.br/artigo/3343/como-documentar-a-arquitetura-de-software.aspx. Acesso em: 27 de mar\u00e7o de 2018;\n\n\n1.5 Vis\u00e3o Geral\n\n\nEste artefato descreve uma vis\u00e3o detalhada da arquitetura utilizada para o desenvolvimento do software. O documento foi elaborado e dividido com as seguintes etapas: representa\u00e7\u00e3o arquitetural, metas e restri\u00e7\u00f5es, casos de uso, l\u00f3gica, implementa\u00e7\u00e3o e tamanho e desempenho do software. \n\n\n2. Representa\u00e7\u00e3o da Arquitetura\n\n\nA arquitetura ser\u00e1 uma adapta\u00e7\u00e3o do Model-View-Controller, sendo aquela separada em duas frentes: front-end e API. Para que isso ocorra existir\u00e1 uma integra\u00e7\u00e3o entre duas tecnologias, o Ruby on Rails 5.1.4 e o Angular5. A comunica\u00e7\u00e3o entre os frameworks \u00e9 feita por protocolos HTTP.\n\n\n\n\n\n\n\n\n\n2.1 Angular5\n\n\nAngular \u00e9 uma framework baseado em JavaScript mantido pela Google e foi projetado para facilitar o desenvolvimento de aplica\u00e7\u00f5es web e tornar o c\u00f3digo mais modularizado. Este framework \u00e9 baseado na arquitetura MVC, por\u00e9m neste projeto o Angular5 tem a fun\u00e7\u00e3o de View-Controller. Todas as requisi\u00e7\u00f5es feitas pelo usu\u00e1rios passam pelo View e depois para Controller, e este envia as requisi\u00e7\u00f5es para a API (desenvolvida em Ruby on Rails) que far\u00e1 o processamentos necess\u00e1rios dos dados.\n\n\n2.2 Ruby on Rails 5.1.4\n\n\nO framework Rails \u00e9 utilizado na linguagem Ruby. A arquitetura deste framework \u00e9 organizada no sistema em tr\u00eas partes distintas: Modelo, controle e vis\u00e3o. Para este projeto s\u00e3o utilizadas as partes Modelo e Controle, pois o papel de view \u00e9 executado pelo Angular5.\nA camada de modelo (Model) \u00e9 o lugar onde os dados s\u00e3o estruturados, consultados e validados. Ela se conecta diretamente com a camada de controle pois a camada de controle que ir\u00e1 definir quais dados ser\u00e3o consultados para que a camada de modelo fa\u00e7a conex\u00e3o com a base de dados, e retorne sua resposta baseando-se nos dados analisados ou alterados. \nA camada de controle (Controller) \u00e9 a camada que faz a liga\u00e7\u00e3o entre usu\u00e1rio e os dados, tendo import\u00e2ncia dentro da arquitetura. Para que essa camada execute os m\u00e9todos ela recebe os comandos passados pelo usu\u00e1rio atrav\u00e9s da camada de vis\u00e3o e manipula os dados recebidos da camada de modelo.\n\n\n3. Metas e Restri\u00e7\u00f5es de Arquitetura\n\n\nO sistema a ser desenvolvido ser\u00e1 suportado por navegadores web como Mozilla Firefox e Google Chrome, sendo otimizado para este \u00faltimo por conta de possuir recursos, em sua maioria, superiores aos outros navegadores dispon\u00edveis no mercado, al\u00e9m de abranger a maior parte dos usu\u00e1rios de navegadores desktop.\nO back-end ser\u00e1 implementado usando a linguagem de programa\u00e7\u00e3o Ruby, vers\u00e3o 2.5.0, no framework de desenvolvimento Rails na vers\u00e3o 5.1.4 enquanto o front-end ser\u00e1 implementado utilizando o framework de desenvolvimento Angular CLI 1.7.3.\nO software por possuir uma base de dados pessoais bastante pertinente dos alunos dever\u00e1 manter estes dados em seguran\u00e7a dentro da base de dados do sistema, assim como as credenciais de usu\u00e1rios se tornam necess\u00e1rias para a filtragem de recursos dentro da aplica\u00e7\u00e3o.\n\n\n4. Vis\u00e3o de Casos de Uso\n\n\n4.1 Atores de Casos de Uso\n\n\n\n\n\n\n\n\nAtor\n\n\nDescri\u00e7\u00e3o\n\n\n\n\n\n\n\n\n\n\nAdministrador\n\n\nO administrador ir\u00e1 gerenciar os dados do corpo docente e poder\u00e1 gerenciar os dados dos alunos\n\n\n\n\n\n\nProfissional de educa\u00e7\u00e3o\n\n\nOs membros do corpo docente poder\u00e3o manter e consultar os dados dos alunos\n\n\n\n\n\n\n\n\n4.2 Vis\u00e3o dos Casos de Uso\n\n\n\n\n4.3 Descri\u00e7\u00f5es dos Casos de Uso\n\n\n\n\n\n\n\n\nCaso de Uso\n\n\nDescri\u00e7\u00e3o\n\n\n\n\n\n\n\n\n\n\nUC01 - Fazer login\n\n\nCredenciamento para acessar as funcionalidades do sistema\n\n\n\n\n\n\nUC02 - Manter alunos\n\n\nCriar, acessar, editar ou deletar um aluno\n\n\n\n\n\n\nUC03 - Manter corpo docente\n\n\nCriar, acessar, editar ou deletar um membro do corpo docente\n\n\n\n\n\n\nUC04 - Manter relat\u00f3rio\n\n\nCriar, editar, acessar ou deletar o relat\u00f3rio de um aluno\n\n\n\n\n\n\nUC05 - Visualizar Registro Diario\n\n\nAcessar o registro diario de cada aluno\n\n\n\n\n\n\nUC06 - Notificar professores\n\n\nMandar recomenda\u00e7\u00f5es para os professores\n\n\n\n\n\n\nUC07 - Gerar recomenda\u00e7\u00f5es\n\n\nGerar recomenda\u00e7\u00f5es de cada aluno\n\n\n\n\n\n\nUC08 - Criar Registro Di\u00e1rio\n\n\nCriar registro di\u00e1rio das reuni\u00f5es\n\n\n\n\n\n\n\n\n5. Vis\u00e3o L\u00f3gica\n\n\n5.1.1 Diagrama de Classe\n\n\n\n\n6. Vis\u00e3o de Implementa\u00e7\u00e3o\n\n\nNo front-end ficam os arquivos HTML e CSS, que s\u00e3o referentes a parte visual do projeto. Eles ser\u00e3o implementadas a partir do framework Angular CLI. O Angular far\u00e1 a comunica\u00e7\u00e3o a API atrav\u00e9s de requisi\u00e7\u00f5es HTTP.\nO back-end \u00e9 respons\u00e1vel por receber as requisi\u00e7\u00f5es HTTP e fazer a conex\u00e3o com o banco de dados. O conjunto Model-Controller, desenvolvida em RoR, controla, acessa e mant\u00e9m o relacionamento entre objetos e o banco de dados, fazendo as valida\u00e7\u00f5es necess\u00e1rias. Em RoR a camada Model \u00e9 implementada pela biblioteca ActionRecord que oferece uma interface de relacionamento entre as tabelas do banco de dados e o c\u00f3digo do programa.\n\n\n7. Tamanho e Desempenho\n\n\nA Escola Classe 401 possui um pouco mais de 900 alunos, ent\u00e3o sistema precisar\u00e1 de uma forma eficiente para guardar os dados dos mesmos. O processamento de dados n\u00e3o ser\u00e1 uma grande exig\u00eancia, j\u00e1 que os relat\u00f3rios s\u00e3o criados ou editados em um intervalo razo\u00e1vel de tempo. O desempenho do sistema depender\u00e1 principalmente da m\u00e1quina e do navegador utilizados em seu uso.", 
+            "title": "Documento de Arquitetura"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#documento-de-arquitetura", 
+            "text": "", 
+            "title": "Documento de Arquitetura"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#historico-de-revisao", 
+            "text": "Data  Vers\u00e3o  Descri\u00e7\u00e3o  Autor      26/03/2018  0.1  Feitas as se\u00e7\u00f5es 1.1, 1.2, 1.4 e 1.5  Gabriel Alves    26/03/2018  0.2  Feita se\u00e7\u00e3o 1.3  Igor Veludo    27/03/2018  0.3  Feitas a se\u00e7\u00e3o 2  Byron Kamal    29/03/2018  0.5  Feita as se\u00e7\u00f5es 4 e 7  William Almeida    30/03/2018  0.4  Feita a se\u00e7\u00e3o 3  Igor Veludo, Igor Arag\u00e3o, Gabriel Alves, Jo\u00e3o Mota, Marcelo Araujo, William Almeida    30/03/2018  0.6  Altera\u00e7\u00f5es 4.2  Igor Veludo, Joao Mota    02/04/2018  0.7  Corre\u00e7\u00e3o do topico 3  Byron Kamal    02/04/2018  0.8  Feita se\u00e7\u00e3o 5  Igor Veludo    02/04/2018  0.9  Feita se\u00e7\u00e3o 6  Igor Veludo, Byron Kamal", 
+            "title": "Hist\u00f3rico de Revis\u00e3o"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#indice", 
+            "text": "Introdu\u00e7\u00e3o  1.1.  Finalidade \n1.2.  Escopo \n1.3.  Defini\u00e7\u00f5es, acr\u00f4nimos e abrevia\u00e7\u00f5es \n1.4.  Refer\u00eancias \n1.5.  Vis\u00e3o Geral       Representa\u00e7\u00e3o da Arquitetura  2.1.  Angular CLI 1.7.3 \n2.2.  Ruby on Rails 5.1.4    Metas e restri\u00e7\u00f5es da arquitetura    Vis\u00e3o de Casos de Usos  4.1.  Atores de Casos de Uso \n4.2.  Vis\u00e3o dos Casos de Uso \n4.3.  Descri\u00e7\u00f5es dos Casos de Uso       Vis\u00e3o L\u00f3gica  5.1.1.  Diagrama de Classe    Vis\u00e3o de Implementa\u00e7\u00e3o    Tamanho e desempenho", 
+            "title": "\u00cdndice"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#1-introducao", 
+            "text": "", 
+            "title": "1. Introdu\u00e7\u00e3o"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#11-finalidade", 
+            "text": "Este documento tem como objetivo demonstrar a arquitetura selecionada para o projeto IncluCare. O documento \u00e9 composto por diversos m\u00e9todos auxiliadores, tais como, diagrama de casos de uso, para facilitar a visualiza\u00e7\u00e3o do processo. Tendo como foco tamb\u00e9m mostrar que a arquitetura escolhida atende os requisitos exigidos pelo cliente, como desempenho, seguran\u00e7a, disponibilidade, integridade e flexibilidade.", 
+            "title": "1.1 Finalidade"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#12-escopo", 
+            "text": "Neste documento \u00e9 descrito as camadas arquiteturais do projeto, abrangendo as tecnologias utilizadas para sua implementa\u00e7\u00e3o com seus respectivos framework e ambientes de trabalho. O documento demonstra tamb\u00e9m, aspectos como desempenho e qualidade.", 
+            "title": "1.2 Escopo"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#13-definicoes-acronimos-e-abreviacoes", 
+            "text": "Alguns dos acr\u00f4nimos, defini\u00e7\u00f5es e abrevia\u00e7\u00f5es usados neste documento s\u00e3o:\nMVC - Arquitetura padr\u00e3o Model View Controller.\nAngular CLI - Angular Command Line Interface.\nRoR - Ruby on Rails, framework de criacao de aplicacoes web.\nAPI - Application Programming Interface.\nCSS - Cascading Style Sheets, usado para adicionar estilo a um documento web.\nHTML - HyperText Markup Language, linguagem padr\u00e3o para constru\u00e7\u00e3o de p\u00e1ginas web.\nHTTP - HyperText Transfer Protocol, \u00e9 um protocolo de comunica\u00e7\u00e3o web.", 
+            "title": "1.3 Defini\u00e7\u00f5es, Acr\u00f4nimos e Abrevia\u00e7\u00f5es"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#14-referencias", 
+            "text": "", 
+            "title": "1.4 Refer\u00eancias"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#linguagem-ruby", 
+            "text": "Site Oficial Ruby - Linguagem Ruby. Dispon\u00edvel em: https://www.ruby-lang.org/pt/. Acesso em: 27 de mar\u00e7o de 2018;  Site Oficial Rails - Framework Rails. Dispon\u00edvel em: http://rubyonrails.org/. Acesso em: 23 de mar\u00e7o de 2018;", 
+            "title": "Linguagem Ruby"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#angular", 
+            "text": "Site Oficial Angular - Angular. Disponivel em :https://cli.angular.io/. Acesso em 23 de mar\u00e7o de 2018.", 
+            "title": "Angular"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#linguagem-javascript", 
+            "text": "Site Oficial javaScript - Linguagem JavaScript. Dispon\u00edvel em: https://www.javascript.com/. Acesso em: 27 de mar\u00e7o de 2018;  Site Oficial Angular - Framework Angular. Dispon\u00edvel em: https://angularjs.org/. Acesso em: 27 de mar\u00e7o de 2018;", 
+            "title": "Linguagem JavaScript"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#documento-de-arquitetura_1", 
+            "text": "Linha de C\u00f3digo - Como documentar a arquitetura de software. Dispon\u00edvel em: http://www.linhadecodigo.com.br/artigo/3343/como-documentar-a-arquitetura-de-software.aspx. Acesso em: 27 de mar\u00e7o de 2018;", 
+            "title": "Documento de Arquitetura"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#15-visao-geral", 
+            "text": "Este artefato descreve uma vis\u00e3o detalhada da arquitetura utilizada para o desenvolvimento do software. O documento foi elaborado e dividido com as seguintes etapas: representa\u00e7\u00e3o arquitetural, metas e restri\u00e7\u00f5es, casos de uso, l\u00f3gica, implementa\u00e7\u00e3o e tamanho e desempenho do software.", 
+            "title": "1.5 Vis\u00e3o Geral"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#2-representacao-da-arquitetura", 
+            "text": "A arquitetura ser\u00e1 uma adapta\u00e7\u00e3o do Model-View-Controller, sendo aquela separada em duas frentes: front-end e API. Para que isso ocorra existir\u00e1 uma integra\u00e7\u00e3o entre duas tecnologias, o Ruby on Rails 5.1.4 e o Angular5. A comunica\u00e7\u00e3o entre os frameworks \u00e9 feita por protocolos HTTP.", 
+            "title": "2. Representa\u00e7\u00e3o da Arquitetura"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#21-angular5", 
+            "text": "Angular \u00e9 uma framework baseado em JavaScript mantido pela Google e foi projetado para facilitar o desenvolvimento de aplica\u00e7\u00f5es web e tornar o c\u00f3digo mais modularizado. Este framework \u00e9 baseado na arquitetura MVC, por\u00e9m neste projeto o Angular5 tem a fun\u00e7\u00e3o de View-Controller. Todas as requisi\u00e7\u00f5es feitas pelo usu\u00e1rios passam pelo View e depois para Controller, e este envia as requisi\u00e7\u00f5es para a API (desenvolvida em Ruby on Rails) que far\u00e1 o processamentos necess\u00e1rios dos dados.", 
+            "title": "2.1 Angular5"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#22-ruby-on-rails-514", 
+            "text": "O framework Rails \u00e9 utilizado na linguagem Ruby. A arquitetura deste framework \u00e9 organizada no sistema em tr\u00eas partes distintas: Modelo, controle e vis\u00e3o. Para este projeto s\u00e3o utilizadas as partes Modelo e Controle, pois o papel de view \u00e9 executado pelo Angular5.\nA camada de modelo (Model) \u00e9 o lugar onde os dados s\u00e3o estruturados, consultados e validados. Ela se conecta diretamente com a camada de controle pois a camada de controle que ir\u00e1 definir quais dados ser\u00e3o consultados para que a camada de modelo fa\u00e7a conex\u00e3o com a base de dados, e retorne sua resposta baseando-se nos dados analisados ou alterados. \nA camada de controle (Controller) \u00e9 a camada que faz a liga\u00e7\u00e3o entre usu\u00e1rio e os dados, tendo import\u00e2ncia dentro da arquitetura. Para que essa camada execute os m\u00e9todos ela recebe os comandos passados pelo usu\u00e1rio atrav\u00e9s da camada de vis\u00e3o e manipula os dados recebidos da camada de modelo.", 
+            "title": "2.2 Ruby on Rails 5.1.4"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#3-metas-e-restricoes-de-arquitetura", 
+            "text": "O sistema a ser desenvolvido ser\u00e1 suportado por navegadores web como Mozilla Firefox e Google Chrome, sendo otimizado para este \u00faltimo por conta de possuir recursos, em sua maioria, superiores aos outros navegadores dispon\u00edveis no mercado, al\u00e9m de abranger a maior parte dos usu\u00e1rios de navegadores desktop.\nO back-end ser\u00e1 implementado usando a linguagem de programa\u00e7\u00e3o Ruby, vers\u00e3o 2.5.0, no framework de desenvolvimento Rails na vers\u00e3o 5.1.4 enquanto o front-end ser\u00e1 implementado utilizando o framework de desenvolvimento Angular CLI 1.7.3.\nO software por possuir uma base de dados pessoais bastante pertinente dos alunos dever\u00e1 manter estes dados em seguran\u00e7a dentro da base de dados do sistema, assim como as credenciais de usu\u00e1rios se tornam necess\u00e1rias para a filtragem de recursos dentro da aplica\u00e7\u00e3o.", 
+            "title": "3. Metas e Restri\u00e7\u00f5es de Arquitetura"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#4-visao-de-casos-de-uso", 
+            "text": "", 
+            "title": "4. Vis\u00e3o de Casos de Uso"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#41-atores-de-casos-de-uso", 
+            "text": "Ator  Descri\u00e7\u00e3o      Administrador  O administrador ir\u00e1 gerenciar os dados do corpo docente e poder\u00e1 gerenciar os dados dos alunos    Profissional de educa\u00e7\u00e3o  Os membros do corpo docente poder\u00e3o manter e consultar os dados dos alunos", 
+            "title": "4.1 Atores de Casos de Uso"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#42-visao-dos-casos-de-uso", 
+            "text": "", 
+            "title": "4.2 Vis\u00e3o dos Casos de Uso"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#43-descricoes-dos-casos-de-uso", 
+            "text": "Caso de Uso  Descri\u00e7\u00e3o      UC01 - Fazer login  Credenciamento para acessar as funcionalidades do sistema    UC02 - Manter alunos  Criar, acessar, editar ou deletar um aluno    UC03 - Manter corpo docente  Criar, acessar, editar ou deletar um membro do corpo docente    UC04 - Manter relat\u00f3rio  Criar, editar, acessar ou deletar o relat\u00f3rio de um aluno    UC05 - Visualizar Registro Diario  Acessar o registro diario de cada aluno    UC06 - Notificar professores  Mandar recomenda\u00e7\u00f5es para os professores    UC07 - Gerar recomenda\u00e7\u00f5es  Gerar recomenda\u00e7\u00f5es de cada aluno    UC08 - Criar Registro Di\u00e1rio  Criar registro di\u00e1rio das reuni\u00f5es", 
+            "title": "4.3 Descri\u00e7\u00f5es dos Casos de Uso"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#5-visao-logica", 
+            "text": "", 
+            "title": "5. Vis\u00e3o L\u00f3gica"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#511-diagrama-de-classe", 
+            "text": "", 
+            "title": "5.1.1 Diagrama de Classe"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#6-visao-de-implementacao", 
+            "text": "No front-end ficam os arquivos HTML e CSS, que s\u00e3o referentes a parte visual do projeto. Eles ser\u00e3o implementadas a partir do framework Angular CLI. O Angular far\u00e1 a comunica\u00e7\u00e3o a API atrav\u00e9s de requisi\u00e7\u00f5es HTTP.\nO back-end \u00e9 respons\u00e1vel por receber as requisi\u00e7\u00f5es HTTP e fazer a conex\u00e3o com o banco de dados. O conjunto Model-Controller, desenvolvida em RoR, controla, acessa e mant\u00e9m o relacionamento entre objetos e o banco de dados, fazendo as valida\u00e7\u00f5es necess\u00e1rias. Em RoR a camada Model \u00e9 implementada pela biblioteca ActionRecord que oferece uma interface de relacionamento entre as tabelas do banco de dados e o c\u00f3digo do programa.", 
+            "title": "6. Vis\u00e3o de Implementa\u00e7\u00e3o"
+        }, 
+        {
+            "location": "/Documento de Arquitetura/#7-tamanho-e-desempenho", 
+            "text": "A Escola Classe 401 possui um pouco mais de 900 alunos, ent\u00e3o sistema precisar\u00e1 de uma forma eficiente para guardar os dados dos mesmos. O processamento de dados n\u00e3o ser\u00e1 uma grande exig\u00eancia, j\u00e1 que os relat\u00f3rios s\u00e3o criados ou editados em um intervalo razo\u00e1vel de tempo. O desempenho do sistema depender\u00e1 principalmente da m\u00e1quina e do navegador utilizados em seu uso.", 
+            "title": "7. Tamanho e Desempenho"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/", 
+            "text": "Documento de Vis\u00e3o\n\n\nHist\u00f3rico de Revis\u00e3o\n\n\n\n\n\n\n\n\nData\n\n\nVers\u00e3o\n\n\nDescri\u00e7\u00e3o\n\n\nAutores\n\n\n\n\n\n\n\n\n\n\n21/03/2018\n\n\n0.1\n\n\nCria\u00e7\u00e3o e estrutura\u00e7\u00e3o do documento\n\n\nByron Kamal, Igor Arag\u00e3o, Igor Veludo, Marcelo Ara\u00fajo\n\n\n\n\n\n\n22/03/2018\n\n\n0.2\n\n\nFeitas se\u00e7\u00f5es 1.1 a 5.2\n\n\nByron Kamal, Igor Arag\u00e3o, Igor Veludo, Marcelo Ara\u00fajo, Mateus Assun\u00e7\u00e3o\n\n\n\n\n\n\n23/03/2018\n\n\n0.3\n\n\nAltera\u00e7\u00e3o na subse\u00e7\u00e3o 3.7\n\n\nWilliam Almeida\n\n\n\n\n\n\n23/03/2018\n\n\n0.4\n\n\nFeita se\u00e7\u00e3o 5\n\n\nWilliam Almeida\n\n\n\n\n\n\n24/03/2018\n\n\n0.5\n\n\nFeitas se\u00e7\u00f5es 6.1, 6.2 e 7\n\n\nIgor Veludo\n\n\n\n\n\n\n24/03/2018\n\n\n0.6\n\n\nRevis\u00e3o da se\u00e7\u00e3o 3.5.1\n\n\nByron Kamal\n\n\n\n\n\n\n24/03/2018\n\n\n0.7\n\n\nFeitas se\u00e7\u00f5es 8.1 a 8.3\n\n\nIgor Veludo\n\n\n\n\n\n\n25/03/2018\n\n\n0.8\n\n\nFeita subse\u00e7\u00e3o 3.1\n\n\nWilliam Almeida\n\n\n\n\n\n\n\n\n\n\n\u00cdndice\n\n\n\n\n\n\nIntrodu\u00e7\u00e3o\n\n\n1.1. \nObjetivo\n\n1.2. \nEscopo\n\n1.3. \nDefini\u00e7\u00f5es, acr\u00f4nimos e abrevia\u00e7\u00f5es\n\n1.4. \nRefer\u00eancias\n\n1.5. \nVis\u00e3o Geral\n  \n\n\n\n\n\n\nPosicionamento\n\n\n2.1. \nOportunidade de Neg\u00f3cios\n\n2.2. \nDescri\u00e7\u00e3o do Problema\n\n2.3. \nSenten\u00e7a de Posi\u00e7\u00e3o do Produto\n\n\n\n\n\n\nDescri\u00e7\u00f5es dos envolvidos e dos usu\u00e1rios\n\n\n3.1. \nDemogr\u00e1ficos de Mercado\n\n3.2. \nResumo dos Envolvidos\n\n3.3. \nResumo dos Usu\u00e1rios\n\n3.4. \nAmbiente do Usu\u00e1rio\n\n3.5. \nPerfis dos Envolvidos\n\n    3.5.1 \nEquipe de avalia\u00e7\u00e3o e suporte\n\n3.5.2 \nEquipe de Desenvolvimento\n\n3.5.3 \nClientes\n\n3.6. \nPerfis dos Usu\u00e1rios\n\n    3.6.1 \nCinthia e Sumara\n\n3.7. \nPrincipais Necessidades dos Usu\u00e1rios ou dos Envolvidos\n\n3.8. \nAlternativas e Concorr\u00eancia\n  \n\n\n\n\n\n\nVis\u00e3o Geral do Produto\n\n\n4.1. \nPerspectiva do Produto\n\n4.2. \nRecursos do Produto\n\n\n\n\n\n\nRestri\u00e7\u00f5es\n\n\n5.1. \nRestri\u00e7\u00f5es de escopo\n\n5.2. \nRestri\u00e7ao de desenvolvimento e implanta\u00e7\u00e3o\n\n\n\n\n\n\nIntervalos de Qualidade\n\n\n\n\n\n\nOutros requisitos do projeto\n\n\n7.1. \nRequisitos de usabilidade\n\n7.2. \nRequisitos do sistema\n\n7.3. \nRequisitos de confiabilidade\n  \n\n\n\n\n\n\n1. Introdu\u00e7\u00e3o\n\n\n1.1. Objetivo\n\n\nEste documento tem como objetivo especificar de maneira geral as caracter\u00edsticas do desenvolvimento da solu\u00e7\u00e3o IncluCare para a Escola Classe 401 (Recanto das Emas).\n\n\n1.2. Escopo\n\n\nEste projeto tem como finalidade suprir a necessidade de automa\u00e7\u00e3o do processo de registro de alunos com necessidades especiais da Escola Classe 401 do Recanto das Emas.\nOs profissionais da \u00e1rea pedag\u00f3gica da escola procuram uma solu\u00e7\u00e3o em software para substituir o processo de encaminhamento e registro dos alunos com necessidades especiais.\nO software, a ser implementado, deve registrar o(s) tipo(s) de transtorno apresentado pelo aluno para servir de consulta aos profissionais, e para a elabora\u00e7\u00e3o do Relat\u00f3rio de Avalia\u00e7\u00e3o e Interven\u00e7\u00e3o Educacional de cada aluno.\n\n\n1.3. Defini\u00e7\u00f5es, Acr\u00f4nimos e Abrevia\u00e7\u00f5es\n\n\nEC 401 - Escola Classe 401 do Recanto das Emas.\n\nDF - Distrito Federal.\n\nMDS - Disciplina de M\u00e9todos de Desenvolvimento de Software.\n\nCEE - Centro de Ensino Especial.  \n\n\n1.4. Refer\u00eancias\n\n\nGuia auxiliar do Documento de Vis\u00e3o: https://github.com/fga-gpp-mds/2017.1-Escola-X]\nRefer\u00eancia Template do documento: http://www.funpar.ufpr.br:8080/rup/webtmpl/templates/req/rup_vision.htm\n\n\n1.5. Vis\u00e3o Geral\n\n\nEste documento descreve os detalhes sobre as caracter\u00edsticas do software IncluCare, especificando os problemas que estimularam a cria\u00e7\u00e3o dessa solu\u00e7\u00e3o em software. O documento \u00e9 dividido da seguinte maneira: inicialmente \u00e9 especificado qual problema motivou o desenvolvimento da solu\u00e7\u00e3o, em seguida as partes interessadas s\u00e3o descritas, e por fim todos os recursos, restri\u00e7\u00f5es e requisitos do produto s\u00e3o apresentados.\n\n\n2. Posicionamento\n\n\n2.1 Oportunidade de Neg\u00f3cios\n\n\nAo analisar o m\u00e9todo que a escola acompanha e pesquisa por informa\u00e7\u00f5es de seus alunos especiais, percebemos que poder\u00edamos facilitar o trabalho dos profissionais que cuidam desses alunos com o nosso produto.\nNosso foco est\u00e1 nos profissionais que lidam de forma direta com os alunos especiais, de forma automatizada e informatizada. Dando um maior suporte e agilidade no processo de acompanhamento dos alunos.\n\n\n2.2 Descri\u00e7\u00e3o do Problema\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nO problema seria\n\n\nA dificuldade de Triagem e acompanhamento dos  estudantes com dificuldades de aprendizagem.\n\n\n\n\n\n\nafeta\n\n\nEstudantes e profissionais que fazem parte do acompanhamento.\n\n\n\n\n\n\ncujo impacto \u00e9\n\n\nDemora no processo de gera\u00e7\u00e3o de relat\u00f3rios e tempo de acompanhamento por encontro profissional-estudante.\n\n\n\n\n\n\numa boa solu\u00e7\u00e3o seria\n\n\nSistema capaz de otimizar o tempo gasto na gera\u00e7\u00e3o de relat\u00f3rios e nos encontros profissional-estudante.\n\n\n\n\n\n\n\n\n2.3 Senten\u00e7a de Posi\u00e7\u00e3o do Produto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPara\n\n\nProfissionais da educa\u00e7\u00e3o do Brasil.\n\n\n\n\n\n\nQue\n\n\nNecessitam de uma ferramenta para o processo de listagem de alunos com dificuldade de aprendizagem.\n\n\n\n\n\n\nO IncluCare\n\n\n\u00c9 um programa web de cadastro e acompanhamento.\n\n\n\n\n\n\nQue\n\n\nReduz tempo gasto com preenchimento de documentos em pap\u00e9is.\n\n\n\n\n\n\nDiferente de\n\n\nDo m\u00e9todo tradicional feito manualmente.\n\n\n\n\n\n\nNosso produto\n\n\n\u00c9 uma solu\u00e7\u00e3o gratuita para o problema existente.\n\n\n\n\n\n\n\n\n3. Descri\u00e7\u00f5es dos Envolvidos e dos Usu\u00e1rios\n\n\n3.1 Demogr\u00e1ficos de Mercado\n\n\nExistem 655 escolas p\u00fablicas no DF, e nelas tamb\u00e9m estudam alunos que possuem necessidades especiais no aprendizado e pelo fato do IncluCare ser um software com c\u00f3digo aberto, poder\u00e1 ser utilizado por essas institui\u00e7\u00f5es para um melhor acompanhamento dos seus alunos.\n\n\n3.2 Resumo dos Envolvidos\n\n\n\n\n\n\n\n\nNome\n\n\nDescri\u00e7\u00e3o\n\n\nResponsabilidade\n\n\n\n\n\n\n\n\n\n\nEquipe de Desenvolvimento\n\n\nEstudantes da Universidade de Bras\u00edlia - FGA\n\n\nDesenvolver e Implementar o Software\n\n\n\n\n\n\nEquipe de avalia\u00e7\u00e3o e suporte\n\n\nProfessora e Coaches das disciplinas de EPS e MDS\n\n\nAuxiliar a equipe ao longo do desenvolvimento do projeto.\n\n\n\n\n\n\nCliente\n\n\nEscola Classe 401 do Recanto das Emas\n\n\nTornar dispon\u00edvel informa\u00e7\u00f5es sobre os estudantes e o processo de acompanhamento.\n\n\n\n\n\n\n\n\n3.3 Resumo dos Usu\u00e1rios\n\n\n\n\n\n\n\n\nNome\n\n\nDescri\u00e7\u00e3o\n\n\nResponsabilidade\n\n\n\n\n\n\n\n\n\n\nProfissionais da \u00e1rea de educa\u00e7\u00e3o\n\n\nUtilizar o software para melhorar o processo de triagem e acompanhamento de alunos com dificuldade de aprendizagem.\n\n\nUtilizar o sistema e manter e alimentar a base de dados.\n\n\n\n\n\n\n\n\n3.4 Ambiente do Usu\u00e1rio\n\n\nO sistema Web poder\u00e1 ser usado pelo profissional de educa\u00e7\u00e3o em navegadores mais conhecidos (Mozilla FireFox, Google Chrome, Opera) para melhor funcionamento do software.\n\n\n3.5 Perfis dos Envolvidos\n\n\n3.5.1 Equipe de avalia\u00e7\u00e3o e suporte\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRepresentante\n\n\nPr\u00aa Carla Rocha\n\n\n\n\n\n\nCoach\n\n\nJoao Henrique\n\n\n\n\n\n\nDescri\u00e7\u00e3o\n\n\nEquipe respons\u00e1vel pela avalia\u00e7\u00e3o e direcionamento do projeto.\n\n\n\n\n\n\nTipo\n\n\nProfessora e coach do grupo da disciplina.\n\n\n\n\n\n\nResponsabilidades\n\n\nDirecionar e dar suporte a equipe de desenvolvimento na disciplina M\u00e9todos de Desenvolvimento de Software quanto ao desenvolvimento do projeto.\n\n\n\n\n\n\nCrit\u00e9rios de Sucesso\n\n\nA entrega do projeto juntamente com uma documenta\u00e7\u00e3o coerente estabelecida, a partir das orienta\u00e7\u00f5es dadas ao longo do semestre.\n\n\n\n\n\n\nEnvolvimento\n\n\nAlto.\n\n\n\n\n\n\nComent\u00e1rios / Problemas\n\n\n-\n\n\n\n\n\n\n\n\n3.5.2 Equipe de Desenvolvimento\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRepresentante\n\n\nByron Kamal Barreto Correa \nEduardo Vin\u00edcius Cerqueira\nGabriel Alves S de Souza\nIgor Arag\u00e3o\nIgor Guimar\u00e3es Veludo\nJo\u00e3o Pedro Mota Jardim\nMarcelo Ara\u00fajo dos Santos\nMateus Alves Mendes Assun\u00e7\u00e3o\nWilliam Silva de Almeida\n\n\n\n\n\n\nDescri\u00e7\u00e3o\n\n\nDesenvolvedores.\n\n\n\n\n\n\nTipo\n\n\nEstudantes da Universidade de Bras\u00edlia - FGA UnB/Gama.\n\n\n\n\n\n\nResponsabilidades\n\n\nDesenvolver, implementar e entregar o projeto.\n\n\n\n\n\n\nCrit\u00e9rios de Sucesso\n\n\nEntregar o software com as funcionalidades requeridas pelo cliente dentro do prazo da disciplina.\n\n\n\n\n\n\nEnvolvimento\n\n\nAlto.\n\n\n\n\n\n\nComent\u00e1rios / Problemas\n\n\nDesenvolvimento de um software com clientes reais e a partir disso passar pelas etapas da engenharia de software, entregando um produto de qualidade.\n\n\n\n\n\n\n\n\n3.5.3 Clientes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRepresentante\n\n\nCinthia e Sumara\n\n\n\n\n\n\nDescri\u00e7\u00e3o\n\n\nProfissionais da \u00e1rea de educa\u00e7\u00e3o que fazem a triagem e acompanhamento dos estudantes com dificuldade de aprendizagem.\n\n\n\n\n\n\nTipo\n\n\nCinthia (Professora) e Sumara (Psic\u00f3loga)\n\n\n\n\n\n\nResponsabilidades\n\n\nFornecer informa\u00e7\u00f5es dos estudantes, dos m\u00e9todos utilizados na triagem, acompanhamento e utilizar o sistema IncluCare.\n\n\n\n\n\n\nCrit\u00e9rios de Sucesso\n\n\nOtimizar o tempo de atendimento e acompanhamento dos estudantes e da gera\u00e7\u00e3o de relat\u00f3rios\n\n\n\n\n\n\nEnvolvimento\n\n\nAlto.\n\n\n\n\n\n\nComent\u00e1rios / Problemas\n\n\n-\n\n\n\n\n\n\n\n\n3.6 Perfis dos Usu\u00e1rios\n\n\n3.6.1 Cinthia e Sumara\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRepresentante\n\n\nCinthia e Sumara\n\n\n\n\n\n\nDescri\u00e7\u00e3o\n\n\nProfissionais da \u00e1rea de educa\u00e7\u00e3o que fazem a triagem e acompanhamento dos estudantes com dificuldade de aprendizagem.\n\n\n\n\n\n\nTipo\n\n\nCinthia (Professora) e Sumara (Psic\u00f3loga)\n\n\n\n\n\n\nResponsabilidades\n\n\nFornecer informa\u00e7\u00f5es dos estudantes e dos m\u00e9todos utilizados na triagem e acompanhamento.\n\n\n\n\n\n\nCrit\u00e9rios de Sucesso\n\n\nOtimizar o tempo de atendimento e acompanhamento dos estudantes e da gera\u00e7\u00e3o de relat\u00f3rios\n\n\n\n\n\n\nEnvolvimento\n\n\nAlto.\n\n\n\n\n\n\nComent\u00e1rios / Problemas\n\n\n-\n\n\n\n\n\n\n\n\n3.7 Principais Necessidades dos Usu\u00e1rios ou dos Envolvidos\n\n\n\n\n\n\n\n\nNecessidade\n\n\nPrioridade\n\n\nPreocupa\u00e7\u00f5es\n\n\nSolu\u00e7\u00e3o Atual\n\n\nSolu\u00e7\u00f5es Propostas\n\n\n\n\n\n\n\n\n\n\nGerenciar cuidados necess\u00e1rios com os alunos\n\n\nAlta\n\n\nArmazenar especialidades necess\u00e1rias para cada aluno com necessidades especiais\n\n\nDocumento feito manualmente, assim torna o processo lento e menos eficiente\n\n\nFacilitar a gest\u00e3o desses documentos, encurtando rotinas repetitivas e aprimorando o armazenamento dos mesmos\n\n\n\n\n\n\nTransmitir mensagens\n\n\nMedia\n\n\nLevar a informa\u00e7\u00e3o necess\u00e1ria aos cuidados do aluno ao professor respons\u00e1vel\n\n\nEntrega manual de um documento f\u00edsico com as informa\u00e7\u00f5es\n\n\nEnviar e-mail para os professores com as recomenda\u00e7\u00f5es.\n\n\n\n\n\n\n\n\n3.8 Alternativas e Concorr\u00eancia\n\n\nM\u00e9todo Tradicional de triagem e acompanhamento\nO m\u00e9todo tradicional de triagem e acompanhamento s\u00e3o feitos de maneira manual. O profissional da \u00e1rea de educa\u00e7\u00e3o recebe dos demais professores uma ficha de encaminhamento para que o estudante que apresentar dificuldade de aprendizagem (estudante especial) possa passar pelo processo de triagem e acompanhamento ao longo do ano escolar. Os relat\u00f3rios resultantes desse processo s\u00e3o feitos a m\u00e3o e depois digitados em editor de texto.\n\n\n4 Vis\u00e3o Geral do Produto\n\n\n4.1 Perspectiva do Produto\n\n\nO sistema ir\u00e1 oferecer uma plataforma web, de maneira responsiva e \u00e1gil para profissionais que lidam diretamente com alunos especiais. O profissional ir\u00e1 contar com uma s\u00e9rie de templates da documenta\u00e7\u00e3o de diagn\u00f3stico do aluno, al\u00e9m de informa\u00e7\u00f5es adicionais relacionadas ao estado dos alunos.\n\n\n4.2 Recursos do Produto\n\n\n\n\n\n\nManter o cadastro de Alunos e Profissionais da \u00e1rea de educa\u00e7\u00e3o\nO sistema vai manter o cadastro dos alunos, professores e psic\u00f3logos.\n\n\n\n\n\n\nGerenciar documentos de necessidades dos alunos\nOs professores e psic\u00f3logos devem criar, editar e armazenar os documentos que cont\u00eam as necessidades especiais dos alunos.\n\n\n\n\n\n\n5 Restri\u00e7\u00f5es\n\n\n5.1 Restri\u00e7\u00f5es de escopo\n\n\nComo o tempo de desenvolvimento \u00e9 curto, o processo de solicita\u00e7\u00e3o de encaminhamento dos estudantes pelos professores, em primeiro momento, ser\u00e1 feita de forma manual.\n\n\n5.2 Restri\u00e7\u00e3o de desenvolvimento e implanta\u00e7\u00e3o\n\n\nComo o grupo n\u00e3o possui conhecimentos t\u00e9cnicos necess\u00e1rios para a produ\u00e7\u00e3o imediata do projeto, \u00e9 necess\u00e1rio o estudo das linguagens e nivelamento de conhecimento, para que depois seja iniciado o processo de cria\u00e7\u00e3o das funcionalidades do sistema.\n\n\n6 Intervalos de Qualidade\n\n\nO sistema deve ser utilizado de forma eficiente e est\u00e1vel em qualquer dispositivo com suporte o navegador Google Chrome vers\u00e3o 65.0.3325.181 e acesso \u00e0 internet.\n\n\n7 Outros requisitos do projeto\n\n\nPara a parte de inser\u00e7\u00e3o de dados dos alunos no cadastro, a prioridade \u00e9 a organiza\u00e7\u00e3o da planilha\n\n\n7.1 Requisitos de usabilidade\n\n\nO sistema deve conter uma interface simples e intuitiva que seja agrad\u00e1vel, para que nosso usu\u00e1rios tenham acesso \u00e0s funcionalidades de forma fluida. Esse processo, no entanto, n\u00e3o pode comprometer a usabilidade do sistema.\n\n\n7.2 Requisitos do sistema\n\n\n\n\nApenas usu\u00e1rios com permiss\u00e3o podem ter acesso ao sistema, pois este cont\u00e9m informa\u00e7\u00f5es sens\u00edveis relacionada aos estudantes.\n\n\nO sistema Web deve ser acessado de forma r\u00e1pida pelo usu\u00e1rio atrav\u00e9s de um navegador em uma m\u00e1quina que possua acesso \u00e0 internet.\n\n\n\n\n7.3 Requisitos de confiabilidade\n\n\nO sistema deve manter todas as informa\u00e7\u00f5es referentes aos estudantes com necessidades especiais e dos profissionais da \u00e1rea de acompanhamento dos estudantes envolvidos, de modo que n\u00e3o seja necess\u00e1rio um recadastramento dos estudantes.", 
+            "title": "Documento de Vis\u00e3o"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#documento-de-visao", 
+            "text": "", 
+            "title": "Documento de Vis\u00e3o"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#historico-de-revisao", 
+            "text": "Data  Vers\u00e3o  Descri\u00e7\u00e3o  Autores      21/03/2018  0.1  Cria\u00e7\u00e3o e estrutura\u00e7\u00e3o do documento  Byron Kamal, Igor Arag\u00e3o, Igor Veludo, Marcelo Ara\u00fajo    22/03/2018  0.2  Feitas se\u00e7\u00f5es 1.1 a 5.2  Byron Kamal, Igor Arag\u00e3o, Igor Veludo, Marcelo Ara\u00fajo, Mateus Assun\u00e7\u00e3o    23/03/2018  0.3  Altera\u00e7\u00e3o na subse\u00e7\u00e3o 3.7  William Almeida    23/03/2018  0.4  Feita se\u00e7\u00e3o 5  William Almeida    24/03/2018  0.5  Feitas se\u00e7\u00f5es 6.1, 6.2 e 7  Igor Veludo    24/03/2018  0.6  Revis\u00e3o da se\u00e7\u00e3o 3.5.1  Byron Kamal    24/03/2018  0.7  Feitas se\u00e7\u00f5es 8.1 a 8.3  Igor Veludo    25/03/2018  0.8  Feita subse\u00e7\u00e3o 3.1  William Almeida", 
+            "title": "Hist\u00f3rico de Revis\u00e3o"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#indice", 
+            "text": "Introdu\u00e7\u00e3o  1.1.  Objetivo \n1.2.  Escopo \n1.3.  Defini\u00e7\u00f5es, acr\u00f4nimos e abrevia\u00e7\u00f5es \n1.4.  Refer\u00eancias \n1.5.  Vis\u00e3o Geral       Posicionamento  2.1.  Oportunidade de Neg\u00f3cios \n2.2.  Descri\u00e7\u00e3o do Problema \n2.3.  Senten\u00e7a de Posi\u00e7\u00e3o do Produto    Descri\u00e7\u00f5es dos envolvidos e dos usu\u00e1rios  3.1.  Demogr\u00e1ficos de Mercado \n3.2.  Resumo dos Envolvidos \n3.3.  Resumo dos Usu\u00e1rios \n3.4.  Ambiente do Usu\u00e1rio \n3.5.  Perfis dos Envolvidos \n    3.5.1  Equipe de avalia\u00e7\u00e3o e suporte \n3.5.2  Equipe de Desenvolvimento \n3.5.3  Clientes \n3.6.  Perfis dos Usu\u00e1rios \n    3.6.1  Cinthia e Sumara \n3.7.  Principais Necessidades dos Usu\u00e1rios ou dos Envolvidos \n3.8.  Alternativas e Concorr\u00eancia       Vis\u00e3o Geral do Produto  4.1.  Perspectiva do Produto \n4.2.  Recursos do Produto    Restri\u00e7\u00f5es  5.1.  Restri\u00e7\u00f5es de escopo \n5.2.  Restri\u00e7ao de desenvolvimento e implanta\u00e7\u00e3o    Intervalos de Qualidade    Outros requisitos do projeto  7.1.  Requisitos de usabilidade \n7.2.  Requisitos do sistema \n7.3.  Requisitos de confiabilidade", 
+            "title": "\u00cdndice"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#1-introducao", 
+            "text": "", 
+            "title": "1. Introdu\u00e7\u00e3o"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#11-objetivo", 
+            "text": "Este documento tem como objetivo especificar de maneira geral as caracter\u00edsticas do desenvolvimento da solu\u00e7\u00e3o IncluCare para a Escola Classe 401 (Recanto das Emas).", 
+            "title": "1.1. Objetivo"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#12-escopo", 
+            "text": "Este projeto tem como finalidade suprir a necessidade de automa\u00e7\u00e3o do processo de registro de alunos com necessidades especiais da Escola Classe 401 do Recanto das Emas.\nOs profissionais da \u00e1rea pedag\u00f3gica da escola procuram uma solu\u00e7\u00e3o em software para substituir o processo de encaminhamento e registro dos alunos com necessidades especiais.\nO software, a ser implementado, deve registrar o(s) tipo(s) de transtorno apresentado pelo aluno para servir de consulta aos profissionais, e para a elabora\u00e7\u00e3o do Relat\u00f3rio de Avalia\u00e7\u00e3o e Interven\u00e7\u00e3o Educacional de cada aluno.", 
+            "title": "1.2. Escopo"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#13-definicoes-acronimos-e-abreviacoes", 
+            "text": "EC 401 - Escola Classe 401 do Recanto das Emas. \nDF - Distrito Federal. \nMDS - Disciplina de M\u00e9todos de Desenvolvimento de Software. \nCEE - Centro de Ensino Especial.", 
+            "title": "1.3. Defini\u00e7\u00f5es, Acr\u00f4nimos e Abrevia\u00e7\u00f5es"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#14-referencias", 
+            "text": "Guia auxiliar do Documento de Vis\u00e3o: https://github.com/fga-gpp-mds/2017.1-Escola-X]\nRefer\u00eancia Template do documento: http://www.funpar.ufpr.br:8080/rup/webtmpl/templates/req/rup_vision.htm", 
+            "title": "1.4. Refer\u00eancias"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#15-visao-geral", 
+            "text": "Este documento descreve os detalhes sobre as caracter\u00edsticas do software IncluCare, especificando os problemas que estimularam a cria\u00e7\u00e3o dessa solu\u00e7\u00e3o em software. O documento \u00e9 dividido da seguinte maneira: inicialmente \u00e9 especificado qual problema motivou o desenvolvimento da solu\u00e7\u00e3o, em seguida as partes interessadas s\u00e3o descritas, e por fim todos os recursos, restri\u00e7\u00f5es e requisitos do produto s\u00e3o apresentados.", 
+            "title": "1.5. Vis\u00e3o Geral"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#2-posicionamento", 
+            "text": "", 
+            "title": "2. Posicionamento"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#21-oportunidade-de-negocios", 
+            "text": "Ao analisar o m\u00e9todo que a escola acompanha e pesquisa por informa\u00e7\u00f5es de seus alunos especiais, percebemos que poder\u00edamos facilitar o trabalho dos profissionais que cuidam desses alunos com o nosso produto.\nNosso foco est\u00e1 nos profissionais que lidam de forma direta com os alunos especiais, de forma automatizada e informatizada. Dando um maior suporte e agilidade no processo de acompanhamento dos alunos.", 
+            "title": "2.1 Oportunidade de Neg\u00f3cios"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#22-descricao-do-problema", 
+            "text": "O problema seria  A dificuldade de Triagem e acompanhamento dos  estudantes com dificuldades de aprendizagem.    afeta  Estudantes e profissionais que fazem parte do acompanhamento.    cujo impacto \u00e9  Demora no processo de gera\u00e7\u00e3o de relat\u00f3rios e tempo de acompanhamento por encontro profissional-estudante.    uma boa solu\u00e7\u00e3o seria  Sistema capaz de otimizar o tempo gasto na gera\u00e7\u00e3o de relat\u00f3rios e nos encontros profissional-estudante.", 
+            "title": "2.2 Descri\u00e7\u00e3o do Problema"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#23-sentenca-de-posicao-do-produto", 
+            "text": "Para  Profissionais da educa\u00e7\u00e3o do Brasil.    Que  Necessitam de uma ferramenta para o processo de listagem de alunos com dificuldade de aprendizagem.    O IncluCare  \u00c9 um programa web de cadastro e acompanhamento.    Que  Reduz tempo gasto com preenchimento de documentos em pap\u00e9is.    Diferente de  Do m\u00e9todo tradicional feito manualmente.    Nosso produto  \u00c9 uma solu\u00e7\u00e3o gratuita para o problema existente.", 
+            "title": "2.3 Senten\u00e7a de Posi\u00e7\u00e3o do Produto"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#3-descricoes-dos-envolvidos-e-dos-usuarios", 
+            "text": "", 
+            "title": "3. Descri\u00e7\u00f5es dos Envolvidos e dos Usu\u00e1rios"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#31-demograficos-de-mercado", 
+            "text": "Existem 655 escolas p\u00fablicas no DF, e nelas tamb\u00e9m estudam alunos que possuem necessidades especiais no aprendizado e pelo fato do IncluCare ser um software com c\u00f3digo aberto, poder\u00e1 ser utilizado por essas institui\u00e7\u00f5es para um melhor acompanhamento dos seus alunos.", 
+            "title": "3.1 Demogr\u00e1ficos de Mercado"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#32-resumo-dos-envolvidos", 
+            "text": "Nome  Descri\u00e7\u00e3o  Responsabilidade      Equipe de Desenvolvimento  Estudantes da Universidade de Bras\u00edlia - FGA  Desenvolver e Implementar o Software    Equipe de avalia\u00e7\u00e3o e suporte  Professora e Coaches das disciplinas de EPS e MDS  Auxiliar a equipe ao longo do desenvolvimento do projeto.    Cliente  Escola Classe 401 do Recanto das Emas  Tornar dispon\u00edvel informa\u00e7\u00f5es sobre os estudantes e o processo de acompanhamento.", 
+            "title": "3.2 Resumo dos Envolvidos"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#33-resumo-dos-usuarios", 
+            "text": "Nome  Descri\u00e7\u00e3o  Responsabilidade      Profissionais da \u00e1rea de educa\u00e7\u00e3o  Utilizar o software para melhorar o processo de triagem e acompanhamento de alunos com dificuldade de aprendizagem.  Utilizar o sistema e manter e alimentar a base de dados.", 
+            "title": "3.3 Resumo dos Usu\u00e1rios"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#34-ambiente-do-usuario", 
+            "text": "O sistema Web poder\u00e1 ser usado pelo profissional de educa\u00e7\u00e3o em navegadores mais conhecidos (Mozilla FireFox, Google Chrome, Opera) para melhor funcionamento do software.", 
+            "title": "3.4 Ambiente do Usu\u00e1rio"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#35-perfis-dos-envolvidos", 
+            "text": "", 
+            "title": "3.5 Perfis dos Envolvidos"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#351-equipe-de-avaliacao-e-suporte", 
+            "text": "Representante  Pr\u00aa Carla Rocha    Coach  Joao Henrique    Descri\u00e7\u00e3o  Equipe respons\u00e1vel pela avalia\u00e7\u00e3o e direcionamento do projeto.    Tipo  Professora e coach do grupo da disciplina.    Responsabilidades  Direcionar e dar suporte a equipe de desenvolvimento na disciplina M\u00e9todos de Desenvolvimento de Software quanto ao desenvolvimento do projeto.    Crit\u00e9rios de Sucesso  A entrega do projeto juntamente com uma documenta\u00e7\u00e3o coerente estabelecida, a partir das orienta\u00e7\u00f5es dadas ao longo do semestre.    Envolvimento  Alto.    Coment\u00e1rios / Problemas  -", 
+            "title": "3.5.1 Equipe de avalia\u00e7\u00e3o e suporte"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#352-equipe-de-desenvolvimento", 
+            "text": "Representante  Byron Kamal Barreto Correa  Eduardo Vin\u00edcius Cerqueira Gabriel Alves S de Souza Igor Arag\u00e3o Igor Guimar\u00e3es Veludo Jo\u00e3o Pedro Mota Jardim Marcelo Ara\u00fajo dos Santos Mateus Alves Mendes Assun\u00e7\u00e3o William Silva de Almeida    Descri\u00e7\u00e3o  Desenvolvedores.    Tipo  Estudantes da Universidade de Bras\u00edlia - FGA UnB/Gama.    Responsabilidades  Desenvolver, implementar e entregar o projeto.    Crit\u00e9rios de Sucesso  Entregar o software com as funcionalidades requeridas pelo cliente dentro do prazo da disciplina.    Envolvimento  Alto.    Coment\u00e1rios / Problemas  Desenvolvimento de um software com clientes reais e a partir disso passar pelas etapas da engenharia de software, entregando um produto de qualidade.", 
+            "title": "3.5.2 Equipe de Desenvolvimento"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#353-clientes", 
+            "text": "Representante  Cinthia e Sumara    Descri\u00e7\u00e3o  Profissionais da \u00e1rea de educa\u00e7\u00e3o que fazem a triagem e acompanhamento dos estudantes com dificuldade de aprendizagem.    Tipo  Cinthia (Professora) e Sumara (Psic\u00f3loga)    Responsabilidades  Fornecer informa\u00e7\u00f5es dos estudantes, dos m\u00e9todos utilizados na triagem, acompanhamento e utilizar o sistema IncluCare.    Crit\u00e9rios de Sucesso  Otimizar o tempo de atendimento e acompanhamento dos estudantes e da gera\u00e7\u00e3o de relat\u00f3rios    Envolvimento  Alto.    Coment\u00e1rios / Problemas  -", 
+            "title": "3.5.3 Clientes"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#36-perfis-dos-usuarios", 
+            "text": "", 
+            "title": "3.6 Perfis dos Usu\u00e1rios"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#361-cinthia-e-sumara", 
+            "text": "Representante  Cinthia e Sumara    Descri\u00e7\u00e3o  Profissionais da \u00e1rea de educa\u00e7\u00e3o que fazem a triagem e acompanhamento dos estudantes com dificuldade de aprendizagem.    Tipo  Cinthia (Professora) e Sumara (Psic\u00f3loga)    Responsabilidades  Fornecer informa\u00e7\u00f5es dos estudantes e dos m\u00e9todos utilizados na triagem e acompanhamento.    Crit\u00e9rios de Sucesso  Otimizar o tempo de atendimento e acompanhamento dos estudantes e da gera\u00e7\u00e3o de relat\u00f3rios    Envolvimento  Alto.    Coment\u00e1rios / Problemas  -", 
+            "title": "3.6.1 Cinthia e Sumara"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#37-principais-necessidades-dos-usuarios-ou-dos-envolvidos", 
+            "text": "Necessidade  Prioridade  Preocupa\u00e7\u00f5es  Solu\u00e7\u00e3o Atual  Solu\u00e7\u00f5es Propostas      Gerenciar cuidados necess\u00e1rios com os alunos  Alta  Armazenar especialidades necess\u00e1rias para cada aluno com necessidades especiais  Documento feito manualmente, assim torna o processo lento e menos eficiente  Facilitar a gest\u00e3o desses documentos, encurtando rotinas repetitivas e aprimorando o armazenamento dos mesmos    Transmitir mensagens  Media  Levar a informa\u00e7\u00e3o necess\u00e1ria aos cuidados do aluno ao professor respons\u00e1vel  Entrega manual de um documento f\u00edsico com as informa\u00e7\u00f5es  Enviar e-mail para os professores com as recomenda\u00e7\u00f5es.", 
+            "title": "3.7 Principais Necessidades dos Usu\u00e1rios ou dos Envolvidos"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#38-alternativas-e-concorrencia", 
+            "text": "M\u00e9todo Tradicional de triagem e acompanhamento\nO m\u00e9todo tradicional de triagem e acompanhamento s\u00e3o feitos de maneira manual. O profissional da \u00e1rea de educa\u00e7\u00e3o recebe dos demais professores uma ficha de encaminhamento para que o estudante que apresentar dificuldade de aprendizagem (estudante especial) possa passar pelo processo de triagem e acompanhamento ao longo do ano escolar. Os relat\u00f3rios resultantes desse processo s\u00e3o feitos a m\u00e3o e depois digitados em editor de texto.", 
+            "title": "3.8 Alternativas e Concorr\u00eancia"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#4-visao-geral-do-produto", 
+            "text": "", 
+            "title": "4 Vis\u00e3o Geral do Produto"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#41-perspectiva-do-produto", 
+            "text": "O sistema ir\u00e1 oferecer uma plataforma web, de maneira responsiva e \u00e1gil para profissionais que lidam diretamente com alunos especiais. O profissional ir\u00e1 contar com uma s\u00e9rie de templates da documenta\u00e7\u00e3o de diagn\u00f3stico do aluno, al\u00e9m de informa\u00e7\u00f5es adicionais relacionadas ao estado dos alunos.", 
+            "title": "4.1 Perspectiva do Produto"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#42-recursos-do-produto", 
+            "text": "Manter o cadastro de Alunos e Profissionais da \u00e1rea de educa\u00e7\u00e3o\nO sistema vai manter o cadastro dos alunos, professores e psic\u00f3logos.    Gerenciar documentos de necessidades dos alunos\nOs professores e psic\u00f3logos devem criar, editar e armazenar os documentos que cont\u00eam as necessidades especiais dos alunos.", 
+            "title": "4.2 Recursos do Produto"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#5-restricoes", 
+            "text": "", 
+            "title": "5 Restri\u00e7\u00f5es"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#51-restricoes-de-escopo", 
+            "text": "Como o tempo de desenvolvimento \u00e9 curto, o processo de solicita\u00e7\u00e3o de encaminhamento dos estudantes pelos professores, em primeiro momento, ser\u00e1 feita de forma manual.", 
+            "title": "5.1 Restri\u00e7\u00f5es de escopo"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#52-restricao-de-desenvolvimento-e-implantacao", 
+            "text": "Como o grupo n\u00e3o possui conhecimentos t\u00e9cnicos necess\u00e1rios para a produ\u00e7\u00e3o imediata do projeto, \u00e9 necess\u00e1rio o estudo das linguagens e nivelamento de conhecimento, para que depois seja iniciado o processo de cria\u00e7\u00e3o das funcionalidades do sistema.", 
+            "title": "5.2 Restri\u00e7\u00e3o de desenvolvimento e implanta\u00e7\u00e3o"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#6-intervalos-de-qualidade", 
+            "text": "O sistema deve ser utilizado de forma eficiente e est\u00e1vel em qualquer dispositivo com suporte o navegador Google Chrome vers\u00e3o 65.0.3325.181 e acesso \u00e0 internet.", 
+            "title": "6 Intervalos de Qualidade"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#7-outros-requisitos-do-projeto", 
+            "text": "Para a parte de inser\u00e7\u00e3o de dados dos alunos no cadastro, a prioridade \u00e9 a organiza\u00e7\u00e3o da planilha", 
+            "title": "7 Outros requisitos do projeto"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#71-requisitos-de-usabilidade", 
+            "text": "O sistema deve conter uma interface simples e intuitiva que seja agrad\u00e1vel, para que nosso usu\u00e1rios tenham acesso \u00e0s funcionalidades de forma fluida. Esse processo, no entanto, n\u00e3o pode comprometer a usabilidade do sistema.", 
+            "title": "7.1 Requisitos de usabilidade"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#72-requisitos-do-sistema", 
+            "text": "Apenas usu\u00e1rios com permiss\u00e3o podem ter acesso ao sistema, pois este cont\u00e9m informa\u00e7\u00f5es sens\u00edveis relacionada aos estudantes.  O sistema Web deve ser acessado de forma r\u00e1pida pelo usu\u00e1rio atrav\u00e9s de um navegador em uma m\u00e1quina que possua acesso \u00e0 internet.", 
+            "title": "7.2 Requisitos do sistema"
+        }, 
+        {
+            "location": "/Documento de Vis\u00e3o/#73-requisitos-de-confiabilidade", 
+            "text": "O sistema deve manter todas as informa\u00e7\u00f5es referentes aos estudantes com necessidades especiais e dos profissionais da \u00e1rea de acompanhamento dos estudantes envolvidos, de modo que n\u00e3o seja necess\u00e1rio um recadastramento dos estudantes.", 
+            "title": "7.3 Requisitos de confiabilidade"
+        }, 
+        {
+            "location": "/Metodologia do Projeto/", 
+            "text": "Sobre o projeto\n\n\nScrum\n\n\n Scrum \u00e9 uma metodologia \u00e1gil para gest\u00e3o e planejamento de projetos de software. A din\u00e2mica do scrum assume que existe uma lista de itens que deve ser desenvolvida para gerar o produto, tamb\u00e9m chamada de backlog do produto a qual \u00e9 ordenada por prioridade onde cada item \u00e9 uma hist\u00f3ria de usu\u00e1rio. \u00c9 a partir dessa lista que o time decide quais hist\u00f3rias ser\u00e3o desenvolvidas naquele momento, sendo assim uma das principais atividades do Product Owner \u00e9 manter essa lista atualizada em ordem de prioridade dessa forma o time sempre vai agregar o maior valor poss\u00edvel.\n\n\nDaily Scrum\n\n\nConsiste nas reuni\u00f5es di\u00e1rias (StandUp Meeting) a cada dia da sprint. As reuni\u00f5es tiveram que ser adaptadas,pois os hor\u00e1rios dos integrnates da equipe n\u00e3o permitem realiz\u00e1-las presencialmente. Ent\u00e3o para solucionar o probelema a equipe fez uma adapta\u00e7\u00e3o que consiste no canal #daily na ferramenta Slack - exclusivo para as dailys e para manter a equipe alinhada sobre o que est\u00e1 sendo feito, dificuldades e entregas.\n\n\nProduct Backlog\n\n\nLista contendo todas as funcionalidades desejadas para um produto.\n\n\nSprint Retrospective\n\n\nOcorre ao final de uma Sprint e serve para identificar o que funcionou bem, o que pode ser melhorado e que a\u00e7\u00f5es ser\u00e3o tomadas para melhorar. \n\n\nSprint Planning Meeting\n\n\nUma reuni\u00e3o na qual est\u00e3o presentes o Product Owner(membro respons\u00e1vel em falar com as clientes para a equipe qual a posi\u00e7\u00e3o das clientes visto que elas n\u00e3o tinham disponibilidade para reuni\u00f5es fixas ), o Scrum Master e todo o Scrum Team, bem como qualquer pessoa interessada que esteja representando a ger\u00eancia ou o cliente. Essa reuni\u00e3o serve para que o PO priorize as funcionalidades do backlog que devem ser implementadas na sprint que se iniciar\u00e1.\n\n\nHist\u00f3ria de usu\u00e1rio\n\n\nCada hist\u00f3ria tem um respons\u00e1vel sendo que qualquer membro da equipe pode contribuir em qualquer hist\u00f3ria mas se um membro \u00e9 respons\u00e1vel por uma hist\u00f3ria significa que ele \u00e9 deve focar na mesma para garantir a entrega.\n\n\nPap\u00e9is\n\n\nScrum Master, Product Owner e Scrum Team (equipe de desenvolvimento).\n\n\nNa tabela abaixo est\u00e3o descritas as fun\u00e7\u00f5es de cada papel na execu\u00e7\u00e3o deste projeto.\n\n\n\n\n\n\n\n\nScrum Master\n\n\nProduct Owner (PO)\n\n\nDevelopment\n\n\n\n\n\n\n\n\n\n\nComandar os stand ups\n\n\n\n\n\n\n\n\n\n\nAtualizar git com resumo da sprint\n\n\nEstabelecer contato com a cliente\n\n\nDesenvolver hist\u00f3ria de usu\u00e1rio\n\n\n\n\n\n\nColetar m\u00e9tricas no final da sprint.\n\n\nPassar feedback para o time\n\n\nTestar funcionalidade implementada\n\n\n\n\n\n\nConversar com respons\u00e1veis de UC\n\n\n\n\n\n\n\n\n\n\n\n\nReuni\u00f5es Di\u00e1rias\n\n\nPor quest\u00f5es de hor\u00e1rios muito distintos entre os membros, ocorrem as dailys escritas onde todos os dias onde o Bot do slack apita, \u00e0s 10h, e os menbros da equipe devem dizer o que foi feito ontem, o que se pretende fazer hoje e existe algum problema a relatar.\n\n\nReuni\u00e3o Semanal\n\n\nMarcada para aconter aos S\u00e1bados entre 8h \u00e0s 12h, ao final de cada sprint a equipe se reune para fazer a Revis\u00e3o da Sprint, Retrospectiva e o Planejamento da pr\u00f3xima sprint. Na Retrospectiva, a equipe conversa sobre os pontos positivos, negativos e propostas de melhoria que devem ocorrer para melhor andamento do projeto. No planejamento, s\u00e3o priorizadas as hist\u00f3ria para a Sprint, e ent\u00e3o divididas entre o time de desenvolvimento.\n\n\n\nDura\u00e7\u00e3o das Sprints\n\n\nPelo contexto da disciplina, as sprints tem um Time Box de uma semana e as sprints se inicam no domingo e terminam no s\u00e1bado.\n\n\nKanban\n\n\nEst\u00e1 utilizado o Kanban para a equipe ter uma melhor visibilidade do projeto. Para facilitar esta visualiza\u00e7\u00e3o, est\u00e1 sendo usada a ferramenta ZenHub conectada ao reposit\u00f3rio do time no GitHub. Na aba de Boards \u00e9 poss\u00edvel ver o que a equipe tem para fazer \"To Do\", o que est\u00e1 sendo feito \"Doing\", o que est\u00e1 pronto \"Done\".", 
+            "title": "Metodologia do Projeto"
+        }, 
+        {
+            "location": "/Metodologia do Projeto/#sobre-o-projeto", 
+            "text": "", 
+            "title": "Sobre o projeto"
+        }, 
+        {
+            "location": "/Metodologia do Projeto/#scrum", 
+            "text": "Scrum \u00e9 uma metodologia \u00e1gil para gest\u00e3o e planejamento de projetos de software. A din\u00e2mica do scrum assume que existe uma lista de itens que deve ser desenvolvida para gerar o produto, tamb\u00e9m chamada de backlog do produto a qual \u00e9 ordenada por prioridade onde cada item \u00e9 uma hist\u00f3ria de usu\u00e1rio. \u00c9 a partir dessa lista que o time decide quais hist\u00f3rias ser\u00e3o desenvolvidas naquele momento, sendo assim uma das principais atividades do Product Owner \u00e9 manter essa lista atualizada em ordem de prioridade dessa forma o time sempre vai agregar o maior valor poss\u00edvel.", 
+            "title": "Scrum"
+        }, 
+        {
+            "location": "/Metodologia do Projeto/#daily-scrum", 
+            "text": "Consiste nas reuni\u00f5es di\u00e1rias (StandUp Meeting) a cada dia da sprint. As reuni\u00f5es tiveram que ser adaptadas,pois os hor\u00e1rios dos integrnates da equipe n\u00e3o permitem realiz\u00e1-las presencialmente. Ent\u00e3o para solucionar o probelema a equipe fez uma adapta\u00e7\u00e3o que consiste no canal #daily na ferramenta Slack - exclusivo para as dailys e para manter a equipe alinhada sobre o que est\u00e1 sendo feito, dificuldades e entregas.", 
+            "title": "Daily Scrum"
+        }, 
+        {
+            "location": "/Metodologia do Projeto/#product-backlog", 
+            "text": "Lista contendo todas as funcionalidades desejadas para um produto.", 
+            "title": "Product Backlog"
+        }, 
+        {
+            "location": "/Metodologia do Projeto/#sprint-retrospective", 
+            "text": "Ocorre ao final de uma Sprint e serve para identificar o que funcionou bem, o que pode ser melhorado e que a\u00e7\u00f5es ser\u00e3o tomadas para melhorar.", 
+            "title": "Sprint Retrospective"
+        }, 
+        {
+            "location": "/Metodologia do Projeto/#sprint-planning-meeting", 
+            "text": "Uma reuni\u00e3o na qual est\u00e3o presentes o Product Owner(membro respons\u00e1vel em falar com as clientes para a equipe qual a posi\u00e7\u00e3o das clientes visto que elas n\u00e3o tinham disponibilidade para reuni\u00f5es fixas ), o Scrum Master e todo o Scrum Team, bem como qualquer pessoa interessada que esteja representando a ger\u00eancia ou o cliente. Essa reuni\u00e3o serve para que o PO priorize as funcionalidades do backlog que devem ser implementadas na sprint que se iniciar\u00e1.", 
+            "title": "Sprint Planning Meeting"
+        }, 
+        {
+            "location": "/Metodologia do Projeto/#historia-de-usuario", 
+            "text": "Cada hist\u00f3ria tem um respons\u00e1vel sendo que qualquer membro da equipe pode contribuir em qualquer hist\u00f3ria mas se um membro \u00e9 respons\u00e1vel por uma hist\u00f3ria significa que ele \u00e9 deve focar na mesma para garantir a entrega.", 
+            "title": "Hist\u00f3ria de usu\u00e1rio"
+        }, 
+        {
+            "location": "/Metodologia do Projeto/#papeis", 
+            "text": "Scrum Master, Product Owner e Scrum Team (equipe de desenvolvimento).  Na tabela abaixo est\u00e3o descritas as fun\u00e7\u00f5es de cada papel na execu\u00e7\u00e3o deste projeto.     Scrum Master  Product Owner (PO)  Development      Comandar os stand ups      Atualizar git com resumo da sprint  Estabelecer contato com a cliente  Desenvolver hist\u00f3ria de usu\u00e1rio    Coletar m\u00e9tricas no final da sprint.  Passar feedback para o time  Testar funcionalidade implementada    Conversar com respons\u00e1veis de UC", 
+            "title": "Pap\u00e9is"
+        }, 
+        {
+            "location": "/Metodologia do Projeto/#reunioes-diarias", 
+            "text": "Por quest\u00f5es de hor\u00e1rios muito distintos entre os membros, ocorrem as dailys escritas onde todos os dias onde o Bot do slack apita, \u00e0s 10h, e os menbros da equipe devem dizer o que foi feito ontem, o que se pretende fazer hoje e existe algum problema a relatar.", 
+            "title": "Reuni\u00f5es Di\u00e1rias"
+        }, 
+        {
+            "location": "/Metodologia do Projeto/#reuniao-semanal", 
+            "text": "Marcada para aconter aos S\u00e1bados entre 8h \u00e0s 12h, ao final de cada sprint a equipe se reune para fazer a Revis\u00e3o da Sprint, Retrospectiva e o Planejamento da pr\u00f3xima sprint. Na Retrospectiva, a equipe conversa sobre os pontos positivos, negativos e propostas de melhoria que devem ocorrer para melhor andamento do projeto. No planejamento, s\u00e3o priorizadas as hist\u00f3ria para a Sprint, e ent\u00e3o divididas entre o time de desenvolvimento.", 
+            "title": "Reuni\u00e3o Semanal"
+        }, 
+        {
+            "location": "/Metodologia do Projeto/#duracao-das-sprints", 
+            "text": "Pelo contexto da disciplina, as sprints tem um Time Box de uma semana e as sprints se inicam no domingo e terminam no s\u00e1bado.", 
+            "title": "Dura\u00e7\u00e3o das Sprints"
+        }, 
+        {
+            "location": "/Metodologia do Projeto/#kanban", 
+            "text": "Est\u00e1 utilizado o Kanban para a equipe ter uma melhor visibilidade do projeto. Para facilitar esta visualiza\u00e7\u00e3o, est\u00e1 sendo usada a ferramenta ZenHub conectada ao reposit\u00f3rio do time no GitHub. Na aba de Boards \u00e9 poss\u00edvel ver o que a equipe tem para fazer \"To Do\", o que est\u00e1 sendo feito \"Doing\", o que est\u00e1 pronto \"Done\".", 
+            "title": "Kanban"
+        }, 
+        {
+            "location": "/ROADMAP/", 
+            "text": "IncluCare RoadMap", 
+            "title": "ROADMAP"
+        }, 
+        {
+            "location": "/ROADMAP/#inclucare-roadmap", 
+            "text": "", 
+            "title": "IncluCare RoadMap"
+        }, 
+        {
+            "location": "/sprints/01/planning_sprint1/", 
+            "text": "Sprint 1\n\n\nData de \u00ednicio: 11/03/2018\n\n\nData de t\u00e9rmino: 17/03/2018\n\n\nPlanejamento\n\n\nPap\u00e9is\n\n\n\n\n\n\n\n\nNome\n\n\nPapel\n\n\n\n\n\n\n\n\n\n\nByron Kamal\n\n\nPO\n\n\n\n\n\n\nEduardo Cerqueira\n\n\nDesenvolvimento\n\n\n\n\n\n\nGabriel Alves\n\n\nDesenvolvimento\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nDesenvolvimento\n\n\n\n\n\n\nIgor Veludo\n\n\nDesenvolvimento\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nDesenvolvimento\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nDesenvolvimento\n\n\n\n\n\n\nMateus Assun\u00e7\u00e3o\n\n\nDesenvolvimneto\n\n\n\n\n\n\nWilliam Silva\n\n\nDesenvolvimento\n\n\n\n\n\n\n\n\nPareamento\n\n\nN\u00e3o se aplica.\n\n\nPlanejamento\n\n\n\n\nTreinamento de Git\n\n\nTreinamento de Metodologia Agil", 
+            "title": "Planning sprint1"
+        }, 
+        {
+            "location": "/sprints/01/planning_sprint1/#sprint-1", 
+            "text": "", 
+            "title": "Sprint 1"
+        }, 
+        {
+            "location": "/sprints/01/planning_sprint1/#data-de-inicio-11032018", 
+            "text": "", 
+            "title": "Data de \u00ednicio: 11/03/2018"
+        }, 
+        {
+            "location": "/sprints/01/planning_sprint1/#data-de-termino-17032018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 17/03/2018"
+        }, 
+        {
+            "location": "/sprints/01/planning_sprint1/#planejamento", 
+            "text": "", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/01/planning_sprint1/#papeis", 
+            "text": "Nome  Papel      Byron Kamal  PO    Eduardo Cerqueira  Desenvolvimento    Gabriel Alves  Desenvolvimento    Igor Arag\u00e3o  Desenvolvimento    Igor Veludo  Desenvolvimento    Jo\u00e3o Mota  Desenvolvimento    Marcelo Ara\u00fajo  Desenvolvimento    Mateus Assun\u00e7\u00e3o  Desenvolvimneto    William Silva  Desenvolvimento", 
+            "title": "Pap\u00e9is"
+        }, 
+        {
+            "location": "/sprints/01/planning_sprint1/#pareamento", 
+            "text": "N\u00e3o se aplica.", 
+            "title": "Pareamento"
+        }, 
+        {
+            "location": "/sprints/01/planning_sprint1/#planejamento_1", 
+            "text": "Treinamento de Git  Treinamento de Metodologia Agil", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/01/results_sprint1/", 
+            "text": "Sprint 1\n\n\nData de \u00ednicio: 11/03/2018\n\n\nData de t\u00e9rmino: 17/03/2018\n\n\nReuni\u00e3o\n\n\nData da reuni\u00e3o: 17/03/2018\n\n\n\n\n\n\n\n\nNome\n\n\nPresente\n\n\n\n\n\n\n\n\n\n\nByron Kamal\n\n\nPresente\n\n\n\n\n\n\nEduardo Cerqueira\n\n\nAusente\n\n\n\n\n\n\nGabriel Alves\n\n\nAusente\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nPresente\n\n\n\n\n\n\nIgor Veludo\n\n\nJUSTIFICADO\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nPresente\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nPresente\n\n\n\n\n\n\nMateus Assun\u00e7\u00e3o\n\n\nAusente\n\n\n\n\n\n\nWilliam Silva\n\n\nAusente\n\n\n\n\n\n\n\n\nSprint Review\n\n\nPara esta Sprint a esquipe focou somente em Treinamento de Git e Metodologia Agil e estas foram\nrealizadas com sucesso, para quem foi ao treinamento. Tamb\u00e9m foram decididas as linguagens\nque o time usar\u00e1 para desenvolver o projeto.\n\n\nRetrospectiva\n\n\nPontos positivos:\n\n\n\n  \nBom aproveitamento do treinamento\n\n\n\n\nPontos Negativos:\n\n\n\n  \nFalta de comunica\u00e7\u00e3o adequada\n\n \u00a0\nSincroniza\u00e7\u00e3o dos hor\u00e1rios para reuni\u00f5es e Stand Up Meeting\n\n \n\n\n### Pontos a melhorar:\n  \n\n \u00a0\nComunica\u00e7\u00e3o da equipe\n\n \u00a0\nSincroniza\u00e7\u00e3o de hor\u00e1rios\n\n  \n\n\n## Burndown\n N\u00e3o se aplica.\n\n\n## Quadro de conhecimento\n N\u00e3o se aplica.\n\n\n## Velocity\n N\u00e3o se aplica.\n\n\n## Metricas\n N\u00e3o se aplica.", 
+            "title": "Results sprint1"
+        }, 
+        {
+            "location": "/sprints/01/results_sprint1/#sprint-1", 
+            "text": "", 
+            "title": "Sprint 1"
+        }, 
+        {
+            "location": "/sprints/01/results_sprint1/#data-de-inicio-11032018", 
+            "text": "", 
+            "title": "Data de \u00ednicio: 11/03/2018"
+        }, 
+        {
+            "location": "/sprints/01/results_sprint1/#data-de-termino-17032018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 17/03/2018"
+        }, 
+        {
+            "location": "/sprints/01/results_sprint1/#reuniao", 
+            "text": "", 
+            "title": "Reuni\u00e3o"
+        }, 
+        {
+            "location": "/sprints/01/results_sprint1/#data-da-reuniao-17032018", 
+            "text": "Nome  Presente      Byron Kamal  Presente    Eduardo Cerqueira  Ausente    Gabriel Alves  Ausente    Igor Arag\u00e3o  Presente    Igor Veludo  JUSTIFICADO    Jo\u00e3o Mota  Presente    Marcelo Ara\u00fajo  Presente    Mateus Assun\u00e7\u00e3o  Ausente    William Silva  Ausente", 
+            "title": "Data da reuni\u00e3o: 17/03/2018"
+        }, 
+        {
+            "location": "/sprints/01/results_sprint1/#sprint-review", 
+            "text": "Para esta Sprint a esquipe focou somente em Treinamento de Git e Metodologia Agil e estas foram\nrealizadas com sucesso, para quem foi ao treinamento. Tamb\u00e9m foram decididas as linguagens\nque o time usar\u00e1 para desenvolver o projeto.", 
+            "title": "Sprint Review"
+        }, 
+        {
+            "location": "/sprints/01/results_sprint1/#retrospectiva", 
+            "text": "", 
+            "title": "Retrospectiva"
+        }, 
+        {
+            "location": "/sprints/01/results_sprint1/#pontos-positivos", 
+            "text": "Bom aproveitamento do treinamento", 
+            "title": "Pontos positivos:"
+        }, 
+        {
+            "location": "/sprints/01/results_sprint1/#pontos-negativos", 
+            "text": "Falta de comunica\u00e7\u00e3o adequada \n \u00a0 Sincroniza\u00e7\u00e3o dos hor\u00e1rios para reuni\u00f5es e Stand Up Meeting \n   ### Pontos a melhorar:\n   \n \u00a0 Comunica\u00e7\u00e3o da equipe \n \u00a0 Sincroniza\u00e7\u00e3o de hor\u00e1rios \n    ## Burndown\n N\u00e3o se aplica.  ## Quadro de conhecimento\n N\u00e3o se aplica.  ## Velocity\n N\u00e3o se aplica.  ## Metricas\n N\u00e3o se aplica.", 
+            "title": "Pontos Negativos:"
+        }, 
+        {
+            "location": "/sprints/02/planning_sprint2/", 
+            "text": "Sprint 2\n\n\nDatade inicio: 18/03/2018\n\n\nData de t\u00e9rmino: 24/03/2018\n\n\nPlanejamento\n\n\nPap\u00e9is\n\n\n\n\n\n\n\n\nNome\n\n\nPapel\n\n\n\n\n\n\n\n\n\n\nByron Kamal\n\n\nPO\n\n\n\n\n\n\nEduardo Cerqueira\n\n\nDesenvolvimento\n\n\n\n\n\n\nGabriel Alves\n\n\nDesenvolvimento\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nDesenvolvimento\n\n\n\n\n\n\nIgor Veludo\n\n\nDesenvolvimento\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nDesenvolvimento\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nDesenvolvimento\n\n\n\n\n\n\nMateus Assun\u00e7\u00e3o\n\n\nDesenvolvimneto\n\n\n\n\n\n\nWilliam Silva\n\n\nDesenvolvimento\n\n\n\n\n\n\n\n\nPareamento\n\n\nN\u00e3o se aplica.\n\n\nPlanejamento\n\n\n\n  \n Elaborar o Documento de Vis\u00e3o", 
+            "title": "Planning sprint2"
+        }, 
+        {
+            "location": "/sprints/02/planning_sprint2/#sprint-2", 
+            "text": "", 
+            "title": "Sprint 2"
+        }, 
+        {
+            "location": "/sprints/02/planning_sprint2/#datade-inicio-18032018", 
+            "text": "", 
+            "title": "Datade inicio: 18/03/2018"
+        }, 
+        {
+            "location": "/sprints/02/planning_sprint2/#data-de-termino-24032018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 24/03/2018"
+        }, 
+        {
+            "location": "/sprints/02/planning_sprint2/#planejamento", 
+            "text": "", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/02/planning_sprint2/#papeis", 
+            "text": "Nome  Papel      Byron Kamal  PO    Eduardo Cerqueira  Desenvolvimento    Gabriel Alves  Desenvolvimento    Igor Arag\u00e3o  Desenvolvimento    Igor Veludo  Desenvolvimento    Jo\u00e3o Mota  Desenvolvimento    Marcelo Ara\u00fajo  Desenvolvimento    Mateus Assun\u00e7\u00e3o  Desenvolvimneto    William Silva  Desenvolvimento", 
+            "title": "Pap\u00e9is"
+        }, 
+        {
+            "location": "/sprints/02/planning_sprint2/#pareamento", 
+            "text": "N\u00e3o se aplica.", 
+            "title": "Pareamento"
+        }, 
+        {
+            "location": "/sprints/02/planning_sprint2/#planejamento_1", 
+            "text": "Elaborar o Documento de Vis\u00e3o", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/02/results_sprint2/", 
+            "text": "Sprint 2\n\n\nDatade inicio: 18/03/2018\n\n\nData de t\u00e9rmino: 24/03/2018\n\n\nReuni\u00e3o\n\n\nData da reuni\u00e3o: 24/03/2018\n\n\n\n\n\n\n\n\nNome\n\n\nPresente\n\n\n\n\n\n\n\n\n\n\nByron Kamal\n\n\nPresente\n\n\n\n\n\n\nEduardo Cerqueira\n\n\nAusente\n\n\n\n\n\n\nGabriel Alves\n\n\nJustificado\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nJustificado\n\n\n\n\n\n\nIgor Veludo\n\n\nPresente\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nJustificado\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nJustificado\n\n\n\n\n\n\nMateus Assun\u00e7\u00e3o\n\n\nJustificado\n\n\n\n\n\n\nWilliam Silva\n\n\nJustificado\n\n\n\n\n\n\n\n\nReview\n\n\nPara esta Sprint a equipe focou no t\u00e9rmino do Documento de Vis\u00e3o e configurar os ambientes de desenvolvimento.\n\n\nRestropectiva\n\n\nPontos Positivos :\n\n\n\n \u00a0 \n Fechamento do Documento de Vis\u00e3o.\n\n\n\n\nPontos Negativos:\n\n\n\n    \n Falta de comprometimento da equipe.\n\n \u00a0 \u00a0\n Falta de comunica\u00e7\u00e3o entre os membros da equipe.\n\n\n\n\n\nPontos a melhorar:\n\n\n\n  \n Maior comprometimento da equipe.\n\n \u00a0\n Melhorar na comunica\u00e7\u00e3o.\n\n\n\n\n\nBurndown\n\n\n(Colocar depois)\n\n\nQuadro de conhecimento\n\n\nN\u00e3o se aplica.\n\n\nVelocity\n\n\n(Colocar depois)\n\n\nMetricas\n\n\nN\u00e3o se aplica", 
+            "title": "Results sprint2"
+        }, 
+        {
+            "location": "/sprints/02/results_sprint2/#sprint-2", 
+            "text": "", 
+            "title": "Sprint 2"
+        }, 
+        {
+            "location": "/sprints/02/results_sprint2/#datade-inicio-18032018", 
+            "text": "", 
+            "title": "Datade inicio: 18/03/2018"
+        }, 
+        {
+            "location": "/sprints/02/results_sprint2/#data-de-termino-24032018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 24/03/2018"
+        }, 
+        {
+            "location": "/sprints/02/results_sprint2/#reuniao", 
+            "text": "", 
+            "title": "Reuni\u00e3o"
+        }, 
+        {
+            "location": "/sprints/02/results_sprint2/#data-da-reuniao-24032018", 
+            "text": "Nome  Presente      Byron Kamal  Presente    Eduardo Cerqueira  Ausente    Gabriel Alves  Justificado    Igor Arag\u00e3o  Justificado    Igor Veludo  Presente    Jo\u00e3o Mota  Justificado    Marcelo Ara\u00fajo  Justificado    Mateus Assun\u00e7\u00e3o  Justificado    William Silva  Justificado", 
+            "title": "Data da reuni\u00e3o: 24/03/2018"
+        }, 
+        {
+            "location": "/sprints/02/results_sprint2/#review", 
+            "text": "Para esta Sprint a equipe focou no t\u00e9rmino do Documento de Vis\u00e3o e configurar os ambientes de desenvolvimento.", 
+            "title": "Review"
+        }, 
+        {
+            "location": "/sprints/02/results_sprint2/#restropectiva", 
+            "text": "", 
+            "title": "Restropectiva"
+        }, 
+        {
+            "location": "/sprints/02/results_sprint2/#pontos-positivos", 
+            "text": "Fechamento do Documento de Vis\u00e3o.", 
+            "title": "Pontos Positivos :"
+        }, 
+        {
+            "location": "/sprints/02/results_sprint2/#pontos-negativos", 
+            "text": "Falta de comprometimento da equipe. \n \u00a0 \u00a0  Falta de comunica\u00e7\u00e3o entre os membros da equipe.", 
+            "title": "Pontos Negativos:"
+        }, 
+        {
+            "location": "/sprints/02/results_sprint2/#pontos-a-melhorar", 
+            "text": "Maior comprometimento da equipe. \n \u00a0  Melhorar na comunica\u00e7\u00e3o.", 
+            "title": "Pontos a melhorar:"
+        }, 
+        {
+            "location": "/sprints/02/results_sprint2/#burndown", 
+            "text": "(Colocar depois)", 
+            "title": "Burndown"
+        }, 
+        {
+            "location": "/sprints/02/results_sprint2/#quadro-de-conhecimento", 
+            "text": "N\u00e3o se aplica.", 
+            "title": "Quadro de conhecimento"
+        }, 
+        {
+            "location": "/sprints/02/results_sprint2/#velocity", 
+            "text": "(Colocar depois)", 
+            "title": "Velocity"
+        }, 
+        {
+            "location": "/sprints/02/results_sprint2/#metricas", 
+            "text": "N\u00e3o se aplica", 
+            "title": "Metricas"
+        }, 
+        {
+            "location": "/sprints/03/planning_sprint3/", 
+            "text": "Sprint 3\n\n\nReuni\u00e3o\n\n\nDatade inicio: 25/03/2018\n\n\nData de t\u00e9rmino: 31/03/2018\n\n\nPlanejamento\n\n\nPap\u00e9is\n\n\n\n\n\n\n\n\nNome\n\n\nPapel\n\n\n\n\n\n\n\n\n\n\nByron Kamal\n\n\nPO\n\n\n\n\n\n\nEduardo Cerqueira\n\n\nDesenvolvimento\n\n\n\n\n\n\nGabriel Alves\n\n\nDesenvolvimento\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nDesenvolvimento\n\n\n\n\n\n\nIgor Veludo\n\n\nDesenvolvimento\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nDesenvolvimento\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nDesenvolvimento\n\n\n\n\n\n\nMateus Assun\u00e7\u00e3o\n\n\nDesenvolvimneto\n\n\n\n\n\n\nWilliam Silva\n\n\nDesenvolvimento\n\n\n\n\n\n\n\n\nPareamento\n\n\nN\u00e3o se aplica.\n\n\nPlanejamento\n\n\n\n \u00a0\n Estrutura\u00e7a\u00f5 e inicio do Documento de Arquitetura\n\n \nFazer t\u00f3picos 1-4 e 7 do Documento de Arquitetura", 
+            "title": "Planning sprint3"
+        }, 
+        {
+            "location": "/sprints/03/planning_sprint3/#sprint-3", 
+            "text": "", 
+            "title": "Sprint 3"
+        }, 
+        {
+            "location": "/sprints/03/planning_sprint3/#reuniao", 
+            "text": "", 
+            "title": "Reuni\u00e3o"
+        }, 
+        {
+            "location": "/sprints/03/planning_sprint3/#datade-inicio-25032018", 
+            "text": "", 
+            "title": "Datade inicio: 25/03/2018"
+        }, 
+        {
+            "location": "/sprints/03/planning_sprint3/#data-de-termino-31032018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 31/03/2018"
+        }, 
+        {
+            "location": "/sprints/03/planning_sprint3/#planejamento", 
+            "text": "", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/03/planning_sprint3/#papeis", 
+            "text": "Nome  Papel      Byron Kamal  PO    Eduardo Cerqueira  Desenvolvimento    Gabriel Alves  Desenvolvimento    Igor Arag\u00e3o  Desenvolvimento    Igor Veludo  Desenvolvimento    Jo\u00e3o Mota  Desenvolvimento    Marcelo Ara\u00fajo  Desenvolvimento    Mateus Assun\u00e7\u00e3o  Desenvolvimneto    William Silva  Desenvolvimento", 
+            "title": "Pap\u00e9is"
+        }, 
+        {
+            "location": "/sprints/03/planning_sprint3/#pareamento", 
+            "text": "N\u00e3o se aplica.", 
+            "title": "Pareamento"
+        }, 
+        {
+            "location": "/sprints/03/planning_sprint3/#planejamento_1", 
+            "text": "Estrutura\u00e7a\u00f5 e inicio do Documento de Arquitetura \n  Fazer t\u00f3picos 1-4 e 7 do Documento de Arquitetura", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/03/results_sprint3/", 
+            "text": "Sprint 3\n\n\nDatade inicio: 25/03/2018\n\n\nData de t\u00e9rmino: 31/03/2018\n\n\nReuni\u00e3o\n\n\nData da reuni\u00e3o: 31/03/2018\n\n\n\n\n\n\n\n\nNome\n\n\nPresente\n\n\n\n\n\n\n\n\n\n\nByron Kamal\n\n\nPresente\n\n\n\n\n\n\nEduardo Cerqueira\n\n\nAusente\n\n\n\n\n\n\nGabriel Alves\n\n\nPresente\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nPresente\n\n\n\n\n\n\nIgor Veludo\n\n\nPresente\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nJustificado\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nJustificado\n\n\n\n\n\n\nWilliam Silva\n\n\nAusente\n\n\n\n\n\n\n\n\nReview\n\n\nPara esta Sprint a equipe focou no inicio do Documento de Arquitetura.\nPontos entregues: Todos os pontos planejados foram entregues na Sprint.\n\n\nRestropectiva\n\n\nPontos Positivos :\n\n\n\n \u00a0 \n Inicio do documento de Arquitetura e finaliza\u00e7\u00e3o dos t\u00f3picos prospostos.\n\n\n\n\nPontos Negativos:\n\n\n\n    \n Falta de comprometimento da equipe.\n\n \u00a0 \u00a0\n Falta de comunica\u00e7\u00e3o entre os membros da equipe.\n\n\n\n\n\nPontos a melhorar:\n\n\n\n  \n Maior comprometimento da equipe.\n\n \u00a0\n Melhorar na comunica\u00e7\u00e3o.\n\n\n\n\n\nBurndown\n\n\n\n\nVelocity\n\n\nN\u00e3o se aplica, porque uma vez que a analise desta m\u00e9trica n\u00e3o existe antes dessa Sprint.\n\n\nAnalise da Sprint\n\n\nDurante essa Sprint a equipe de desenvolvimento conseguiu entregar tudo que foi proposto. Entretanto, para conseguir fazer isso a equipe teve que dedicar e estudar como o Documento de Arquitetura deve ser feito, por isso que todos os pontos foram entregues de \u00faltima hora.", 
+            "title": "Results sprint3"
+        }, 
+        {
+            "location": "/sprints/03/results_sprint3/#sprint-3", 
+            "text": "", 
+            "title": "Sprint 3"
+        }, 
+        {
+            "location": "/sprints/03/results_sprint3/#datade-inicio-25032018", 
+            "text": "", 
+            "title": "Datade inicio: 25/03/2018"
+        }, 
+        {
+            "location": "/sprints/03/results_sprint3/#data-de-termino-31032018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 31/03/2018"
+        }, 
+        {
+            "location": "/sprints/03/results_sprint3/#reuniao", 
+            "text": "", 
+            "title": "Reuni\u00e3o"
+        }, 
+        {
+            "location": "/sprints/03/results_sprint3/#data-da-reuniao-31032018", 
+            "text": "Nome  Presente      Byron Kamal  Presente    Eduardo Cerqueira  Ausente    Gabriel Alves  Presente    Igor Arag\u00e3o  Presente    Igor Veludo  Presente    Jo\u00e3o Mota  Justificado    Marcelo Ara\u00fajo  Justificado    William Silva  Ausente", 
+            "title": "Data da reuni\u00e3o: 31/03/2018"
+        }, 
+        {
+            "location": "/sprints/03/results_sprint3/#review", 
+            "text": "Para esta Sprint a equipe focou no inicio do Documento de Arquitetura.\nPontos entregues: Todos os pontos planejados foram entregues na Sprint.", 
+            "title": "Review"
+        }, 
+        {
+            "location": "/sprints/03/results_sprint3/#restropectiva", 
+            "text": "", 
+            "title": "Restropectiva"
+        }, 
+        {
+            "location": "/sprints/03/results_sprint3/#pontos-positivos", 
+            "text": "Inicio do documento de Arquitetura e finaliza\u00e7\u00e3o dos t\u00f3picos prospostos.", 
+            "title": "Pontos Positivos :"
+        }, 
+        {
+            "location": "/sprints/03/results_sprint3/#pontos-negativos", 
+            "text": "Falta de comprometimento da equipe. \n \u00a0 \u00a0  Falta de comunica\u00e7\u00e3o entre os membros da equipe.", 
+            "title": "Pontos Negativos:"
+        }, 
+        {
+            "location": "/sprints/03/results_sprint3/#pontos-a-melhorar", 
+            "text": "Maior comprometimento da equipe. \n \u00a0  Melhorar na comunica\u00e7\u00e3o.", 
+            "title": "Pontos a melhorar:"
+        }, 
+        {
+            "location": "/sprints/03/results_sprint3/#burndown", 
+            "text": "", 
+            "title": "Burndown"
+        }, 
+        {
+            "location": "/sprints/03/results_sprint3/#velocity", 
+            "text": "N\u00e3o se aplica, porque uma vez que a analise desta m\u00e9trica n\u00e3o existe antes dessa Sprint.", 
+            "title": "Velocity"
+        }, 
+        {
+            "location": "/sprints/03/results_sprint3/#analise-da-sprint", 
+            "text": "Durante essa Sprint a equipe de desenvolvimento conseguiu entregar tudo que foi proposto. Entretanto, para conseguir fazer isso a equipe teve que dedicar e estudar como o Documento de Arquitetura deve ser feito, por isso que todos os pontos foram entregues de \u00faltima hora.", 
+            "title": "Analise da Sprint"
+        }, 
+        {
+            "location": "/sprints/04/planning_sprint4/", 
+            "text": "Sprint 4\n\n\nDatade inicio: 01/04/2018\n\n\nData de t\u00e9rmino: 07/04/2018\n\n\nPlanejamento\n\n\nPap\u00e9is\n\n\n\n\n\n\n\n\nNome\n\n\nPapel\n\n\n\n\n\n\n\n\n\n\nByron Kamal\n\n\nPO\n\n\n\n\n\n\nGabriel Alves\n\n\nDesenvolvimento\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nDesenvolvimento\n\n\n\n\n\n\nIgor Veludo\n\n\nDesenvolvimento\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nDesenvolvimento\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nDesenvolvimento\n\n\n\n\n\n\nWilliam Silva\n\n\nDesenvolvimento\n\n\n\n\n\n\n\n\nPareamento\n\n\n\n \nByron e Igor Arag\u00e3o\n\n \nIgor Veludo e Marcelo Ara\u00fajo e Jo\u00e3o Mota\n\n \nGabriel Alves e William Silva. \n\n\n\n\nPlanejamento\n\n\n\n \u00a0\nFazer se\u00e7\u00e3o 5 e 6 do Documento de Arquitetura\n\n \u00a0\nCorrigir bug na instala\u00e7\u00e3o de desenvolvimento da equipe\n\n \u00a0\nCria\u00e7\u00e3o do C\u00f3digo de Conduta e Contribui\u00e7\u00e3o\n\n \u00a0\nRefatora\u00e7\u00e3o do Documento de Vis\u00e3o", 
+            "title": "Planning sprint4"
+        }, 
+        {
+            "location": "/sprints/04/planning_sprint4/#sprint-4", 
+            "text": "", 
+            "title": "Sprint 4"
+        }, 
+        {
+            "location": "/sprints/04/planning_sprint4/#datade-inicio-01042018", 
+            "text": "", 
+            "title": "Datade inicio: 01/04/2018"
+        }, 
+        {
+            "location": "/sprints/04/planning_sprint4/#data-de-termino-07042018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 07/04/2018"
+        }, 
+        {
+            "location": "/sprints/04/planning_sprint4/#planejamento", 
+            "text": "", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/04/planning_sprint4/#papeis", 
+            "text": "Nome  Papel      Byron Kamal  PO    Gabriel Alves  Desenvolvimento    Igor Arag\u00e3o  Desenvolvimento    Igor Veludo  Desenvolvimento    Jo\u00e3o Mota  Desenvolvimento    Marcelo Ara\u00fajo  Desenvolvimento    William Silva  Desenvolvimento", 
+            "title": "Pap\u00e9is"
+        }, 
+        {
+            "location": "/sprints/04/planning_sprint4/#pareamento", 
+            "text": "Byron e Igor Arag\u00e3o \n  Igor Veludo e Marcelo Ara\u00fajo e Jo\u00e3o Mota \n  Gabriel Alves e William Silva.", 
+            "title": "Pareamento"
+        }, 
+        {
+            "location": "/sprints/04/planning_sprint4/#planejamento_1", 
+            "text": "Fazer se\u00e7\u00e3o 5 e 6 do Documento de Arquitetura \n \u00a0 Corrigir bug na instala\u00e7\u00e3o de desenvolvimento da equipe \n \u00a0 Cria\u00e7\u00e3o do C\u00f3digo de Conduta e Contribui\u00e7\u00e3o \n \u00a0 Refatora\u00e7\u00e3o do Documento de Vis\u00e3o", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/04/results_sprint4/", 
+            "text": "Sprint 4\n\n\nDatade inicio: 01/04/2018\n\n\nData de t\u00e9rmino: 07/04/2018\n\n\nReuni\u00e3o\n\n\nData da reuni\u00e3o: 07/04/2018\n\n\n\n\n\n\n\n\nNome\n\n\nPresente\n\n\n\n\n\n\n\n\n\n\nByron Kamal\n\n\nPresente\n\n\n\n\n\n\nGabriel Alves\n\n\nPresente\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nPresente\n\n\n\n\n\n\nIgor Veludo\n\n\nPresente\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nJustificado\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nPresente\n\n\n\n\n\n\nWilliam Silva\n\n\nPresente\n\n\n\n\n\n\n\n\nReview\n\n\nPara esta Sprint a equipe focou na refatorac\u00e3o dos documentos e criac\u00e3o de novos t\u00f3picos. A equipe tamb\u00e9m resolveu alguns bugs de c\u00f3digo e tamb\u00e9m foi criada o C\u00f3digo de Conduta e Contribui\u00e7\u00e3o.\n\n\nRestropectiva\n\n\nPontos Positivos :\n\n\n\n \u00a0 \n Primeiro pareamento de conhecimento entre os membros da equipe.\n\n\n\n\nPontos Negativos:\n\n\n\n    \n Falta de comprometimento da equipe.\n\n \u00a0 \u00a0\n Falta de comunica\u00e7\u00e3o entre os membros da equipe.\n\n \u00a0 \u00a0\n Os membros Eduardo Cerqueira e Mateus Assun\u00e7\u00e3o trancaram a disciplina.\n\n\n\n\n\nPontos a melhorar:\n\n\n\n  \n Maior comprometimento da equipe.\n\n \u00a0\n Melhorar na comunica\u00e7\u00e3o.\n\n\n\n\n\nBurndown\n\n\n\n\nVelocity\n\n\n\n\nAnalise da Sprint\n\n\nDurante essa Sprint, a equipe conseguiu entregar os pontos ao decorrer da Sprint, isso mostra um conhecimento maior dos documentos em rela\u00e7\u00e3o a Sprint passada.", 
+            "title": "Results sprint4"
+        }, 
+        {
+            "location": "/sprints/04/results_sprint4/#sprint-4", 
+            "text": "", 
+            "title": "Sprint 4"
+        }, 
+        {
+            "location": "/sprints/04/results_sprint4/#datade-inicio-01042018", 
+            "text": "", 
+            "title": "Datade inicio: 01/04/2018"
+        }, 
+        {
+            "location": "/sprints/04/results_sprint4/#data-de-termino-07042018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 07/04/2018"
+        }, 
+        {
+            "location": "/sprints/04/results_sprint4/#reuniao", 
+            "text": "", 
+            "title": "Reuni\u00e3o"
+        }, 
+        {
+            "location": "/sprints/04/results_sprint4/#data-da-reuniao-07042018", 
+            "text": "Nome  Presente      Byron Kamal  Presente    Gabriel Alves  Presente    Igor Arag\u00e3o  Presente    Igor Veludo  Presente    Jo\u00e3o Mota  Justificado    Marcelo Ara\u00fajo  Presente    William Silva  Presente", 
+            "title": "Data da reuni\u00e3o: 07/04/2018"
+        }, 
+        {
+            "location": "/sprints/04/results_sprint4/#review", 
+            "text": "Para esta Sprint a equipe focou na refatorac\u00e3o dos documentos e criac\u00e3o de novos t\u00f3picos. A equipe tamb\u00e9m resolveu alguns bugs de c\u00f3digo e tamb\u00e9m foi criada o C\u00f3digo de Conduta e Contribui\u00e7\u00e3o.", 
+            "title": "Review"
+        }, 
+        {
+            "location": "/sprints/04/results_sprint4/#restropectiva", 
+            "text": "", 
+            "title": "Restropectiva"
+        }, 
+        {
+            "location": "/sprints/04/results_sprint4/#pontos-positivos", 
+            "text": "Primeiro pareamento de conhecimento entre os membros da equipe.", 
+            "title": "Pontos Positivos :"
+        }, 
+        {
+            "location": "/sprints/04/results_sprint4/#pontos-negativos", 
+            "text": "Falta de comprometimento da equipe. \n \u00a0 \u00a0  Falta de comunica\u00e7\u00e3o entre os membros da equipe. \n \u00a0 \u00a0  Os membros Eduardo Cerqueira e Mateus Assun\u00e7\u00e3o trancaram a disciplina.", 
+            "title": "Pontos Negativos:"
+        }, 
+        {
+            "location": "/sprints/04/results_sprint4/#pontos-a-melhorar", 
+            "text": "Maior comprometimento da equipe. \n \u00a0  Melhorar na comunica\u00e7\u00e3o.", 
+            "title": "Pontos a melhorar:"
+        }, 
+        {
+            "location": "/sprints/04/results_sprint4/#burndown", 
+            "text": "", 
+            "title": "Burndown"
+        }, 
+        {
+            "location": "/sprints/04/results_sprint4/#velocity", 
+            "text": "", 
+            "title": "Velocity"
+        }, 
+        {
+            "location": "/sprints/04/results_sprint4/#analise-da-sprint", 
+            "text": "Durante essa Sprint, a equipe conseguiu entregar os pontos ao decorrer da Sprint, isso mostra um conhecimento maior dos documentos em rela\u00e7\u00e3o a Sprint passada.", 
+            "title": "Analise da Sprint"
+        }, 
+        {
+            "location": "/sprints/05/planning_sprint5/", 
+            "text": "Sprint 5\n\n\nReuni\u00e3o\n\n\nDatade inicio: 8/04/2018\n\n\nData de t\u00e9rmino: 14/04/2018\n\n\nPlanejamento\n\n\nPap\u00e9is\n\n\n\n\n\n\n\n\nNome\n\n\nPapel\n\n\n\n\n\n\n\n\n\n\nByron Kamal\n\n\nPO\n\n\n\n\n\n\nGabriel Alves\n\n\nDesenvolvimento\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nDesenvolvimento\n\n\n\n\n\n\nIgor Veludo\n\n\nDesenvolvimento\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nDesenvolvimento\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nDesenvolvimento\n\n\n\n\n\n\nWilliam Silva\n\n\nDesenvolvimento\n\n\n\n\n\n\n\n\nPareamento\n\n\n\n  \n Byron e Igor Arag\u00e3o \n\n  \n Marcelo Ara\u00fajo, Jo\u00e3o Mota e Igor Veludo \n\n  \n William e Gabriel \n\n\n\n\nPlanejamento\n\n\n\n  \n Refatorar Documento de arquitetura\n\n \u00a0\n Adicionar arquivo de configura\u00e7\u00e3o do Travis CI\n\n  \n registrar metodologia\n\n  \n Cadastrar membro do corpo docente", 
+            "title": "Planning sprint5"
+        }, 
+        {
+            "location": "/sprints/05/planning_sprint5/#sprint-5", 
+            "text": "", 
+            "title": "Sprint 5"
+        }, 
+        {
+            "location": "/sprints/05/planning_sprint5/#reuniao", 
+            "text": "", 
+            "title": "Reuni\u00e3o"
+        }, 
+        {
+            "location": "/sprints/05/planning_sprint5/#datade-inicio-8042018", 
+            "text": "", 
+            "title": "Datade inicio: 8/04/2018"
+        }, 
+        {
+            "location": "/sprints/05/planning_sprint5/#data-de-termino-14042018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 14/04/2018"
+        }, 
+        {
+            "location": "/sprints/05/planning_sprint5/#planejamento", 
+            "text": "", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/05/planning_sprint5/#papeis", 
+            "text": "Nome  Papel      Byron Kamal  PO    Gabriel Alves  Desenvolvimento    Igor Arag\u00e3o  Desenvolvimento    Igor Veludo  Desenvolvimento    Jo\u00e3o Mota  Desenvolvimento    Marcelo Ara\u00fajo  Desenvolvimento    William Silva  Desenvolvimento", 
+            "title": "Pap\u00e9is"
+        }, 
+        {
+            "location": "/sprints/05/planning_sprint5/#pareamento", 
+            "text": "Byron e Igor Arag\u00e3o  \n    Marcelo Ara\u00fajo, Jo\u00e3o Mota e Igor Veludo  \n    William e Gabriel", 
+            "title": "Pareamento"
+        }, 
+        {
+            "location": "/sprints/05/planning_sprint5/#planejamento_1", 
+            "text": "Refatorar Documento de arquitetura \n \u00a0  Adicionar arquivo de configura\u00e7\u00e3o do Travis CI \n    registrar metodologia \n    Cadastrar membro do corpo docente", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/05/results_sprint5/", 
+            "text": "Sprint 5\n\n\nDatade inicio: 8/04/2018\n\n\nData de t\u00e9rmino: 14/04/2018\n\n\nReuni\u00e3o\n\n\nData da reuni\u00e3o: 24/03/2018\n\n\n\n\n\n\n\n\nNome\n\n\nPresente\n\n\n\n\n\n\n\n\n\n\nByron Kamal\n\n\nPresente\n\n\n\n\n\n\nGabriel Alves\n\n\nPresente\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nPresente\n\n\n\n\n\n\nIgor Veludo\n\n\nPresente\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nJustificado\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nPresente\n\n\n\n\n\n\nWilliam Silva\n\n\nPresente\n\n\n\n\n\n\n\n\nReview\n\n\nNesta Sprint, al\u00e9m dos pareamentos normais, foi feita um super pareamento para alinhar a equipe e adiantar o projeto.\n\n\nTarefas finalizadas:\n\n\nTodas os planejamentos do plannning sprint 5 foram realizadas\n\n\nRestropectiva\n\n\nPontos Positivos :\n\n\n\n  \n Super Paremaento.\n\n  \n Melhor entendimento da arquitetura.\n\n\n\n\nPontos Negativos:\n\n\n\n    \n Falta de empenho da equipe.\n\n \u00a0 \u00a0\n Falta de comunica\u00e7\u00e3o entre os membros da equipe.\n\n    \n Conhecimento t\u00e9cnico desnivelado.\n\n    \n Um membro da equipe desistiu da disciplina.\n\n\n\n\n\nPontos a melhorar:\n\n\n\n  \n Comunica\u00e7\u00e3o da equipe.\n\n \u00a0\n engajamento da equipe.\n\n  \n Nivelamento t\u00e9cnico.\n\n\n\n\n\nBurndown\n\n\n\n\nVelocity\n\n\n\n\nAnalise da Sprint\n\n\nNessa Sprint, a equipe conseguiu entregar a primeira Hist\u00f3ria de Usu\u00e1rio. A equipe mostrou um avan\u00e7o no conhecimento das tecnologias. A equipe conseguiu entregar todos os pontos ao decorrer da Sprint.", 
+            "title": "Results sprint5"
+        }, 
+        {
+            "location": "/sprints/05/results_sprint5/#sprint-5", 
+            "text": "", 
+            "title": "Sprint 5"
+        }, 
+        {
+            "location": "/sprints/05/results_sprint5/#datade-inicio-8042018", 
+            "text": "", 
+            "title": "Datade inicio: 8/04/2018"
+        }, 
+        {
+            "location": "/sprints/05/results_sprint5/#data-de-termino-14042018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 14/04/2018"
+        }, 
+        {
+            "location": "/sprints/05/results_sprint5/#reuniao", 
+            "text": "", 
+            "title": "Reuni\u00e3o"
+        }, 
+        {
+            "location": "/sprints/05/results_sprint5/#data-da-reuniao-24032018", 
+            "text": "Nome  Presente      Byron Kamal  Presente    Gabriel Alves  Presente    Igor Arag\u00e3o  Presente    Igor Veludo  Presente    Jo\u00e3o Mota  Justificado    Marcelo Ara\u00fajo  Presente    William Silva  Presente", 
+            "title": "Data da reuni\u00e3o: 24/03/2018"
+        }, 
+        {
+            "location": "/sprints/05/results_sprint5/#review", 
+            "text": "Nesta Sprint, al\u00e9m dos pareamentos normais, foi feita um super pareamento para alinhar a equipe e adiantar o projeto.", 
+            "title": "Review"
+        }, 
+        {
+            "location": "/sprints/05/results_sprint5/#tarefas-finalizadas", 
+            "text": "Todas os planejamentos do plannning sprint 5 foram realizadas", 
+            "title": "Tarefas finalizadas:"
+        }, 
+        {
+            "location": "/sprints/05/results_sprint5/#restropectiva", 
+            "text": "", 
+            "title": "Restropectiva"
+        }, 
+        {
+            "location": "/sprints/05/results_sprint5/#pontos-positivos", 
+            "text": "Super Paremaento. \n    Melhor entendimento da arquitetura.", 
+            "title": "Pontos Positivos :"
+        }, 
+        {
+            "location": "/sprints/05/results_sprint5/#pontos-negativos", 
+            "text": "Falta de empenho da equipe. \n \u00a0 \u00a0  Falta de comunica\u00e7\u00e3o entre os membros da equipe. \n      Conhecimento t\u00e9cnico desnivelado. \n      Um membro da equipe desistiu da disciplina.", 
+            "title": "Pontos Negativos:"
+        }, 
+        {
+            "location": "/sprints/05/results_sprint5/#pontos-a-melhorar", 
+            "text": "Comunica\u00e7\u00e3o da equipe. \n \u00a0  engajamento da equipe. \n    Nivelamento t\u00e9cnico.", 
+            "title": "Pontos a melhorar:"
+        }, 
+        {
+            "location": "/sprints/05/results_sprint5/#burndown", 
+            "text": "", 
+            "title": "Burndown"
+        }, 
+        {
+            "location": "/sprints/05/results_sprint5/#velocity", 
+            "text": "", 
+            "title": "Velocity"
+        }, 
+        {
+            "location": "/sprints/05/results_sprint5/#analise-da-sprint", 
+            "text": "Nessa Sprint, a equipe conseguiu entregar a primeira Hist\u00f3ria de Usu\u00e1rio. A equipe mostrou um avan\u00e7o no conhecimento das tecnologias. A equipe conseguiu entregar todos os pontos ao decorrer da Sprint.", 
+            "title": "Analise da Sprint"
+        }, 
+        {
+            "location": "/sprints/06/planning_sprint6/", 
+            "text": "Sprint 4\n\n\nDatade inicio: 15/04/2018\n\n\nData de t\u00e9rmino: 21/04/2018\n\n\nPlanejamento\n\n\nPap\u00e9is\n\n\n\n\n\n\n\n\nNome\n\n\nPapel\n\n\n\n\n\n\n\n\n\n\nByron Kamal\n\n\nPO\n\n\n\n\n\n\nGabriel Alves\n\n\nDesenvolvimento\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nDesenvolvimento\n\n\n\n\n\n\nIgor Veludo\n\n\nDesenvolvimento\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nDesenvolvimento\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nDesenvolvimento\n\n\n\n\n\n\nWilliam Silva\n\n\nDesenvolvimento\n\n\n\n\n\n\n\n\nPareamento\n\n\n\n \nByron e Igor Arag\u00e3o\n\n \nIgor Veludo e Marcelo Ara\u00fajo e Jo\u00e3o Mota\n\n \nGabriel Alves e William Silva. \n\n\n\n\nPlanejamento\n\n\n\n \u00a0\nCria\u00e7\u00e3o do Docker front/back\n\n \u00a0\nDocumentando as Issues\n\n \u00a0\nDivida tecnica - historias\n\n \u00a0\nElabora\u00e7\u00e3o do prot\u00f3tipo", 
+            "title": "Planning sprint6"
+        }, 
+        {
+            "location": "/sprints/06/planning_sprint6/#sprint-4", 
+            "text": "", 
+            "title": "Sprint 4"
+        }, 
+        {
+            "location": "/sprints/06/planning_sprint6/#datade-inicio-15042018", 
+            "text": "", 
+            "title": "Datade inicio: 15/04/2018"
+        }, 
+        {
+            "location": "/sprints/06/planning_sprint6/#data-de-termino-21042018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 21/04/2018"
+        }, 
+        {
+            "location": "/sprints/06/planning_sprint6/#planejamento", 
+            "text": "", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/06/planning_sprint6/#papeis", 
+            "text": "Nome  Papel      Byron Kamal  PO    Gabriel Alves  Desenvolvimento    Igor Arag\u00e3o  Desenvolvimento    Igor Veludo  Desenvolvimento    Jo\u00e3o Mota  Desenvolvimento    Marcelo Ara\u00fajo  Desenvolvimento    William Silva  Desenvolvimento", 
+            "title": "Pap\u00e9is"
+        }, 
+        {
+            "location": "/sprints/06/planning_sprint6/#pareamento", 
+            "text": "Byron e Igor Arag\u00e3o \n  Igor Veludo e Marcelo Ara\u00fajo e Jo\u00e3o Mota \n  Gabriel Alves e William Silva.", 
+            "title": "Pareamento"
+        }, 
+        {
+            "location": "/sprints/06/planning_sprint6/#planejamento_1", 
+            "text": "Cria\u00e7\u00e3o do Docker front/back \n \u00a0 Documentando as Issues \n \u00a0 Divida tecnica - historias \n \u00a0 Elabora\u00e7\u00e3o do prot\u00f3tipo", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/06/results_sprint6/", 
+            "text": "Sprint 6\n\n\nDatade inicio: 15/04/2018\n\n\nData de t\u00e9rmino: 21/04/2018\n\n\nReuni\u00e3o\n\n\nData da reuni\u00e3o: 21/04/2018\n\n\n\n\n\n\n\n\nNome\n\n\nPresente\n\n\n\n\n\n\n\n\n\n\nByron Kamal\n\n\nPresente\n\n\n\n\n\n\nGabriel Alves\n\n\nPresente\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nPresente\n\n\n\n\n\n\nIgor Veludo\n\n\nPresente\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nPresente\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nPresente\n\n\n\n\n\n\nWilliam Silva\n\n\nPresente\n\n\n\n\n\n\n\n\nReview\n\n\n Nesta Sprint a equipe n\u00e3o entregou nenhuma hist\u00f3ria de usu\u00e1rio. Foi entregue o prot\u00f3tipo de m\u00e9dia fidelidade.\n\n\nRestropectiva\n\n\nPontos Positivos :\n\n\n\n \u00a0 \n Super Pareamento da equipe\n\n \u00a0 \n Aumento da integra\u00e7\u00e3o do time\n\n\n\n\nPontos Negativos:\n\n\n\n    \n Testes incompletos\n\n \u00a0 \u00a0\n Falta de nivelamento tecnico (commits)\n\n\n\n\n\nPontos a melhorar:\n\n\n\n  \n Nivel tecnico \n\n \u00a0\n Mais integra\u00e7\u00e3o da equipe \n\n  \n Testes \n\n\n\n\n\nBurndown\n\n\nN\u00e3o se aplica.\n\n\nVelocity\n\n\nN\u00e3o se aplica.\n\n\nAnalise da Sprint\n\n\nA equipe n\u00e3o possui pontos entregues, burndown e velocity, pois a equipe n\u00e3o conseguiu realizar os testes das hist\u00f3rias de usu\u00e1rio, portanto as hist\u00f3rias n\u00e3o foram consideradas como entregues nessa Sprint.", 
+            "title": "Results sprint6"
+        }, 
+        {
+            "location": "/sprints/06/results_sprint6/#sprint-6", 
+            "text": "", 
+            "title": "Sprint 6"
+        }, 
+        {
+            "location": "/sprints/06/results_sprint6/#datade-inicio-15042018", 
+            "text": "", 
+            "title": "Datade inicio: 15/04/2018"
+        }, 
+        {
+            "location": "/sprints/06/results_sprint6/#data-de-termino-21042018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 21/04/2018"
+        }, 
+        {
+            "location": "/sprints/06/results_sprint6/#reuniao", 
+            "text": "", 
+            "title": "Reuni\u00e3o"
+        }, 
+        {
+            "location": "/sprints/06/results_sprint6/#data-da-reuniao-21042018", 
+            "text": "Nome  Presente      Byron Kamal  Presente    Gabriel Alves  Presente    Igor Arag\u00e3o  Presente    Igor Veludo  Presente    Jo\u00e3o Mota  Presente    Marcelo Ara\u00fajo  Presente    William Silva  Presente", 
+            "title": "Data da reuni\u00e3o: 21/04/2018"
+        }, 
+        {
+            "location": "/sprints/06/results_sprint6/#review", 
+            "text": "Nesta Sprint a equipe n\u00e3o entregou nenhuma hist\u00f3ria de usu\u00e1rio. Foi entregue o prot\u00f3tipo de m\u00e9dia fidelidade.", 
+            "title": "Review"
+        }, 
+        {
+            "location": "/sprints/06/results_sprint6/#restropectiva", 
+            "text": "", 
+            "title": "Restropectiva"
+        }, 
+        {
+            "location": "/sprints/06/results_sprint6/#pontos-positivos", 
+            "text": "Super Pareamento da equipe \n \u00a0   Aumento da integra\u00e7\u00e3o do time", 
+            "title": "Pontos Positivos :"
+        }, 
+        {
+            "location": "/sprints/06/results_sprint6/#pontos-negativos", 
+            "text": "Testes incompletos \n \u00a0 \u00a0  Falta de nivelamento tecnico (commits)", 
+            "title": "Pontos Negativos:"
+        }, 
+        {
+            "location": "/sprints/06/results_sprint6/#pontos-a-melhorar", 
+            "text": "Nivel tecnico  \n \u00a0  Mais integra\u00e7\u00e3o da equipe  \n    Testes", 
+            "title": "Pontos a melhorar:"
+        }, 
+        {
+            "location": "/sprints/06/results_sprint6/#burndown", 
+            "text": "N\u00e3o se aplica.", 
+            "title": "Burndown"
+        }, 
+        {
+            "location": "/sprints/06/results_sprint6/#velocity", 
+            "text": "N\u00e3o se aplica.", 
+            "title": "Velocity"
+        }, 
+        {
+            "location": "/sprints/06/results_sprint6/#analise-da-sprint", 
+            "text": "A equipe n\u00e3o possui pontos entregues, burndown e velocity, pois a equipe n\u00e3o conseguiu realizar os testes das hist\u00f3rias de usu\u00e1rio, portanto as hist\u00f3rias n\u00e3o foram consideradas como entregues nessa Sprint.", 
+            "title": "Analise da Sprint"
+        }, 
+        {
+            "location": "/sprints/07/planning_sprint7/", 
+            "text": "Sprint 7\n\n\nData de inicio: 22/04/2018\n\n\nData de t\u00e9rmino: 28/04/2018\n\n\nPlanejamento\n\n\nPap\u00e9is\n\n\n\n\n\n\n\n\nNome\n\n\nPapel\n\n\n\n\n\n\n\n\n\n\nScrum Master\n\n\nJo\u00e3o Henrique\n\n\n\n\n\n\nByron Kamal\n\n\nPO\n\n\n\n\n\n\nGabriel Alves\n\n\nDesenvolvimento\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nDesenvolvimento\n\n\n\n\n\n\nIgor Veludo\n\n\nDesenvolvimento\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nDesenvolvimento\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nDesenvolvimento\n\n\n\n\n\n\nWilliam Silva\n\n\nDesenvolvimento\n\n\n\n\n\n\n\n\nPareamento\n\n\n\n \nByron e Igor Arag\u00e3o\n\n \nIgor Veludo e Marcelo Ara\u00fajo e Jo\u00e3o Mota\n\n \nGabriel Alves e William Silva. \n\n\n\n\nPlanejamento\n\n\n\n  \nHist\u00f3rias de Usu\u00e1rios relaciondas ao CRUD de estudante\n\n\u00a0 \nOrganiza\u00e7\u00e3o das pastas dos resposit\u00f3rios\n\n\u00a0 \nHist\u00f3ria de Usu\u00e1rio - Login na aplica\u00e7\u00e3o\n\n\u00a0 \nRoadmap do projeto\n\n  \nMelhorar Prototipagem do projeto de acordo com as novas demandas do cliente", 
+            "title": "Planning sprint7"
+        }, 
+        {
+            "location": "/sprints/07/planning_sprint7/#sprint-7", 
+            "text": "", 
+            "title": "Sprint 7"
+        }, 
+        {
+            "location": "/sprints/07/planning_sprint7/#data-de-inicio-22042018", 
+            "text": "", 
+            "title": "Data de inicio: 22/04/2018"
+        }, 
+        {
+            "location": "/sprints/07/planning_sprint7/#data-de-termino-28042018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 28/04/2018"
+        }, 
+        {
+            "location": "/sprints/07/planning_sprint7/#planejamento", 
+            "text": "", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/07/planning_sprint7/#papeis", 
+            "text": "Nome  Papel      Scrum Master  Jo\u00e3o Henrique    Byron Kamal  PO    Gabriel Alves  Desenvolvimento    Igor Arag\u00e3o  Desenvolvimento    Igor Veludo  Desenvolvimento    Jo\u00e3o Mota  Desenvolvimento    Marcelo Ara\u00fajo  Desenvolvimento    William Silva  Desenvolvimento", 
+            "title": "Pap\u00e9is"
+        }, 
+        {
+            "location": "/sprints/07/planning_sprint7/#pareamento", 
+            "text": "Byron e Igor Arag\u00e3o \n  Igor Veludo e Marcelo Ara\u00fajo e Jo\u00e3o Mota \n  Gabriel Alves e William Silva.", 
+            "title": "Pareamento"
+        }, 
+        {
+            "location": "/sprints/07/planning_sprint7/#planejamento_1", 
+            "text": "Hist\u00f3rias de Usu\u00e1rios relaciondas ao CRUD de estudante \n\u00a0  Organiza\u00e7\u00e3o das pastas dos resposit\u00f3rios \n\u00a0  Hist\u00f3ria de Usu\u00e1rio - Login na aplica\u00e7\u00e3o \n\u00a0  Roadmap do projeto \n   Melhorar Prototipagem do projeto de acordo com as novas demandas do cliente", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/07/results_sprint7/", 
+            "text": "Sprint 7\n\n\nDatade inicio: 22/04/2018\n\n\nData de t\u00e9rmino: 28/04/2018\n\n\nReuni\u00e3o\n\n\nData da reuni\u00e3o: 28/04/2018\n\n\n\n\n\n\n\n\nNome\n\n\nPresente\n\n\n\n\n\n\n\n\n\n\nByron Kamal\n\n\nPresente\n\n\n\n\n\n\nGabriel Alves\n\n\nPresente\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nPresente\n\n\n\n\n\n\nIgor Veludo\n\n\nPresente\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nPresente\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nPresente\n\n\n\n\n\n\nWilliam Silva\n\n\nPresente\n\n\n\n\n\n\n\n\nReview\n\n\nHist\u00f3rias entregues:\n\n\n\n\nHist\u00f3rias de Usu\u00e1rios relaciondas ao CRUD de estudante:\n\nUS#02-createStudent\nUS#03-editStudent\nUS#04-deleteStudent\n\nOrganiza\u00e7\u00e3o das pastas dos reposit\u00f3rios\n\n\n\nHist\u00f3ria de Usu\u00e1rio - Login na aplica\u00e7\u00e3o\n\nUS#01-userLogin\n\n\nMelhorar Prototipagem do projeto de acordo com as novas demandas do cliente\n\n\n\n\n\nHist\u00f3rias n\u00e3o entregues:\n\n\nRoadmap do Projeto\n\n\nTotal de pontos planejados: 15\n\n\nTotal de pontos entregues: 14\n\n\nRetrospectiva\n\n\nPontos Positivos :\n\n\n\n\n Super Pareamento da equipe\n\n\n Aumento da integra\u00e7\u00e3o do time\n\n\n\n\nPontos Negativos:\n\n\n\n\n Testes incompletos\n\n\n Falta de nivelamento t\u00e9cnico (commits)\n\n\nHouve planejamento, mas n\u00e3o foi seguido de forma efetiva\n\n\n\n\n\nPontos a melhorar:\n\n\n\n\nN\u00edvel t\u00e9cnico da equipe\n\n\nTestes\n\n\n\n\n\nBurndown\n\n\n\n\nVelocity\n\n\n\n\nAnalise da Sprint\n\n\nNessa Sprint, a equipe conseguiu entregar quase todos os pontos, mas eles foram entregues nos \u00faltimos dias da Sprint.", 
+            "title": "Results sprint7"
+        }, 
+        {
+            "location": "/sprints/07/results_sprint7/#sprint-7", 
+            "text": "", 
+            "title": "Sprint 7"
+        }, 
+        {
+            "location": "/sprints/07/results_sprint7/#datade-inicio-22042018", 
+            "text": "", 
+            "title": "Datade inicio: 22/04/2018"
+        }, 
+        {
+            "location": "/sprints/07/results_sprint7/#data-de-termino-28042018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 28/04/2018"
+        }, 
+        {
+            "location": "/sprints/07/results_sprint7/#reuniao", 
+            "text": "", 
+            "title": "Reuni\u00e3o"
+        }, 
+        {
+            "location": "/sprints/07/results_sprint7/#data-da-reuniao-28042018", 
+            "text": "Nome  Presente      Byron Kamal  Presente    Gabriel Alves  Presente    Igor Arag\u00e3o  Presente    Igor Veludo  Presente    Jo\u00e3o Mota  Presente    Marcelo Ara\u00fajo  Presente    William Silva  Presente", 
+            "title": "Data da reuni\u00e3o: 28/04/2018"
+        }, 
+        {
+            "location": "/sprints/07/results_sprint7/#review", 
+            "text": "", 
+            "title": "Review"
+        }, 
+        {
+            "location": "/sprints/07/results_sprint7/#historias-entregues", 
+            "text": "Hist\u00f3rias de Usu\u00e1rios relaciondas ao CRUD de estudante: \nUS#02-createStudent\nUS#03-editStudent\nUS#04-deleteStudent Organiza\u00e7\u00e3o das pastas dos reposit\u00f3rios  Hist\u00f3ria de Usu\u00e1rio - Login na aplica\u00e7\u00e3o \nUS#01-userLogin Melhorar Prototipagem do projeto de acordo com as novas demandas do cliente", 
+            "title": "Hist\u00f3rias entregues:"
+        }, 
+        {
+            "location": "/sprints/07/results_sprint7/#historias-nao-entregues", 
+            "text": "Roadmap do Projeto", 
+            "title": "Hist\u00f3rias n\u00e3o entregues:"
+        }, 
+        {
+            "location": "/sprints/07/results_sprint7/#total-de-pontos-planejados-15", 
+            "text": "", 
+            "title": "Total de pontos planejados: 15"
+        }, 
+        {
+            "location": "/sprints/07/results_sprint7/#total-de-pontos-entregues-14", 
+            "text": "", 
+            "title": "Total de pontos entregues: 14"
+        }, 
+        {
+            "location": "/sprints/07/results_sprint7/#retrospectiva", 
+            "text": "", 
+            "title": "Retrospectiva"
+        }, 
+        {
+            "location": "/sprints/07/results_sprint7/#pontos-positivos", 
+            "text": "Super Pareamento da equipe   Aumento da integra\u00e7\u00e3o do time", 
+            "title": "Pontos Positivos :"
+        }, 
+        {
+            "location": "/sprints/07/results_sprint7/#pontos-negativos", 
+            "text": "Testes incompletos   Falta de nivelamento t\u00e9cnico (commits)  Houve planejamento, mas n\u00e3o foi seguido de forma efetiva", 
+            "title": "Pontos Negativos:"
+        }, 
+        {
+            "location": "/sprints/07/results_sprint7/#pontos-a-melhorar", 
+            "text": "N\u00edvel t\u00e9cnico da equipe  Testes", 
+            "title": "Pontos a melhorar:"
+        }, 
+        {
+            "location": "/sprints/07/results_sprint7/#burndown", 
+            "text": "", 
+            "title": "Burndown"
+        }, 
+        {
+            "location": "/sprints/07/results_sprint7/#velocity", 
+            "text": "", 
+            "title": "Velocity"
+        }, 
+        {
+            "location": "/sprints/07/results_sprint7/#analise-da-sprint", 
+            "text": "Nessa Sprint, a equipe conseguiu entregar quase todos os pontos, mas eles foram entregues nos \u00faltimos dias da Sprint.", 
+            "title": "Analise da Sprint"
+        }, 
+        {
+            "location": "/sprints/08/planning_sprint8/", 
+            "text": "Sprint 8\n\n\nData de inicio: 29/04/2018\n\n\nData de t\u00e9rmino: 05/05/2018\n\n\nPlanejamento\n\n\nPap\u00e9is\n\n\n\n\n\n\n\n\nNome\n\n\nPapel\n\n\n\n\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nScrum Master\n\n\n\n\n\n\nByron Kamal\n\n\nPO\n\n\n\n\n\n\nGabriel Alves\n\n\nDesenvolvimento\n\n\n\n\n\n\nIgor Veludo\n\n\nDesenvolvimento\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nDesenvolvimento\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nDesenvolvimento\n\n\n\n\n\n\nWilliam Silva\n\n\nDesenvolvimento\n\n\n\n\n\n\n\n\nPareamento\n\n\n\n \nIgor Arag\u00e3o e Igor Veludo\n\n \nMarcelo Ara\u00fajo e Jo\u00e3o Mota\n\n \nGabriel Alves, Byron Kamal e William Silva. \n\n\n\n\nPlanejamento\n\n\n\n\nTS#01-validateStudent\n\n\nTS#02-Melhorar design do projeto\n\n\nTS#03-Routes\n\n\n\n\nMelhorias a serem tomadas\n\n\nO grupo deve buscar melhorar no conhecimento t\u00e9cnico, para isso, o pareamento vai tomar em conta o n\u00edvel t\u00e9cnico de cada integrante, juntando o de menor conhecimento com o que mais desenvolveu em determinada \u00e1rea.", 
+            "title": "Planning sprint8"
+        }, 
+        {
+            "location": "/sprints/08/planning_sprint8/#sprint-8", 
+            "text": "", 
+            "title": "Sprint 8"
+        }, 
+        {
+            "location": "/sprints/08/planning_sprint8/#data-de-inicio-29042018", 
+            "text": "", 
+            "title": "Data de inicio: 29/04/2018"
+        }, 
+        {
+            "location": "/sprints/08/planning_sprint8/#data-de-termino-05052018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 05/05/2018"
+        }, 
+        {
+            "location": "/sprints/08/planning_sprint8/#planejamento", 
+            "text": "", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/08/planning_sprint8/#papeis", 
+            "text": "Nome  Papel      Igor Arag\u00e3o  Scrum Master    Byron Kamal  PO    Gabriel Alves  Desenvolvimento    Igor Veludo  Desenvolvimento    Jo\u00e3o Mota  Desenvolvimento    Marcelo Ara\u00fajo  Desenvolvimento    William Silva  Desenvolvimento", 
+            "title": "Pap\u00e9is"
+        }, 
+        {
+            "location": "/sprints/08/planning_sprint8/#pareamento", 
+            "text": "Igor Arag\u00e3o e Igor Veludo \n  Marcelo Ara\u00fajo e Jo\u00e3o Mota \n  Gabriel Alves, Byron Kamal e William Silva.", 
+            "title": "Pareamento"
+        }, 
+        {
+            "location": "/sprints/08/planning_sprint8/#planejamento_1", 
+            "text": "TS#01-validateStudent  TS#02-Melhorar design do projeto  TS#03-Routes", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/08/planning_sprint8/#melhorias-a-serem-tomadas", 
+            "text": "O grupo deve buscar melhorar no conhecimento t\u00e9cnico, para isso, o pareamento vai tomar em conta o n\u00edvel t\u00e9cnico de cada integrante, juntando o de menor conhecimento com o que mais desenvolveu em determinada \u00e1rea.", 
+            "title": "Melhorias a serem tomadas"
+        }, 
+        {
+            "location": "/sprints/08/results_sprint8/", 
+            "text": "Sprint 8\n\n\nData de inicio: 29/04/2018\n\n\nData de t\u00e9rmino: 05/05/2018\n\n\nReuni\u00e3o\n\n\nData da reuni\u00e3o: 05/05/2018\n\n\n\n\n\n\n\n\nNome\n\n\nPresente\n\n\n\n\n\n\n\n\n\n\nByron Kamal\n\n\nPresente\n\n\n\n\n\n\nGabriel Alves\n\n\nPresente\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nPresente\n\n\n\n\n\n\nIgor Veludo\n\n\nPresente\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nJUSTIFICADO\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nPresente\n\n\n\n\n\n\nWilliam Silva\n\n\nPresente\n\n\n\n\n\n\n\n\nReview\n\n\nHist\u00f3rias entregues:\n\n\n\n\nTS#01-validateStudent\n\n\nTS#02-Melhorar design do projeto\n\n\nTS#03-Routes\n\n\n\n\nHist\u00f3rias n\u00e3o entregues:\n\n\nNenhuma\n\n\nTotal de pontos planejados: 7\n\n\nTotal de pontos entregues: 7\n\n\nRestropectiva\n\n\nPontos Positivos :\n\n\n\n   \n Melhora no aprendizado com testes\n\n   \n Aumento da integra\u00e7\u00e3o do time\n\n\n\n\nPontos Negativos:\n\n\n\n  \n Planejamento inadequado para a sprint\n\n  \n Falta de nivelamento tecnico (commits)\n\n\n\n\n\nPontos a melhorar:\n\n\n\n  \n Nivel tecnico\n\n  \n Testes\n\n  \n Planejamento das proximas sprints\n\n  \n Empenho da equipe no projeto\n\n\n\n\n\nBurndown\n\n\n\n\nHouve uma baixa quantidade de tarefas, e as mesmas tinham pontua\u00e7\u00f5es baixas, totalizando 7 pontos.\n\n\nVelocity\n\n\n\n\nDevido \u00e0 baixa quantidade de tarefas e \u00e0s baixas pontua\u00e7\u00f5es das tarefas executadas nessa Sprint, o velocity da equipe ficou em apenas 7 pontos.\n\n\nAn\u00e1lise do Scrum Master\n\n\nNesta Sprint, a equipe fez poucos pontos, pelo fato de haver um desfoque do grupo em rela\u00e7\u00e3o \u00e0 quantidade de tempo dispon\u00edvel, durante a semana.", 
+            "title": "Results sprint8"
+        }, 
+        {
+            "location": "/sprints/08/results_sprint8/#sprint-8", 
+            "text": "", 
+            "title": "Sprint 8"
+        }, 
+        {
+            "location": "/sprints/08/results_sprint8/#data-de-inicio-29042018", 
+            "text": "", 
+            "title": "Data de inicio: 29/04/2018"
+        }, 
+        {
+            "location": "/sprints/08/results_sprint8/#data-de-termino-05052018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 05/05/2018"
+        }, 
+        {
+            "location": "/sprints/08/results_sprint8/#reuniao", 
+            "text": "", 
+            "title": "Reuni\u00e3o"
+        }, 
+        {
+            "location": "/sprints/08/results_sprint8/#data-da-reuniao-05052018", 
+            "text": "Nome  Presente      Byron Kamal  Presente    Gabriel Alves  Presente    Igor Arag\u00e3o  Presente    Igor Veludo  Presente    Jo\u00e3o Mota  JUSTIFICADO    Marcelo Ara\u00fajo  Presente    William Silva  Presente", 
+            "title": "Data da reuni\u00e3o: 05/05/2018"
+        }, 
+        {
+            "location": "/sprints/08/results_sprint8/#review", 
+            "text": "", 
+            "title": "Review"
+        }, 
+        {
+            "location": "/sprints/08/results_sprint8/#historias-entregues", 
+            "text": "TS#01-validateStudent  TS#02-Melhorar design do projeto  TS#03-Routes", 
+            "title": "Hist\u00f3rias entregues:"
+        }, 
+        {
+            "location": "/sprints/08/results_sprint8/#historias-nao-entregues", 
+            "text": "Nenhuma", 
+            "title": "Hist\u00f3rias n\u00e3o entregues:"
+        }, 
+        {
+            "location": "/sprints/08/results_sprint8/#total-de-pontos-planejados-7", 
+            "text": "", 
+            "title": "Total de pontos planejados: 7"
+        }, 
+        {
+            "location": "/sprints/08/results_sprint8/#total-de-pontos-entregues-7", 
+            "text": "", 
+            "title": "Total de pontos entregues: 7"
+        }, 
+        {
+            "location": "/sprints/08/results_sprint8/#restropectiva", 
+            "text": "", 
+            "title": "Restropectiva"
+        }, 
+        {
+            "location": "/sprints/08/results_sprint8/#pontos-positivos", 
+            "text": "Melhora no aprendizado com testes \n     Aumento da integra\u00e7\u00e3o do time", 
+            "title": "Pontos Positivos :"
+        }, 
+        {
+            "location": "/sprints/08/results_sprint8/#pontos-negativos", 
+            "text": "Planejamento inadequado para a sprint \n    Falta de nivelamento tecnico (commits)", 
+            "title": "Pontos Negativos:"
+        }, 
+        {
+            "location": "/sprints/08/results_sprint8/#pontos-a-melhorar", 
+            "text": "Nivel tecnico \n    Testes \n    Planejamento das proximas sprints \n    Empenho da equipe no projeto", 
+            "title": "Pontos a melhorar:"
+        }, 
+        {
+            "location": "/sprints/08/results_sprint8/#burndown", 
+            "text": "Houve uma baixa quantidade de tarefas, e as mesmas tinham pontua\u00e7\u00f5es baixas, totalizando 7 pontos.", 
+            "title": "Burndown"
+        }, 
+        {
+            "location": "/sprints/08/results_sprint8/#velocity", 
+            "text": "Devido \u00e0 baixa quantidade de tarefas e \u00e0s baixas pontua\u00e7\u00f5es das tarefas executadas nessa Sprint, o velocity da equipe ficou em apenas 7 pontos.", 
+            "title": "Velocity"
+        }, 
+        {
+            "location": "/sprints/08/results_sprint8/#analise-do-scrum-master", 
+            "text": "Nesta Sprint, a equipe fez poucos pontos, pelo fato de haver um desfoque do grupo em rela\u00e7\u00e3o \u00e0 quantidade de tempo dispon\u00edvel, durante a semana.", 
+            "title": "An\u00e1lise do Scrum Master"
+        }, 
+        {
+            "location": "/sprints/09/planning_sprint9/", 
+            "text": "Sprint 8\n\n\nData de inicio: 06/05/2018\n\n\nData de t\u00e9rmino: 12/05/2018\n\n\nPlanejamento\n\n\nPap\u00e9is\n\n\n\n\n\n\n\n\nNome\n\n\nPapel\n\n\n\n\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nScrum Master\n\n\n\n\n\n\nByron Kamal\n\n\nPO\n\n\n\n\n\n\nGabriel Alves\n\n\nDesenvolvimento\n\n\n\n\n\n\nIgor Veludo\n\n\nDesenvolvimento\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nDesenvolvimento\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nDesenvolvimento\n\n\n\n\n\n\nWilliam Silva\n\n\nDesenvolvimento\n\n\n\n\n\n\n\n\nPareamento\n\n\n\n \nIgor Arag\u00e3o, Igor Veludo e Marcelo Ara\u00fajo\n\n \nGabriel Alves e Jo\u00e3o Mota\n\n \nByron Kamal e William Silva\n\n\n\n\nPlanejamento\n\n\n\n\nUS#16-studentPanel\n\n\nUS#18-listClasses\n\n\nUS#19-registerTeamMember\n\n\n\n\nMelhorias a serem tomadas\n\n\nO grupo deve aprender a lidar com as 10 horas semanais, e saber dividir o tempo para que haja um desenvolvimento \u00e1gil.", 
+            "title": "Planning sprint9"
+        }, 
+        {
+            "location": "/sprints/09/planning_sprint9/#sprint-8", 
+            "text": "", 
+            "title": "Sprint 8"
+        }, 
+        {
+            "location": "/sprints/09/planning_sprint9/#data-de-inicio-06052018", 
+            "text": "", 
+            "title": "Data de inicio: 06/05/2018"
+        }, 
+        {
+            "location": "/sprints/09/planning_sprint9/#data-de-termino-12052018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 12/05/2018"
+        }, 
+        {
+            "location": "/sprints/09/planning_sprint9/#planejamento", 
+            "text": "", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/09/planning_sprint9/#papeis", 
+            "text": "Nome  Papel      Igor Arag\u00e3o  Scrum Master    Byron Kamal  PO    Gabriel Alves  Desenvolvimento    Igor Veludo  Desenvolvimento    Jo\u00e3o Mota  Desenvolvimento    Marcelo Ara\u00fajo  Desenvolvimento    William Silva  Desenvolvimento", 
+            "title": "Pap\u00e9is"
+        }, 
+        {
+            "location": "/sprints/09/planning_sprint9/#pareamento", 
+            "text": "Igor Arag\u00e3o, Igor Veludo e Marcelo Ara\u00fajo \n  Gabriel Alves e Jo\u00e3o Mota \n  Byron Kamal e William Silva", 
+            "title": "Pareamento"
+        }, 
+        {
+            "location": "/sprints/09/planning_sprint9/#planejamento_1", 
+            "text": "US#16-studentPanel  US#18-listClasses  US#19-registerTeamMember", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/09/planning_sprint9/#melhorias-a-serem-tomadas", 
+            "text": "O grupo deve aprender a lidar com as 10 horas semanais, e saber dividir o tempo para que haja um desenvolvimento \u00e1gil.", 
+            "title": "Melhorias a serem tomadas"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/", 
+            "text": "Sprint 9\n\n\nData de inicio: 06/05/2018\n\n\nData de t\u00e9rmino: 12/05/2018\n\n\nReuni\u00e3o\n\n\nData da reuni\u00e3o: 12/05/2018\n\n\n\n\n\n\n\n\nNome\n\n\nPresente\n\n\n\n\n\n\n\n\n\n\nByron Kamal\n\n\nPresente\n\n\n\n\n\n\nGabriel Alves\n\n\nAusente\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nPresente\n\n\n\n\n\n\nIgor Veludo\n\n\nPresente\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nJUSTIFICADO\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nPresente\n\n\n\n\n\n\nWilliam Silva\n\n\nPresente\n\n\n\n\n\n\n\n\nReview\n\n\nHist\u00f3rias entregues:\n\n\n\n\nUS#16-studentPanel\n\n\nUS#19-registerTeamMember\n\n\n\n\nHist\u00f3rias n\u00e3o entregues:\n\n\n\n\nUS#18-listClasses\n\n\n\n\nTarefas entregues:\n\n\n\n\nReadme do Back-end (refatorado)\n\n\n\n\nTotal de pontos planejados: 16\n\n\nTotal de pontos entregues: 11\n\n\nRestropectiva\n\n\nPontos Positivos:\n\n\n\n   \nMelhoria no aprendizado do Front-End\n\n\n\n\nPontos Negativos:\n\n\n\n  \nExecu\u00e7\u00e3o do planejamento foi ineficiente\n\n  \nAlguns membros n\u00e3o tiveram comunica\u00e7\u00e3o evetiva\n\n\n\n\n\nPontos a melhorar:\n\n\n\n  \nExecu\u00e7\u00e3o das Sprints\n\n  \nTestes unit\u00e1rios\n\n  \nGerenciamento do tempo dedicado ao projeto\n\n\n\n\n\nBurndown\n\n\n\n\nHouve uma boa quantidade de pontos planejados para a sprint, e uma tarefa adicionada, totalizando 16 pontos.\n\n\nVelocity\n\n\n\n\nForam planejadas as entregas de 1 tarefa e 3 hist\u00f3rias. Por\u00e9m 1 hist\u00f3ria n\u00e3o foi entregue, se tornando uma d\u00edvida t\u00e9cnica para a pr\u00f3xima Sprint. Ou seja, dos 16 pontos planejados, apenas 11 foram entregues.\n\n\nM\u00e9tricas\n\n\nNessa Sprint os valores alcan\u00e7ados nas m\u00e9tricas foram:\n\n\nFrontEnd\n\n\n\n\n\n\n\n\nM\u00e9trica\n\n\nResultado\n\n\nAceit\u00e1vel?\n\n\n\n\n\n\n\n\n\n\nMAINTAINABILITY\n\n\nA\n\n\nPresente\n\n\n\n\n\n\nBUILD\n\n\nPASSING\n\n\nPresente\n\n\n\n\n\n\nTESTS COVERAGE\n\n\n96%\n\n\nPresente\n\n\n\n\n\n\n\n\nBackEnd\n\n\n\n\n\n\n\n\nM\u00e9trica\n\n\nResultado\n\n\nAceit\u00e1vel?\n\n\n\n\n\n\n\n\n\n\nMAINTAINABILITY\n\n\nC\n\n\nPresente\n\n\n\n\n\n\nBUILD\n\n\nPASSING\n\n\nPresente\n\n\n\n\n\n\nTESTS COVERAGE\n\n\n65%\n\n\nAusente\n\n\n\n\n\n\n\n\nQuadro de Conhecimento\n\n\n\n\nAn\u00e1lise do Scrum Master\n\n\nNesta Sprint, apesar de termos falhado na entrega de uma hist\u00f3ria, a equipe entregou mais pontos do que a m\u00e9dia mostrada no velocity. Por\u00e9m, \u00e9 um n\u00famero ainda baixo, h\u00e1 a necessidade de um melhor planejamento individual na parte da equipe.", 
+            "title": "Results sprint9"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/#sprint-9", 
+            "text": "", 
+            "title": "Sprint 9"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/#data-de-inicio-06052018", 
+            "text": "", 
+            "title": "Data de inicio: 06/05/2018"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/#data-de-termino-12052018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 12/05/2018"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/#reuniao", 
+            "text": "", 
+            "title": "Reuni\u00e3o"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/#data-da-reuniao-12052018", 
+            "text": "Nome  Presente      Byron Kamal  Presente    Gabriel Alves  Ausente    Igor Arag\u00e3o  Presente    Igor Veludo  Presente    Jo\u00e3o Mota  JUSTIFICADO    Marcelo Ara\u00fajo  Presente    William Silva  Presente", 
+            "title": "Data da reuni\u00e3o: 12/05/2018"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/#review", 
+            "text": "", 
+            "title": "Review"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/#historias-entregues", 
+            "text": "US#16-studentPanel  US#19-registerTeamMember", 
+            "title": "Hist\u00f3rias entregues:"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/#historias-nao-entregues", 
+            "text": "US#18-listClasses", 
+            "title": "Hist\u00f3rias n\u00e3o entregues:"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/#tarefas-entregues", 
+            "text": "Readme do Back-end (refatorado)", 
+            "title": "Tarefas entregues:"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/#total-de-pontos-planejados-16", 
+            "text": "", 
+            "title": "Total de pontos planejados: 16"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/#total-de-pontos-entregues-11", 
+            "text": "", 
+            "title": "Total de pontos entregues: 11"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/#restropectiva", 
+            "text": "", 
+            "title": "Restropectiva"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/#pontos-positivos", 
+            "text": "Melhoria no aprendizado do Front-End", 
+            "title": "Pontos Positivos:"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/#pontos-negativos", 
+            "text": "Execu\u00e7\u00e3o do planejamento foi ineficiente \n   Alguns membros n\u00e3o tiveram comunica\u00e7\u00e3o evetiva", 
+            "title": "Pontos Negativos:"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/#pontos-a-melhorar", 
+            "text": "Execu\u00e7\u00e3o das Sprints \n   Testes unit\u00e1rios \n   Gerenciamento do tempo dedicado ao projeto", 
+            "title": "Pontos a melhorar:"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/#burndown", 
+            "text": "Houve uma boa quantidade de pontos planejados para a sprint, e uma tarefa adicionada, totalizando 16 pontos.", 
+            "title": "Burndown"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/#velocity", 
+            "text": "Foram planejadas as entregas de 1 tarefa e 3 hist\u00f3rias. Por\u00e9m 1 hist\u00f3ria n\u00e3o foi entregue, se tornando uma d\u00edvida t\u00e9cnica para a pr\u00f3xima Sprint. Ou seja, dos 16 pontos planejados, apenas 11 foram entregues.", 
+            "title": "Velocity"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/#metricas", 
+            "text": "Nessa Sprint os valores alcan\u00e7ados nas m\u00e9tricas foram:", 
+            "title": "M\u00e9tricas"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/#frontend", 
+            "text": "M\u00e9trica  Resultado  Aceit\u00e1vel?      MAINTAINABILITY  A  Presente    BUILD  PASSING  Presente    TESTS COVERAGE  96%  Presente", 
+            "title": "FrontEnd"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/#backend", 
+            "text": "M\u00e9trica  Resultado  Aceit\u00e1vel?      MAINTAINABILITY  C  Presente    BUILD  PASSING  Presente    TESTS COVERAGE  65%  Ausente", 
+            "title": "BackEnd"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/#quadro-de-conhecimento", 
+            "text": "", 
+            "title": "Quadro de Conhecimento"
+        }, 
+        {
+            "location": "/sprints/09/results_sprint9/#analise-do-scrum-master", 
+            "text": "Nesta Sprint, apesar de termos falhado na entrega de uma hist\u00f3ria, a equipe entregou mais pontos do que a m\u00e9dia mostrada no velocity. Por\u00e9m, \u00e9 um n\u00famero ainda baixo, h\u00e1 a necessidade de um melhor planejamento individual na parte da equipe.", 
+            "title": "An\u00e1lise do Scrum Master"
+        }, 
+        {
+            "location": "/sprints/10/planning_sprint10/", 
+            "text": "Sprint 10\n\n\nData de inicio: 13/05/2018\n\n\nData de t\u00e9rmino: 19/05/2018\n\n\nPlanejamento\n\n\nPap\u00e9is\n\n\n\n\n\n\n\n\nNome\n\n\nPapel\n\n\n\n\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nScrum Master\n\n\n\n\n\n\nByron Kamal\n\n\nPO\n\n\n\n\n\n\nGabriel Alves\n\n\nDesenvolvimento\n\n\n\n\n\n\nIgor Veludo\n\n\nDesenvolvimento\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nDesenvolvimento\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nDesenvolvimento\n\n\n\n\n\n\nWilliam Silva\n\n\nDesenvolvimento\n\n\n\n\n\n\n\n\nPareamento\n\n\n\n\nIgor Arag\u00e3o\n\n\nIgor Veludo e William Silva\n\n\nByron Kamal e Marcelo Ara\u00fajo\n\n\nGabriel Alves e Jo\u00e3o Mota\n\n\n\n\nPlanejamento\n\n\n\n\nTS-Docker\n\n\nUS#13-createDailyLog\n\n\nUS#20-teamMemberPanel\n\n\nUS#18-listClasses\n\n\n\n\nA Sprint 10 resulta em 18 pontos planejados.\n\n\nMelhorias a serem tomadas\n\n\nA equipe deve melhorar no planejamento individual, ou seja, os membros do grupo devem aprender a lidar com as 10 horas semanais que devem ser dedicadas ao projeto, e tamb\u00e9m, saber dividir o tempo, para que haja um desenvolvimento \u00e1gil.", 
+            "title": "Planning sprint10"
+        }, 
+        {
+            "location": "/sprints/10/planning_sprint10/#sprint-10", 
+            "text": "", 
+            "title": "Sprint 10"
+        }, 
+        {
+            "location": "/sprints/10/planning_sprint10/#data-de-inicio-13052018", 
+            "text": "", 
+            "title": "Data de inicio: 13/05/2018"
+        }, 
+        {
+            "location": "/sprints/10/planning_sprint10/#data-de-termino-19052018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 19/05/2018"
+        }, 
+        {
+            "location": "/sprints/10/planning_sprint10/#planejamento", 
+            "text": "", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/10/planning_sprint10/#papeis", 
+            "text": "Nome  Papel      Igor Arag\u00e3o  Scrum Master    Byron Kamal  PO    Gabriel Alves  Desenvolvimento    Igor Veludo  Desenvolvimento    Jo\u00e3o Mota  Desenvolvimento    Marcelo Ara\u00fajo  Desenvolvimento    William Silva  Desenvolvimento", 
+            "title": "Pap\u00e9is"
+        }, 
+        {
+            "location": "/sprints/10/planning_sprint10/#pareamento", 
+            "text": "Igor Arag\u00e3o  Igor Veludo e William Silva  Byron Kamal e Marcelo Ara\u00fajo  Gabriel Alves e Jo\u00e3o Mota", 
+            "title": "Pareamento"
+        }, 
+        {
+            "location": "/sprints/10/planning_sprint10/#planejamento_1", 
+            "text": "TS-Docker  US#13-createDailyLog  US#20-teamMemberPanel  US#18-listClasses   A Sprint 10 resulta em 18 pontos planejados.", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/10/planning_sprint10/#melhorias-a-serem-tomadas", 
+            "text": "A equipe deve melhorar no planejamento individual, ou seja, os membros do grupo devem aprender a lidar com as 10 horas semanais que devem ser dedicadas ao projeto, e tamb\u00e9m, saber dividir o tempo, para que haja um desenvolvimento \u00e1gil.", 
+            "title": "Melhorias a serem tomadas"
+        }, 
+        {
+            "location": "/sprints/10/results_sprint10/", 
+            "text": "Sprint 10\n\n\nData de inicio: 13/05/2018\n\n\nData de t\u00e9rmino: 19/05/2018\n\n\nReuni\u00e3o\n\n\nData da reuni\u00e3o: 19/05/2018\n\n\n\n\n\n\n\n\nNome\n\n\nPresente\n\n\n\n\n\n\n\n\n\n\nByron Kamal\n\n\nPresente\n\n\n\n\n\n\nGabriel Alves\n\n\nAusente\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nPresente\n\n\n\n\n\n\nIgor Veludo\n\n\nPresente\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nJUSTIFICADO\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nPresente\n\n\n\n\n\n\nWilliam Silva\n\n\nPresente\n\n\n\n\n\n\n\n\nReview\n\n\nHist\u00f3rias entregues:\n\n\n\n\nUS#13-createDailyLog\n\n\nUS#20-teamMemberPanel\n\n\n\n\nHist\u00f3rias n\u00e3o entregues:\n\n\n\n\nTS-Docker\n\n\nUS#18-listClasses (D\u00edvida T\u00e9cnica)\n\n\n\n\nTotal de pontos planejados: 15\n\n\nTotal de pontos entregues: 10\n\n\nRetrospectiva\n\n\nPontos Positivos:\n\n\n\n   \nAlguns membros conseguiram evoluir com o pareamento.\n\n\n\n\nPontos Negativos:\n\n\n\n  \nExecu\u00e7\u00e3o do planejamento foi ineficiente\n\n  \nAlguns membros n\u00e3o tiveram comunica\u00e7\u00e3o efetiva\n\n  \nFalta de empenho envolvendo alguns membros\n\n\n\n\n\nPontos a melhorar:\n\n\n\n  \nGerenciamento do tempo, e empenho, dedicado ao projeto\n\n\n\n\nBurndown\n\n\n\n\nHouve uma boa quantidade de pontos planejados para a sprint, totalizando 15 pontos.\n\n\nVelocity\n\n\n\n\nForam planejadas as entregas de 1 d\u00edvida t\u00e9cnica, 1 hist\u00f3ria t\u00e9cnica e 2 hist\u00f3rias de usu\u00e1rio. Por\u00e9m 2 hist\u00f3rias n\u00e3o foram entregues, se tornando d\u00edvidas t\u00e9cnicas para a pr\u00f3xima Sprint. Ou seja, dos 15 pontos planejados, apenas 10 foram entregues.\n\n\nM\u00e9tricas\n\n\nNessa Sprint os valores alcan\u00e7ados nas m\u00e9tricas foram:\n\n\nBackEnd\n\n\n\n\n\n\n\n\nM\u00e9trica\n\n\nResultado\n\n\nAceit\u00e1vel?\n\n\n\n\n\n\n\n\n\n\nMAINTAINABILITY\n\n\nA\n\n\nPresente\n\n\n\n\n\n\nBUILD\n\n\nPASSING\n\n\nPresente\n\n\n\n\n\n\nTESTS COVERAGE\n\n\n96%\n\n\nPresente\n\n\n\n\n\n\n\n\nFrontEnd\n\n\n\n\n\n\n\n\nM\u00e9trica\n\n\nResultado\n\n\nAceit\u00e1vel?\n\n\n\n\n\n\n\n\n\n\nMAINTAINABILITY\n\n\nC\n\n\nAusente\n\n\n\n\n\n\nBUILD\n\n\nPASSING\n\n\nPresente\n\n\n\n\n\n\nTESTS COVERAGE\n\n\n69%\n\n\nAusente\n\n\n\n\n\n\n\n\nQuadro de Conhecimento\n\n\n\n\nAn\u00e1lise do Scrum Master\n\n\nNesta Sprint, falhamos na entrega de uma d\u00edvida t\u00e9cnica, e uma hist\u00f3ria t\u00e9cnica, tendo \"perdido\" 5 pontos nessa sprint, e n\u00e3o completado os pontos da Sprint anterior. S\u00e3o n\u00fameros ainda baixos, e preocupantes, pois a data de entrega est\u00e1 pr\u00f3xima. H\u00e1 a necessidade de um melhor planejamento individual na parte da equipe.", 
+            "title": "Results sprint10"
+        }, 
+        {
+            "location": "/sprints/10/results_sprint10/#sprint-10", 
+            "text": "", 
+            "title": "Sprint 10"
+        }, 
+        {
+            "location": "/sprints/10/results_sprint10/#data-de-inicio-13052018", 
+            "text": "", 
+            "title": "Data de inicio: 13/05/2018"
+        }, 
+        {
+            "location": "/sprints/10/results_sprint10/#data-de-termino-19052018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 19/05/2018"
+        }, 
+        {
+            "location": "/sprints/10/results_sprint10/#reuniao", 
+            "text": "", 
+            "title": "Reuni\u00e3o"
+        }, 
+        {
+            "location": "/sprints/10/results_sprint10/#data-da-reuniao-19052018", 
+            "text": "Nome  Presente      Byron Kamal  Presente    Gabriel Alves  Ausente    Igor Arag\u00e3o  Presente    Igor Veludo  Presente    Jo\u00e3o Mota  JUSTIFICADO    Marcelo Ara\u00fajo  Presente    William Silva  Presente", 
+            "title": "Data da reuni\u00e3o: 19/05/2018"
+        }, 
+        {
+            "location": "/sprints/10/results_sprint10/#review", 
+            "text": "", 
+            "title": "Review"
+        }, 
+        {
+            "location": "/sprints/10/results_sprint10/#historias-entregues", 
+            "text": "US#13-createDailyLog  US#20-teamMemberPanel", 
+            "title": "Hist\u00f3rias entregues:"
+        }, 
+        {
+            "location": "/sprints/10/results_sprint10/#historias-nao-entregues", 
+            "text": "TS-Docker  US#18-listClasses (D\u00edvida T\u00e9cnica)", 
+            "title": "Hist\u00f3rias n\u00e3o entregues:"
+        }, 
+        {
+            "location": "/sprints/10/results_sprint10/#total-de-pontos-planejados-15", 
+            "text": "", 
+            "title": "Total de pontos planejados: 15"
+        }, 
+        {
+            "location": "/sprints/10/results_sprint10/#total-de-pontos-entregues-10", 
+            "text": "", 
+            "title": "Total de pontos entregues: 10"
+        }, 
+        {
+            "location": "/sprints/10/results_sprint10/#retrospectiva", 
+            "text": "", 
+            "title": "Retrospectiva"
+        }, 
+        {
+            "location": "/sprints/10/results_sprint10/#pontos-positivos", 
+            "text": "Alguns membros conseguiram evoluir com o pareamento.", 
+            "title": "Pontos Positivos:"
+        }, 
+        {
+            "location": "/sprints/10/results_sprint10/#pontos-negativos", 
+            "text": "Execu\u00e7\u00e3o do planejamento foi ineficiente \n   Alguns membros n\u00e3o tiveram comunica\u00e7\u00e3o efetiva \n   Falta de empenho envolvendo alguns membros", 
+            "title": "Pontos Negativos:"
+        }, 
+        {
+            "location": "/sprints/10/results_sprint10/#pontos-a-melhorar", 
+            "text": "Gerenciamento do tempo, e empenho, dedicado ao projeto", 
+            "title": "Pontos a melhorar:"
+        }, 
+        {
+            "location": "/sprints/10/results_sprint10/#burndown", 
+            "text": "Houve uma boa quantidade de pontos planejados para a sprint, totalizando 15 pontos.", 
+            "title": "Burndown"
+        }, 
+        {
+            "location": "/sprints/10/results_sprint10/#velocity", 
+            "text": "Foram planejadas as entregas de 1 d\u00edvida t\u00e9cnica, 1 hist\u00f3ria t\u00e9cnica e 2 hist\u00f3rias de usu\u00e1rio. Por\u00e9m 2 hist\u00f3rias n\u00e3o foram entregues, se tornando d\u00edvidas t\u00e9cnicas para a pr\u00f3xima Sprint. Ou seja, dos 15 pontos planejados, apenas 10 foram entregues.", 
+            "title": "Velocity"
+        }, 
+        {
+            "location": "/sprints/10/results_sprint10/#metricas", 
+            "text": "Nessa Sprint os valores alcan\u00e7ados nas m\u00e9tricas foram:", 
+            "title": "M\u00e9tricas"
+        }, 
+        {
+            "location": "/sprints/10/results_sprint10/#backend", 
+            "text": "M\u00e9trica  Resultado  Aceit\u00e1vel?      MAINTAINABILITY  A  Presente    BUILD  PASSING  Presente    TESTS COVERAGE  96%  Presente", 
+            "title": "BackEnd"
+        }, 
+        {
+            "location": "/sprints/10/results_sprint10/#frontend", 
+            "text": "M\u00e9trica  Resultado  Aceit\u00e1vel?      MAINTAINABILITY  C  Ausente    BUILD  PASSING  Presente    TESTS COVERAGE  69%  Ausente", 
+            "title": "FrontEnd"
+        }, 
+        {
+            "location": "/sprints/10/results_sprint10/#quadro-de-conhecimento", 
+            "text": "", 
+            "title": "Quadro de Conhecimento"
+        }, 
+        {
+            "location": "/sprints/10/results_sprint10/#analise-do-scrum-master", 
+            "text": "Nesta Sprint, falhamos na entrega de uma d\u00edvida t\u00e9cnica, e uma hist\u00f3ria t\u00e9cnica, tendo \"perdido\" 5 pontos nessa sprint, e n\u00e3o completado os pontos da Sprint anterior. S\u00e3o n\u00fameros ainda baixos, e preocupantes, pois a data de entrega est\u00e1 pr\u00f3xima. H\u00e1 a necessidade de um melhor planejamento individual na parte da equipe.", 
+            "title": "An\u00e1lise do Scrum Master"
+        }, 
+        {
+            "location": "/sprints/11/planning_sprint11/", 
+            "text": "Sprint 11\n\n\nData de inicio: 20/05/2018\n\n\nData de t\u00e9rmino: 26/05/2018\n\n\nPlanejamento\n\n\nPap\u00e9is\n\n\n\n\n\n\n\n\nNome\n\n\nPapel\n\n\n\n\n\n\n\n\n\n\nWilliam Silva\n\n\nScrum Master\n\n\n\n\n\n\nByron Kamal\n\n\nPO\n\n\n\n\n\n\nGabriel Alves\n\n\nDesenvolvimento\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nDesenvolvimento\n\n\n\n\n\n\nIgor Veludo\n\n\nDesenvolvimento\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nDesenvolvimento\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nDesenvolvimento\n\n\n\n\n\n\n\n\nPareamento\n\n\n\n\nIgor Veludo, Byron Kamal e Gabriel Alves\n\n\nIgor Arag\u00e3o e William Silva\n\n\nJo\u00e3o Mota e Marcelo Ara\u00fajo\n\n\n\n\nPlanejamento\n\n\n\n\nUS#18-listClasses (D\u00edvida T\u00e9cnica)\n\n\nUS#21-studentReport\n\n\nTS#05-sideNav\n\n\n\n\nMelhorias a serem tomadas\n\n\nA equipe deve melhorar no planejamento individual, ou seja, os membros do grupo devem aprender a lidar com as 10 horas semanais que devem ser dedicadas ao projeto, e tamb\u00e9m, saber dividir o tempo, para que haja um desenvolvimento \u00e1gil.", 
+            "title": "Planning sprint11"
+        }, 
+        {
+            "location": "/sprints/11/planning_sprint11/#sprint-11", 
+            "text": "", 
+            "title": "Sprint 11"
+        }, 
+        {
+            "location": "/sprints/11/planning_sprint11/#data-de-inicio-20052018", 
+            "text": "", 
+            "title": "Data de inicio: 20/05/2018"
+        }, 
+        {
+            "location": "/sprints/11/planning_sprint11/#data-de-termino-26052018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 26/05/2018"
+        }, 
+        {
+            "location": "/sprints/11/planning_sprint11/#planejamento", 
+            "text": "", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/11/planning_sprint11/#papeis", 
+            "text": "Nome  Papel      William Silva  Scrum Master    Byron Kamal  PO    Gabriel Alves  Desenvolvimento    Igor Arag\u00e3o  Desenvolvimento    Igor Veludo  Desenvolvimento    Jo\u00e3o Mota  Desenvolvimento    Marcelo Ara\u00fajo  Desenvolvimento", 
+            "title": "Pap\u00e9is"
+        }, 
+        {
+            "location": "/sprints/11/planning_sprint11/#pareamento", 
+            "text": "Igor Veludo, Byron Kamal e Gabriel Alves  Igor Arag\u00e3o e William Silva  Jo\u00e3o Mota e Marcelo Ara\u00fajo", 
+            "title": "Pareamento"
+        }, 
+        {
+            "location": "/sprints/11/planning_sprint11/#planejamento_1", 
+            "text": "US#18-listClasses (D\u00edvida T\u00e9cnica)  US#21-studentReport  TS#05-sideNav", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/11/planning_sprint11/#melhorias-a-serem-tomadas", 
+            "text": "A equipe deve melhorar no planejamento individual, ou seja, os membros do grupo devem aprender a lidar com as 10 horas semanais que devem ser dedicadas ao projeto, e tamb\u00e9m, saber dividir o tempo, para que haja um desenvolvimento \u00e1gil.", 
+            "title": "Melhorias a serem tomadas"
+        }, 
+        {
+            "location": "/sprints/11/results_sprint11/", 
+            "text": "Sprint 11\n\n\nData de inicio: 20/05/2018\n\n\nData de t\u00e9rmino: 27/05/2018\n\n\nReuni\u00e3o\n\n\nData da reuni\u00e3o: 27/05/2018\n\n\n\n\n\n\n\n\nNome\n\n\nPresente\n\n\n\n\n\n\n\n\n\n\nByron Kamal\n\n\nPresente\n\n\n\n\n\n\nGabriel Alves\n\n\nPresente\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nPresente\n\n\n\n\n\n\nIgor Veludo\n\n\nJUSTIFICADO\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nJUSTIFICADO\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nPresente\n\n\n\n\n\n\nWilliam Silva\n\n\nPresente\n\n\n\n\n\n\n\n\nReview\n\n\nHist\u00f3rias entregues:\n\n\n\n\nUS#18-listClasses (D\u00edvida T\u00e9cnica)\n\n\nUS#21-studentReport\n\n\nTS#05-sideNav\n\n\n\n\nHist\u00f3rias n\u00e3o entregues:\n\n\nTotal de pontos planejados: 10\n\n\nTotal de pontos entregues: 10\n\n\nRetrospectiva\n\n\nPontos Positivos:\n\n\n\n   \nHouveram avan\u00e7os com pareamento\n\n   \nTodas hist\u00f3rias planejadas foram entregues\n\n\n\n\nPontos Negativos:\n\n\n\n  \nAinda falta empenho de alguns integrantes\n\n\n\n\n\nPontos a melhorar:\n\n\n\n  \nNivelamento t\u00e9cnico da equipe\n\n  \nGest\u00e3o de tempo individual\n\n\n\n\nBurndown\n\n\n\n\nPor conta de d\u00edvida t\u00e9cnica os pontos entregues para a Sprint 11 foram menores.\n\n\nVelocity\n\n\n\n\nForam planejadas as entregas de 1 d\u00edvida t\u00e9cnica, 1 hist\u00f3ria t\u00e9cnica e 1 hist\u00f3ria de usu\u00e1rio. Os pontos planejados foram um pouco acima da m\u00e9dia e todos pontos planejados foram entregues.\n\n\nM\u00e9tricas\n\n\nNessa Sprint os valores alcan\u00e7ados nas m\u00e9tricas foram:\n\n\nBackEnd\n\n\n\n\n\n\n\n\nM\u00e9trica\n\n\nResultado\n\n\nAceit\u00e1vel?\n\n\n\n\n\n\n\n\n\n\nMAINTAINABILITY\n\n\nA\n\n\nPresente\n\n\n\n\n\n\nBUILD\n\n\nPASSING\n\n\nPresente\n\n\n\n\n\n\nTESTS COVERAGE\n\n\n97%\n\n\nPresente\n\n\n\n\n\n\n\n\nFrontEnd\n\n\n\n\n\n\n\n\nM\u00e9trica\n\n\nResultado\n\n\nAceit\u00e1vel?\n\n\n\n\n\n\n\n\n\n\nMAINTAINABILITY\n\n\nF\n\n\nAusente\n\n\n\n\n\n\nBUILD\n\n\nPASSING\n\n\nPresente\n\n\n\n\n\n\nTESTS COVERAGE\n\n\n69%\n\n\nAusente\n\n\n\n\n\n\n\n\nQuadro de Conhecimento\n\n\n\n\nAn\u00e1lise do Scrum Master\n\n\nNessa Sprint, pela primeira vez nesse projeto todas hist\u00f3rias planejadas foram conclu\u00eddas. Houve tamb\u00e9m a maior participa\u00e7\u00e3o de membros que se mostravam mais ausentes em rela\u00e7\u00e3o ao c\u00f3digo. O pareamento de certa forma foi bem-sucedido, pois alguns membros conseguiram melhorar seu conhecimento. Para as pr\u00f3ximas sprints, a participa\u00e7\u00e3o de todos membros, as entregas das hist\u00f3rias e o aumento de pontos planejados s\u00e3o necess\u00e1rios para a entrega do projeto.", 
+            "title": "Results sprint11"
+        }, 
+        {
+            "location": "/sprints/11/results_sprint11/#sprint-11", 
+            "text": "", 
+            "title": "Sprint 11"
+        }, 
+        {
+            "location": "/sprints/11/results_sprint11/#data-de-inicio-20052018", 
+            "text": "", 
+            "title": "Data de inicio: 20/05/2018"
+        }, 
+        {
+            "location": "/sprints/11/results_sprint11/#data-de-termino-27052018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 27/05/2018"
+        }, 
+        {
+            "location": "/sprints/11/results_sprint11/#reuniao", 
+            "text": "", 
+            "title": "Reuni\u00e3o"
+        }, 
+        {
+            "location": "/sprints/11/results_sprint11/#data-da-reuniao-27052018", 
+            "text": "Nome  Presente      Byron Kamal  Presente    Gabriel Alves  Presente    Igor Arag\u00e3o  Presente    Igor Veludo  JUSTIFICADO    Jo\u00e3o Mota  JUSTIFICADO    Marcelo Ara\u00fajo  Presente    William Silva  Presente", 
+            "title": "Data da reuni\u00e3o: 27/05/2018"
+        }, 
+        {
+            "location": "/sprints/11/results_sprint11/#review", 
+            "text": "", 
+            "title": "Review"
+        }, 
+        {
+            "location": "/sprints/11/results_sprint11/#historias-entregues", 
+            "text": "US#18-listClasses (D\u00edvida T\u00e9cnica)  US#21-studentReport  TS#05-sideNav", 
+            "title": "Hist\u00f3rias entregues:"
+        }, 
+        {
+            "location": "/sprints/11/results_sprint11/#historias-nao-entregues", 
+            "text": "", 
+            "title": "Hist\u00f3rias n\u00e3o entregues:"
+        }, 
+        {
+            "location": "/sprints/11/results_sprint11/#total-de-pontos-planejados-10", 
+            "text": "", 
+            "title": "Total de pontos planejados: 10"
+        }, 
+        {
+            "location": "/sprints/11/results_sprint11/#total-de-pontos-entregues-10", 
+            "text": "", 
+            "title": "Total de pontos entregues: 10"
+        }, 
+        {
+            "location": "/sprints/11/results_sprint11/#retrospectiva", 
+            "text": "", 
+            "title": "Retrospectiva"
+        }, 
+        {
+            "location": "/sprints/11/results_sprint11/#pontos-positivos", 
+            "text": "Houveram avan\u00e7os com pareamento \n    Todas hist\u00f3rias planejadas foram entregues", 
+            "title": "Pontos Positivos:"
+        }, 
+        {
+            "location": "/sprints/11/results_sprint11/#pontos-negativos", 
+            "text": "Ainda falta empenho de alguns integrantes", 
+            "title": "Pontos Negativos:"
+        }, 
+        {
+            "location": "/sprints/11/results_sprint11/#pontos-a-melhorar", 
+            "text": "Nivelamento t\u00e9cnico da equipe \n   Gest\u00e3o de tempo individual", 
+            "title": "Pontos a melhorar:"
+        }, 
+        {
+            "location": "/sprints/11/results_sprint11/#burndown", 
+            "text": "Por conta de d\u00edvida t\u00e9cnica os pontos entregues para a Sprint 11 foram menores.", 
+            "title": "Burndown"
+        }, 
+        {
+            "location": "/sprints/11/results_sprint11/#velocity", 
+            "text": "Foram planejadas as entregas de 1 d\u00edvida t\u00e9cnica, 1 hist\u00f3ria t\u00e9cnica e 1 hist\u00f3ria de usu\u00e1rio. Os pontos planejados foram um pouco acima da m\u00e9dia e todos pontos planejados foram entregues.", 
+            "title": "Velocity"
+        }, 
+        {
+            "location": "/sprints/11/results_sprint11/#metricas", 
+            "text": "Nessa Sprint os valores alcan\u00e7ados nas m\u00e9tricas foram:", 
+            "title": "M\u00e9tricas"
+        }, 
+        {
+            "location": "/sprints/11/results_sprint11/#backend", 
+            "text": "M\u00e9trica  Resultado  Aceit\u00e1vel?      MAINTAINABILITY  A  Presente    BUILD  PASSING  Presente    TESTS COVERAGE  97%  Presente", 
+            "title": "BackEnd"
+        }, 
+        {
+            "location": "/sprints/11/results_sprint11/#frontend", 
+            "text": "M\u00e9trica  Resultado  Aceit\u00e1vel?      MAINTAINABILITY  F  Ausente    BUILD  PASSING  Presente    TESTS COVERAGE  69%  Ausente", 
+            "title": "FrontEnd"
+        }, 
+        {
+            "location": "/sprints/11/results_sprint11/#quadro-de-conhecimento", 
+            "text": "", 
+            "title": "Quadro de Conhecimento"
+        }, 
+        {
+            "location": "/sprints/11/results_sprint11/#analise-do-scrum-master", 
+            "text": "Nessa Sprint, pela primeira vez nesse projeto todas hist\u00f3rias planejadas foram conclu\u00eddas. Houve tamb\u00e9m a maior participa\u00e7\u00e3o de membros que se mostravam mais ausentes em rela\u00e7\u00e3o ao c\u00f3digo. O pareamento de certa forma foi bem-sucedido, pois alguns membros conseguiram melhorar seu conhecimento. Para as pr\u00f3ximas sprints, a participa\u00e7\u00e3o de todos membros, as entregas das hist\u00f3rias e o aumento de pontos planejados s\u00e3o necess\u00e1rios para a entrega do projeto.", 
+            "title": "An\u00e1lise do Scrum Master"
+        }, 
+        {
+            "location": "/sprints/12/planning_sprint12/", 
+            "text": "Sprint 12\n\n\nData de inicio: 27/05/2018\n\n\nData de t\u00e9rmino: 02/06/2018\n\n\nPlanejamento\n\n\nPap\u00e9is\n\n\n\n\n\n\n\n\nNome\n\n\nPapel\n\n\n\n\n\n\n\n\n\n\nByron Kamal\n\n\nScrum Master\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nPO\n\n\n\n\n\n\nWilliam Silva\n\n\nDesenvolvimento\n\n\n\n\n\n\nGabriel Alves\n\n\nDesenvolvimento\n\n\n\n\n\n\nIgor Veludo\n\n\nDesenvolvimento\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nDesenvolvimento\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nDesenvolvimento\n\n\n\n\n\n\n\n\nPareamento\n\n\n\n\nByron Kamal e Jo\u00e3o Mota\n\n\nIgor Arag\u00e3o e Gabriel Alves\n\n\nWilliam Silva, Igor Veludo e Marcelo Ara\u00fajo\n\n\n\n\nPlanejamento\n\n\n\n\nUS#22-studentReferral\n\n\nUS#23-exportReport\n\n\nUS#25-memberEdit\n\n\n\n\nMelhorias a serem tomadas\n\n\nA equipe deve melhorar no planejamento individual, ou seja, os membros do grupo devem aprender a lidar com as 10 horas semanais que devem ser dedicadas ao projeto, e tamb\u00e9m, saber dividir o tempo, para que haja um desenvolvimento \u00e1gil. Os pareamentos precisam ser feitos de forma mais efetiva para a evolu\u00e7\u00e3o t\u00e9cnica da equipe.", 
+            "title": "Planning sprint12"
+        }, 
+        {
+            "location": "/sprints/12/planning_sprint12/#sprint-12", 
+            "text": "", 
+            "title": "Sprint 12"
+        }, 
+        {
+            "location": "/sprints/12/planning_sprint12/#data-de-inicio-27052018", 
+            "text": "", 
+            "title": "Data de inicio: 27/05/2018"
+        }, 
+        {
+            "location": "/sprints/12/planning_sprint12/#data-de-termino-02062018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 02/06/2018"
+        }, 
+        {
+            "location": "/sprints/12/planning_sprint12/#planejamento", 
+            "text": "", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/12/planning_sprint12/#papeis", 
+            "text": "Nome  Papel      Byron Kamal  Scrum Master    Igor Arag\u00e3o  PO    William Silva  Desenvolvimento    Gabriel Alves  Desenvolvimento    Igor Veludo  Desenvolvimento    Jo\u00e3o Mota  Desenvolvimento    Marcelo Ara\u00fajo  Desenvolvimento", 
+            "title": "Pap\u00e9is"
+        }, 
+        {
+            "location": "/sprints/12/planning_sprint12/#pareamento", 
+            "text": "Byron Kamal e Jo\u00e3o Mota  Igor Arag\u00e3o e Gabriel Alves  William Silva, Igor Veludo e Marcelo Ara\u00fajo", 
+            "title": "Pareamento"
+        }, 
+        {
+            "location": "/sprints/12/planning_sprint12/#planejamento_1", 
+            "text": "US#22-studentReferral  US#23-exportReport  US#25-memberEdit", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/12/planning_sprint12/#melhorias-a-serem-tomadas", 
+            "text": "A equipe deve melhorar no planejamento individual, ou seja, os membros do grupo devem aprender a lidar com as 10 horas semanais que devem ser dedicadas ao projeto, e tamb\u00e9m, saber dividir o tempo, para que haja um desenvolvimento \u00e1gil. Os pareamentos precisam ser feitos de forma mais efetiva para a evolu\u00e7\u00e3o t\u00e9cnica da equipe.", 
+            "title": "Melhorias a serem tomadas"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/", 
+            "text": "Sprint 12\n\n\nData de inicio: 27/05/2018\n\n\nData de t\u00e9rmino: 02/06/2018\n\n\nReuni\u00e3o\n\n\nData da reuni\u00e3o: 02/06/2018\n\n\n\n\n\n\n\n\nNome\n\n\nPresente\n\n\n\n\n\n\n\n\n\n\nByron Kamal\n\n\nPresente\n\n\n\n\n\n\nGabriel Alves\n\n\nJUSTIFICADO\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nPresente\n\n\n\n\n\n\nIgor Veludo\n\n\nPresente\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nPresente\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nPresente\n\n\n\n\n\n\nWilliam Silva\n\n\nPresente\n\n\n\n\n\n\n\n\nReview\n\n\nHist\u00f3rias entregues:\n\n\n\n\nUS#22-studentReferral\n - \n8 pontos\n\n\nUS#25-editTeamMember\n \n3 pontos\n\n\n\n\nHist\u00f3rias n\u00e3o entregues:\n\n\n\n\nUS#23-exportReport\n \n8 pontos\n\n\n\n\nTotal de pontos planejados: 19\n\n\nTotal de pontos entregues: 11\n\n\nRetrospectiva\n\n\nPontos Positivos:\n\n\n\n   \nMelhora no conhecimento t\u00e9cnico - linguagens\n\n   \nMelhora nos pareamentos\n\n   \nMelhora na gest\u00e3o do tempo\n\n\n\n\nPontos Negativos:\n\n\n\n  \nTestes no front-end\n\n\n\n\n\nPontos a melhorar:\n\n\n\n  \nNivelamento t\u00e9cnico da equipe\n\n  \nTestes no front-end\n\n\n\n\nBurndown\n\n\n\n\nVelocity\n\n\n\n\nForam planejadas as entregas de 3 hist\u00f3rias de usu\u00e1rio, por\u00e9m s\u00f3 foram entregues 2. Apesar de ter ocorrido uma melhora na gest\u00e3o individual do tempo de cada integrante, ainda houveram complica\u00e7\u00f5es ao longo da sprint que dever\u00e3o ser resolvidas na sprint 13. \n\n\nM\u00e9tricas\n\n\nNessa Sprint os valores alcan\u00e7ados nas m\u00e9tricas foram:\n\n\nBackEnd\n\n\n\n\n\n\n\n\nM\u00e9trica\n\n\nResultado\n\n\nAceit\u00e1vel?\n\n\n\n\n\n\n\n\n\n\nMAINTAINABILITY\n\n\nA\n\n\nPresente\n\n\n\n\n\n\nBUILD\n\n\nPASSING\n\n\nPresente\n\n\n\n\n\n\nTESTS COVERAGE\n\n\n97%\n\n\nPresente\n\n\n\n\n\n\n\n\nFrontEnd\n\n\n\n\n\n\n\n\nM\u00e9trica\n\n\nResultado\n\n\nAceit\u00e1vel?\n\n\n\n\n\n\n\n\n\n\nMAINTAINABILITY\n\n\nF\n\n\nAusente\n\n\n\n\n\n\nBUILD\n\n\nPASSING\n\n\nPresente\n\n\n\n\n\n\nTESTS COVERAGE\n\n\n68%\n\n\nAusente\n\n\n\n\n\n\n\n\nCompara\u00e7\u00e3o Entre Quadros de Conhecimento\n\n\nSprint 11 (passada)\n\n\n\n\nSprint 12 (atual)\n\n\n\n\nAn\u00e1lise do Scrum Master\n\n\nNessa Sprint, alguns integrantes tiveram problemas que afetaram o desenvolvimento de uma hist\u00f3ria. Outro ponto \u00e9 que as entregas ocorreram muito ao final da sprint, porque a equipe se deparou com a falta de conhecimento em algumas bibliotecas, no front-end.\n \n\nHouve maior participa\u00e7\u00e3o de membros que se mostravam mais ausentes em rela\u00e7\u00e3o ao c\u00f3digo. O pareamento de certa forma foi bem-sucedido, pois alguns membros conseguiram melhorar seu conhecimento, o que \u00e9 poss\u00edvel ver no quadro de conhecimento.", 
+            "title": "Results sprint12"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#sprint-12", 
+            "text": "", 
+            "title": "Sprint 12"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#data-de-inicio-27052018", 
+            "text": "", 
+            "title": "Data de inicio: 27/05/2018"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#data-de-termino-02062018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 02/06/2018"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#reuniao", 
+            "text": "", 
+            "title": "Reuni\u00e3o"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#data-da-reuniao-02062018", 
+            "text": "Nome  Presente      Byron Kamal  Presente    Gabriel Alves  JUSTIFICADO    Igor Arag\u00e3o  Presente    Igor Veludo  Presente    Jo\u00e3o Mota  Presente    Marcelo Ara\u00fajo  Presente    William Silva  Presente", 
+            "title": "Data da reuni\u00e3o: 02/06/2018"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#review", 
+            "text": "", 
+            "title": "Review"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#historias-entregues", 
+            "text": "US#22-studentReferral  -  8 pontos  US#25-editTeamMember   3 pontos", 
+            "title": "Hist\u00f3rias entregues:"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#historias-nao-entregues", 
+            "text": "US#23-exportReport   8 pontos", 
+            "title": "Hist\u00f3rias n\u00e3o entregues:"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#total-de-pontos-planejados-19", 
+            "text": "", 
+            "title": "Total de pontos planejados: 19"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#total-de-pontos-entregues-11", 
+            "text": "", 
+            "title": "Total de pontos entregues: 11"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#retrospectiva", 
+            "text": "", 
+            "title": "Retrospectiva"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#pontos-positivos", 
+            "text": "Melhora no conhecimento t\u00e9cnico - linguagens \n    Melhora nos pareamentos \n    Melhora na gest\u00e3o do tempo", 
+            "title": "Pontos Positivos:"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#pontos-negativos", 
+            "text": "Testes no front-end", 
+            "title": "Pontos Negativos:"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#pontos-a-melhorar", 
+            "text": "Nivelamento t\u00e9cnico da equipe \n   Testes no front-end", 
+            "title": "Pontos a melhorar:"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#burndown", 
+            "text": "", 
+            "title": "Burndown"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#velocity", 
+            "text": "Foram planejadas as entregas de 3 hist\u00f3rias de usu\u00e1rio, por\u00e9m s\u00f3 foram entregues 2. Apesar de ter ocorrido uma melhora na gest\u00e3o individual do tempo de cada integrante, ainda houveram complica\u00e7\u00f5es ao longo da sprint que dever\u00e3o ser resolvidas na sprint 13.", 
+            "title": "Velocity"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#metricas", 
+            "text": "Nessa Sprint os valores alcan\u00e7ados nas m\u00e9tricas foram:", 
+            "title": "M\u00e9tricas"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#backend", 
+            "text": "M\u00e9trica  Resultado  Aceit\u00e1vel?      MAINTAINABILITY  A  Presente    BUILD  PASSING  Presente    TESTS COVERAGE  97%  Presente", 
+            "title": "BackEnd"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#frontend", 
+            "text": "M\u00e9trica  Resultado  Aceit\u00e1vel?      MAINTAINABILITY  F  Ausente    BUILD  PASSING  Presente    TESTS COVERAGE  68%  Ausente", 
+            "title": "FrontEnd"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#comparacao-entre-quadros-de-conhecimento", 
+            "text": "", 
+            "title": "Compara\u00e7\u00e3o Entre Quadros de Conhecimento"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#sprint-11-passada", 
+            "text": "", 
+            "title": "Sprint 11 (passada)"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#sprint-12-atual", 
+            "text": "", 
+            "title": "Sprint 12 (atual)"
+        }, 
+        {
+            "location": "/sprints/12/results_sprint12/#analise-do-scrum-master", 
+            "text": "Nessa Sprint, alguns integrantes tiveram problemas que afetaram o desenvolvimento de uma hist\u00f3ria. Outro ponto \u00e9 que as entregas ocorreram muito ao final da sprint, porque a equipe se deparou com a falta de conhecimento em algumas bibliotecas, no front-end.   Houve maior participa\u00e7\u00e3o de membros que se mostravam mais ausentes em rela\u00e7\u00e3o ao c\u00f3digo. O pareamento de certa forma foi bem-sucedido, pois alguns membros conseguiram melhorar seu conhecimento, o que \u00e9 poss\u00edvel ver no quadro de conhecimento.", 
+            "title": "An\u00e1lise do Scrum Master"
+        }, 
+        {
+            "location": "/sprints/13/planning_sprint13/", 
+            "text": "Sprint 13\n\n\nData de inicio: 03/06/2018\n\n\nData de t\u00e9rmino: 09/06/2018\n\n\nPlanejamento\n\n\nPap\u00e9is\n\n\n\n\n\n\n\n\nNome\n\n\nPapel\n\n\n\n\n\n\n\n\n\n\nIgor Veludo\n\n\nScrum Master\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nPO\n\n\n\n\n\n\nByron Kamal\n\n\nDesenvolvimento\n\n\n\n\n\n\nWilliam Silva\n\n\nDesenvolvimento\n\n\n\n\n\n\nGabriel Alves\n\n\nDesenvolvimento\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nDesenvolvimento\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nDesenvolvimento\n\n\n\n\n\n\n\n\nPareamento\n\n\n\n\nByron, Igor Veludo e Marcelo\n\n\nWilliam e Gabriel\n\n\nIgor Arag\u00e3o e Mota\n\n\n\n\nPlanejamento\n\n\nUS - Hist\u00f3rias de Usu\u00e1rio\n\n\n\n\nUS#14-sendRecommendations\n \nPontos 8\n\n\nUS#26-studentPanelLog\n \nPontos 3\n\n\n\n\nTD - Divida Tecnica\n\n\n\n\nUS#23-exportReport\n \n8 pontos\n\n\n\n\nMelhorias a serem tomadas\n\n\nProblemas individuias devem ser relatados ao scrum master e \u00e0 equipe, para que decis\u00f5es possam ser tomada e assim n\u00e3o afetando o desenvolvimento do projeto.", 
+            "title": "Planning sprint13"
+        }, 
+        {
+            "location": "/sprints/13/planning_sprint13/#sprint-13", 
+            "text": "", 
+            "title": "Sprint 13"
+        }, 
+        {
+            "location": "/sprints/13/planning_sprint13/#data-de-inicio-03062018", 
+            "text": "", 
+            "title": "Data de inicio: 03/06/2018"
+        }, 
+        {
+            "location": "/sprints/13/planning_sprint13/#data-de-termino-09062018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 09/06/2018"
+        }, 
+        {
+            "location": "/sprints/13/planning_sprint13/#planejamento", 
+            "text": "", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/13/planning_sprint13/#papeis", 
+            "text": "Nome  Papel      Igor Veludo  Scrum Master    Igor Arag\u00e3o  PO    Byron Kamal  Desenvolvimento    William Silva  Desenvolvimento    Gabriel Alves  Desenvolvimento    Jo\u00e3o Mota  Desenvolvimento    Marcelo Ara\u00fajo  Desenvolvimento", 
+            "title": "Pap\u00e9is"
+        }, 
+        {
+            "location": "/sprints/13/planning_sprint13/#pareamento", 
+            "text": "Byron, Igor Veludo e Marcelo  William e Gabriel  Igor Arag\u00e3o e Mota", 
+            "title": "Pareamento"
+        }, 
+        {
+            "location": "/sprints/13/planning_sprint13/#planejamento_1", 
+            "text": "", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/13/planning_sprint13/#us-historias-de-usuario", 
+            "text": "US#14-sendRecommendations   Pontos 8  US#26-studentPanelLog   Pontos 3", 
+            "title": "US - Hist\u00f3rias de Usu\u00e1rio"
+        }, 
+        {
+            "location": "/sprints/13/planning_sprint13/#td-divida-tecnica", 
+            "text": "US#23-exportReport   8 pontos", 
+            "title": "TD - Divida Tecnica"
+        }, 
+        {
+            "location": "/sprints/13/planning_sprint13/#melhorias-a-serem-tomadas", 
+            "text": "Problemas individuias devem ser relatados ao scrum master e \u00e0 equipe, para que decis\u00f5es possam ser tomada e assim n\u00e3o afetando o desenvolvimento do projeto.", 
+            "title": "Melhorias a serem tomadas"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/", 
+            "text": "Sprint 13\n\n\nData de inicio: 02/05/2018\n\n\nData de t\u00e9rmino: 09/06/2018\n\n\nReuni\u00e3o\n\n\nData da reuni\u00e3o: 09/06/2018\n\n\n\n\n\n\n\n\nNome\n\n\nPresente\n\n\n\n\n\n\n\n\n\n\nByron Kamal\n\n\nPresente\n\n\n\n\n\n\nGabriel Alves\n\n\nPresente\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nJUSTIFICADO\n\n\n\n\n\n\nIgor Veludo\n\n\nPresente\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nJUSTIFICADO\n\n\n\n\n\n\nMarcelo Ara\u00fajo\n\n\nPresente\n\n\n\n\n\n\nWilliam Silva\n\n\nPresente\n\n\n\n\n\n\n\n\nReview\n\n\nHist\u00f3rias entregues:\n\n\n\n\nUS#14-sendRecommendations\n \nPontos 8\n\n\nUS#26-studentPanelLog\n \nPontos 3\n\n\n\n\nTD - Divida Tecnica\n\n\n\n\nUS#23-exportReport\n \n8 pontos\n\n\n\n\nTotal de pontos planejados: 11\n\n\nTotal de pontos entregues: 11\n\n\nRetrospectiva\n\n\nPontos Positivos:\n\n\n\n   \nMelhora no conhecimento t\u00e9cnico - linguagens\n\n   \nMelhora nos pareamentos\n\n   \nMelhora na gest\u00e3o do tempo\n\n\n\n\nPontos Negativos:\n\n\n\n  \nTestes no front-end\n\n\n\n\n\nPontos a melhorar:\n\n\n\n  \nNivelamento t\u00e9cnico da equipe\n\n  \nTestes no front-end\n\n\n\n\nBurndown\n\n\n\n\nVelocity\n\n\n\n\nForam planejadas as entregas de 3 hist\u00f3rias de usu\u00e1rio, sendo uma divida t\u00e9cnica. Todas foram entregues.\n\n\nM\u00e9tricas\n\n\nNessa Sprint os valores alcan\u00e7ados nas m\u00e9tricas foram:\n\n\nBackEnd\n\n\n\n\n\n\n\n\nM\u00e9trica\n\n\nResultado\n\n\nAceit\u00e1vel?\n\n\n\n\n\n\n\n\n\n\nMAINTAINABILITY\n\n\nA\n\n\nPresente\n\n\n\n\n\n\nBUILD\n\n\nPASSING\n\n\nPresente\n\n\n\n\n\n\nTESTS COVERAGE\n\n\n97%\n\n\nPresente\n\n\n\n\n\n\n\n\nFrontEnd\n\n\n\n\n\n\n\n\nM\u00e9trica\n\n\nResultado\n\n\nAceit\u00e1vel?\n\n\n\n\n\n\n\n\n\n\nMAINTAINABILITY\n\n\nF\n\n\nAusente\n\n\n\n\n\n\nBUILD\n\n\nPASSING\n\n\nPresente\n\n\n\n\n\n\nTESTS COVERAGE\n\n\n65%\n\n\nAusente\n\n\n\n\n\n\n\n\nCompara\u00e7\u00e3o Entre Quadros de Conhecimento\n\n\nSprint 12 (passada)\n\n\n\n\nSprint 13 (atual)\n\n\n\n\nAn\u00e1lise do Scrum Master\n\n\nNessa Sprint, houve um comprometimento maior dos integrantes em rela\u00e7\u00e3o a Sprint passada. Alguns pareamentos conseguiram entregar a sua hist\u00f3ria bem mais cedo em rela\u00e7\u00e3o a Sprint passada. Por\u00e9m, outros grupos de pareamento entregaram em cima da hora.\n\n\nHouve maior participa\u00e7\u00e3o de membros que se mostravam mais ausentes em rela\u00e7\u00e3o ao c\u00f3digo. O pareamento de certa forma foi bem-sucedido, pois alguns membros conseguiram melhorar seu conhecimento, o que \u00e9 poss\u00edvel ver no quadro de conhecimento.", 
+            "title": "Results sprint13"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#sprint-13", 
+            "text": "", 
+            "title": "Sprint 13"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#data-de-inicio-02052018", 
+            "text": "", 
+            "title": "Data de inicio: 02/05/2018"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#data-de-termino-09062018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 09/06/2018"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#reuniao", 
+            "text": "", 
+            "title": "Reuni\u00e3o"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#data-da-reuniao-09062018", 
+            "text": "Nome  Presente      Byron Kamal  Presente    Gabriel Alves  Presente    Igor Arag\u00e3o  JUSTIFICADO    Igor Veludo  Presente    Jo\u00e3o Mota  JUSTIFICADO    Marcelo Ara\u00fajo  Presente    William Silva  Presente", 
+            "title": "Data da reuni\u00e3o: 09/06/2018"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#review", 
+            "text": "", 
+            "title": "Review"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#historias-entregues", 
+            "text": "US#14-sendRecommendations   Pontos 8  US#26-studentPanelLog   Pontos 3", 
+            "title": "Hist\u00f3rias entregues:"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#td-divida-tecnica", 
+            "text": "US#23-exportReport   8 pontos", 
+            "title": "TD - Divida Tecnica"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#total-de-pontos-planejados-11", 
+            "text": "", 
+            "title": "Total de pontos planejados: 11"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#total-de-pontos-entregues-11", 
+            "text": "", 
+            "title": "Total de pontos entregues: 11"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#retrospectiva", 
+            "text": "", 
+            "title": "Retrospectiva"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#pontos-positivos", 
+            "text": "Melhora no conhecimento t\u00e9cnico - linguagens \n    Melhora nos pareamentos \n    Melhora na gest\u00e3o do tempo", 
+            "title": "Pontos Positivos:"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#pontos-negativos", 
+            "text": "Testes no front-end", 
+            "title": "Pontos Negativos:"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#pontos-a-melhorar", 
+            "text": "Nivelamento t\u00e9cnico da equipe \n   Testes no front-end", 
+            "title": "Pontos a melhorar:"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#burndown", 
+            "text": "", 
+            "title": "Burndown"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#velocity", 
+            "text": "Foram planejadas as entregas de 3 hist\u00f3rias de usu\u00e1rio, sendo uma divida t\u00e9cnica. Todas foram entregues.", 
+            "title": "Velocity"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#metricas", 
+            "text": "Nessa Sprint os valores alcan\u00e7ados nas m\u00e9tricas foram:", 
+            "title": "M\u00e9tricas"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#backend", 
+            "text": "M\u00e9trica  Resultado  Aceit\u00e1vel?      MAINTAINABILITY  A  Presente    BUILD  PASSING  Presente    TESTS COVERAGE  97%  Presente", 
+            "title": "BackEnd"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#frontend", 
+            "text": "M\u00e9trica  Resultado  Aceit\u00e1vel?      MAINTAINABILITY  F  Ausente    BUILD  PASSING  Presente    TESTS COVERAGE  65%  Ausente", 
+            "title": "FrontEnd"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#comparacao-entre-quadros-de-conhecimento", 
+            "text": "", 
+            "title": "Compara\u00e7\u00e3o Entre Quadros de Conhecimento"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#sprint-12-passada", 
+            "text": "", 
+            "title": "Sprint 12 (passada)"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#sprint-13-atual", 
+            "text": "", 
+            "title": "Sprint 13 (atual)"
+        }, 
+        {
+            "location": "/sprints/13/results_sprint13/#analise-do-scrum-master", 
+            "text": "Nessa Sprint, houve um comprometimento maior dos integrantes em rela\u00e7\u00e3o a Sprint passada. Alguns pareamentos conseguiram entregar a sua hist\u00f3ria bem mais cedo em rela\u00e7\u00e3o a Sprint passada. Por\u00e9m, outros grupos de pareamento entregaram em cima da hora.  Houve maior participa\u00e7\u00e3o de membros que se mostravam mais ausentes em rela\u00e7\u00e3o ao c\u00f3digo. O pareamento de certa forma foi bem-sucedido, pois alguns membros conseguiram melhorar seu conhecimento, o que \u00e9 poss\u00edvel ver no quadro de conhecimento.", 
+            "title": "An\u00e1lise do Scrum Master"
+        }, 
+        {
+            "location": "/sprints/14/planning_sprint14/", 
+            "text": "Sprint 14\n\n\nData de inicio: 10/06/2018\n\n\nData de t\u00e9rmino: 16/06/2018\n\n\nPlanejamento\n\n\nPap\u00e9is\n\n\n\n\n\n\n\n\nNome\n\n\nPapel\n\n\n\n\n\n\n\n\n\n\nGabriel Alves\n\n\nScrum Master\n\n\n\n\n\n\nMarcelo\n\n\nPO\n\n\n\n\n\n\nByron Kamal\n\n\nDesenvolvimento\n\n\n\n\n\n\nWilliam Silva\n\n\nDesenvolvimento\n\n\n\n\n\n\nIgor Arag\u00e3o\n\n\nDesenvolvimento\n\n\n\n\n\n\nIgor Veludo\n\n\nDesenvolvimento\n\n\n\n\n\n\nJo\u00e3o Mota\n\n\nDesenvolvimento\n\n\n\n\n\n\n\n\nPareamento\n\n\n\n\nByron Kamal e Gabriel\n\n\nIgor Arag\u00e3o e Marcelo\n\n\nWilliam Silva, Igor Veludo e Mota\n\n\n\n\nPlanejamento\n\n\n\n\nUS#27-membersManagement\n\n\nTS#07-increaseTest\n\n\nUS#26-studentPanelLog", 
+            "title": "Planning sprint14"
+        }, 
+        {
+            "location": "/sprints/14/planning_sprint14/#sprint-14", 
+            "text": "", 
+            "title": "Sprint 14"
+        }, 
+        {
+            "location": "/sprints/14/planning_sprint14/#data-de-inicio-10062018", 
+            "text": "", 
+            "title": "Data de inicio: 10/06/2018"
+        }, 
+        {
+            "location": "/sprints/14/planning_sprint14/#data-de-termino-16062018", 
+            "text": "", 
+            "title": "Data de t\u00e9rmino: 16/06/2018"
+        }, 
+        {
+            "location": "/sprints/14/planning_sprint14/#planejamento", 
+            "text": "", 
+            "title": "Planejamento"
+        }, 
+        {
+            "location": "/sprints/14/planning_sprint14/#papeis", 
+            "text": "Nome  Papel      Gabriel Alves  Scrum Master    Marcelo  PO    Byron Kamal  Desenvolvimento    William Silva  Desenvolvimento    Igor Arag\u00e3o  Desenvolvimento    Igor Veludo  Desenvolvimento    Jo\u00e3o Mota  Desenvolvimento", 
+            "title": "Pap\u00e9is"
+        }, 
+        {
+            "location": "/sprints/14/planning_sprint14/#pareamento", 
+            "text": "Byron Kamal e Gabriel  Igor Arag\u00e3o e Marcelo  William Silva, Igor Veludo e Mota", 
+            "title": "Pareamento"
+        }, 
+        {
+            "location": "/sprints/14/planning_sprint14/#planejamento_1", 
+            "text": "US#27-membersManagement  TS#07-increaseTest  US#26-studentPanelLog", 
+            "title": "Planejamento"
+        }
+    ]
+}
