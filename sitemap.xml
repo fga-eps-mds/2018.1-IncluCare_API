@@ -2,147 +2,162 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/Documento de Arquitetura/</loc>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Documento de Visão/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/Documento_de_Arquitetura/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <loc>/Metodologia do Projeto/</loc>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/Roadmap/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <loc>/ROADMAP/</loc>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/01/planning_sprint1/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/01/results_sprint1/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/02/planning_sprint2/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/02/results_sprint2/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/03/planning_sprint3/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/03/results_sprint3/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/04/planning_sprint4/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/04/results_sprint4/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/05/planning_sprint5/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/05/results_sprint5/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/06/planning_sprint6/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/06/results_sprint6/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/07/planning_sprint7/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/07/results_sprint7/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/08/planning_sprint8/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/08/results_sprint8/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/09/planning_sprint9/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/09/results_sprint9/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/10/planning_sprint10/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/10/results_sprint10/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/11/planning_sprint11/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/11/results_sprint11/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/12/planning_sprint12/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/12/results_sprint12/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sprints/13/planning_sprint13/</loc>
-     <lastmod>2018-06-11</lastmod>
+     <lastmod>2018-06-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/sprints/13/results_sprint13/</loc>
+     <lastmod>2018-06-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/sprints/14/planning_sprint14/</loc>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
