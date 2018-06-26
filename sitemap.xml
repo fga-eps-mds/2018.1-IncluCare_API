@@ -6,11 +6,6 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/Conclusão da Disicipliana/</loc>
-     <lastmod>2018-06-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
      <loc>/Documento de Arquitetura/</loc>
      <lastmod>2018-06-26</lastmod>
      <changefreq>daily</changefreq>
@@ -22,6 +17,11 @@
     </url>
     <url>
      <loc>/Metodologia do Projeto/</loc>
+     <lastmod>2018-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/Post Mortem/</loc>
      <lastmod>2018-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
