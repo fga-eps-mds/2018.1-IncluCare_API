@@ -10,8 +10,8 @@ class Student < ApplicationRecord
   validates_presence_of :mother_name, presence: true, message: 'can t be left blank'
   validates_presence_of :responsible, presence: true, message: 'can t be left blank'
   validates_presence_of :address, presence: true, message: 'can t be left blank'
-  validates_presence_of :parent_telephone, presence: true, length: { is: 11 }, message: 'can t be left blank'
-  
+  validates_presence_of :parent_telephone, presence: true, message: 'can t be left blank'
+
   validates_length_of :name, minimum: 5, message: 'at least 5 characters'
   validates_length_of :nationality, maximum: 14, message: 'deve possuir no maximo 15 caracteres'
   validates_length_of :year, maximum: 2, message: 'deve possuir no maximo 3 digitos'
@@ -23,5 +23,4 @@ class Student < ApplicationRecord
   validates_length_of :address, minimum: 7, message: 'at least 7 characters'
 
   validates_numericality_of :age, message: 'need to be number'
-  validates_numericality_of :parent_telephone, message: 'need to be number'
 end

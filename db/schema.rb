@@ -103,7 +103,7 @@ ActiveRecord::Schema.define(version: 20180607195236) do
     t.string "mother_name"
     t.string "responsible"
     t.string "address"
-    t.integer "parent_telephone"
+    t.string "parent_telephone"
     t.string "parent_email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -12,7 +12,7 @@ one:
   mother_name: MyString
   responsible: MyString
   address: MyString
-  parent_telephone: 1
+  parent_telephone: MyString
   parent_email: MyString
 
 two:
@@ -26,5 +26,5 @@ two:
   father_name: MyString
   mother_name: MyString
   responsible: MyString
-  parent_telephone: 1
+  parent_telephone: MyString
   parent_email: MyString
